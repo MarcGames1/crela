@@ -1,0 +1,21 @@
+.tagline{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 20px;
+text-align: center;
+text-transform: uppercase;
+color: var(--secondary-color);
+}
+
+.usp{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 55px;
+text-align: center;
+letter-spacing: -0.04em;
+color: var(--primary-color);
+}
