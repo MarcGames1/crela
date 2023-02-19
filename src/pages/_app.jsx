@@ -1,6 +1,9 @@
-import '@/styles/globals.css'
+import '@/styles/globals.css';
+import withTwindApp from '@twind/next/app';
+import twindConfig from '../twind.config';
 
-
-export default function App({ Component, pageProps }) {
-  return < Component {...pageProps} />
+function App({ Component, pageProps }) {
+  return <Component {...pageProps} />;
 }
+
+export default withTwindApp(twindConfig, App);

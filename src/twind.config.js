@@ -16,9 +16,12 @@ export default {
         paragraph: {
           DEFAULT: '#5E6282',
         },
-        crelaRoz: {
+        crelaroz: {
           DEFAULT: '#FF0090',
         },
+      },
+      backgroundColor: {
+        crelaRoz: 'var(--color-crelaRoz)',
       },
       container: {
         center: true,
@@ -34,5 +37,10 @@ export default {
         xlarge: '2rem',
       },
     },
+  },
+  purge: ['./**/*.tsx', './**/*.css'],
+  future: {
+    purgeLayersByDefault: true,
+    removeDeprecatedGapUtilities: true,
   },
 };

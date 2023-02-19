@@ -8,11 +8,12 @@ import Document, {
 } from 'next/document';
 import { setup } from 'twind';
 import { asyncVirtualSheet, getStyleTagProperties } from 'twind/server';
+import withTwindDocument from '@twind/next/document';
 import twindConfig from '../twind.config';
 import Script from 'next/script';
 const sheet = asyncVirtualSheet();
 
-setup({ ...twindConfig, sheet });
+setup({  sheet });
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -87,4 +88,4 @@ class MyDocument extends Document {
   }
 }
 
-export default MyDocument;
+export default withTwindDocument(twindConfig, MyDocument);
