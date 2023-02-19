@@ -1,8 +1,10 @@
+
 .tagline{
+display: inline-block;
 font-family: 'Poppins';
-font-style: normal;
+font-style: medium;
 font-weight: 700;
-font-size: 13px;
+font-size: 1.1rem;
 line-height: 20px;
 text-align: center;
 text-transform: uppercase;
@@ -10,12 +12,37 @@ color: var(--secondary-color);
 }
 
 .usp{
+display: inline-block;
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 700;
-font-size: 32px;
+font-size: 2.5rem;
 line-height: 55px;
 text-align: center;
 letter-spacing: -0.04em;
 color: var(--primary-color);
 }
+
+.pContainer {
+
+}
+
+.p {
+    
+    font-weight: 500;
+font-style: medium;
+font-size: 1rem;
+line-height: 30px;
+/* line-height: 167%; */
+text-align: center;
+
+color: var(--paragraph-color);
+align: Center;
+
+}
+
+
+@media (min-width: 1024px) {
+    
+    
+ }
