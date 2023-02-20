@@ -157,11 +157,22 @@ export const Navigation = () => {
     <div className={tw('flex flex-col')}>
       <div className={tw('flex flex-row sm:flex-col items-center')}>
         <div className={tw('sm:block md:hidden  lg:hidden')}>
-         <Image className={styles.heart} width={166} height={66} src='/heart.svg' />
+          <Image
+            className={styles.heart}
+            width={166}
+            height={66}
+            src="/heart.svg"
+          />
         </div>
-        <div className={tw(`sm:hidden flex  m-auto lg:flex md:flex`)}>
-          <Link className={''} href={'/'}>
-            <Image className={tw(``)} src="/Logo.svg" alt="Crela-logo" width={171} height={113} />
+        <div className={tw(`sm:hidden flex relative  m-auto lg:flex md:flex`)}>
+          <Link className={'block r '} href={'/'}>
+            <Image
+              className={tw(` `)}
+              src="/Logo.svg"
+              alt="Crela-logo"
+              width={171}
+              height={113}
+            />
             {/* <Logo /> */}
           </Link>
         </div>
@@ -198,9 +209,8 @@ export const Navigation = () => {
         </nav>
       </div>
       <div className={tw('self-center')}>
-      {showMenu ? <MobileMenu /> : null}
+        {showMenu ? <MobileMenu /> : null}
       </div>
-
     </div>
   );
 };

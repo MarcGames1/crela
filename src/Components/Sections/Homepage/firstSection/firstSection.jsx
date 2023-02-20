@@ -9,15 +9,19 @@ import { Button } from '@/Components/UX';
 
 export const FirstSection = () => {
   return (
-    <section className={tw('m-2 min-h-screen flex flex-col')}>
+    <section
+      className={`${styles.section} ${tw(
+        ' m-2 min-h-screen flex lg:flex-row sm:flex-col md:flex-col'
+      )}`}
+    >
       <div
         className={tw(
-          ' md:w-9/12 lg:w-12/12 flex flex-col  h-full  self-center	min-h-screen  justify-self-center			  '
+          ' md:w-9/12 lg:w-12/12 flex flex-col justify-evenly items-center	  h-full   self-center	min-h-screen 			  '
         )}
       >
         <div
           className={tw(
-            'flex flex-col justify-items-around h-full  lg:w-2/3 md:w-2/3'
+            'flex flex-col justify-evenly	 h-full  lg:w-2/3 md:w-2/3'
           )}
         >
           <span
@@ -33,13 +37,13 @@ export const FirstSection = () => {
           </div>
           <Image
             className={tw('md:hidden lg:hidden self-center')}
-            width={300}
-            height={300}
-            src={'/dog.png'}
+            width={200}
+            height={200}
+            src={'/compositions/dog.png'}
             alt="Crela dog"
           />
           <div className={styles.pContainer}>
-            <p className={styles.p}>Tot ceea ce visezi, este deja realizat. </p>
+            <p className={styles.p}>Tot ceea ce visezi, este deja realizat.</p>
             <p className={styles.p}>
               Tot ceea ce trebuie să faci este să te lași pe valurile creației
               împreună cu mine.
@@ -53,13 +57,19 @@ export const FirstSection = () => {
         >
           Descopera{' '}
         </Button>
+        <Image
+          className={tw('md:hidden relative bottom-0 self-end lg:hidden ')}
+          src={'/compositions/Miroodles Color Comp.png'}
+          width={160}
+          height={177}
+        />
       </div>
-
       <Image
-        className={tw('md:hidden self-end lg:hidden  float-right')}
-        src={'/compositions/Miroodles Color Comp.png'}
-        width={160}
-        height={177}
+        className={tw(' lg:block md:hidden hidden self-center')}
+        width={500}
+        height={500}
+        src={'/compositions/dog.png'}
+        alt="Crela dog"
       />
     </section>
   );
