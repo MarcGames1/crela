@@ -3,7 +3,7 @@ import React from 'react'
 import { tw } from 'twind';
 import styles from './firstSection.module.css'
 import Image from 'next/image';
-
+import { typography } from '@/helpers/styles';
 import { Button } from '@/Components/UX';
 
 
@@ -48,10 +48,10 @@ export const FirstSection = () => {
             alt="Crela dog"
           />
           <div className={`${tw('grow h-1/4')} ${styles.pContainer}`}>
-            <p className={paragraphStyle}>
+            <p className={typography.p}>
               Tot ceea ce visezi, este deja realizat.
             </p>
-            <p className={paragraphStyle}>
+            <p className={typography.p}>
               Tot ceea ce trebuie să faci este să te lași pe valurile creației
               împreună cu mine.
             </p>
@@ -80,7 +80,7 @@ export const FirstSection = () => {
         </div>
         <Image
           className={tw('md:hidden relative bottom-0 self-end lg:hidden ')}
-          src={'/compositions/Miroodles Color Comp.png'}
+          src={'/compositions/ciori.png'}
           width={160}
           height={177}
         />

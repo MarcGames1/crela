@@ -1,0 +1,27 @@
+.heading1{
+    margin: 2rem 3rem 2rem 3rem;
+font-family: 'Poppins';
+
+font-weight: 700;
+font-size: 3rem;
+line-height: 3rem;
+text-align: center;
+letter-spacing: -0.04em;
+color: var(--primary-color);
+}
+
+.heading2{
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.p {
+    
+
+line-height: 2!important;
+
+color: var(--paragraph-color);
+
+}

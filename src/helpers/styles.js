@@ -1,3 +1,6 @@
+import { tw } from "twind"
+import styles from './styles.module.css'
+
 export const colors = {
         primary: {
           DEFAULT: '#181E4B',
@@ -15,3 +18,15 @@ export const colors = {
             DEFAULT: '#FFFFFF',
         }
       }
+
+
+export const typography = {
+  heading1: `${styles.heading1} ${tw('')}`,
+  heading2: `${styles.heading2} ${tw('')}`,
+
+
+  p:`${tw(
+    'lg:text-xl md:text-sm sm:text-sm leading-18 indent-0	text-justify		'
+  )} ${styles.p}`,
+}
+  

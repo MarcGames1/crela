@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import { Navigation } from '@/Components/NavBar/Index';
-import { FirstSection } from '@/Components/Sections/Homepage';
+import { FirstSection, SecondSection } from '@/Components/Sections/Homepage';
 
 
 export default function Home() {
@@ -17,6 +17,7 @@ export default function Home() {
       </Head>
       <Navigation />
       <FirstSection />
+      <SecondSection />
     </>
   );
 }
