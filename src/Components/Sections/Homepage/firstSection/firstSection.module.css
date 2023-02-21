@@ -22,7 +22,7 @@ color: var(--secondary-color);
 
 .usp{
 display:block;
-margin: 1rem 3rem 0rem 3rem;
+margin: 2rem 3rem 2rem 3rem;
 font-family: 'Poppins';
 
 font-weight: 700;
@@ -35,28 +35,42 @@ color: var(--primary-color);
 
 .pContainer {
     display:block;
-    margin: 1rem 3rem 1rem 3rem;
-    line-height: 30px;
+    margin: 2rem 1rem 3rem 2rem;
+    /* line-height: 20; */
     font-weight:500;
+    /* border: 1px solid red; */
+    
 
 }
 
 .p {
     
-font-weight: 500;
-font-style: medium;
-font-size: 1rem;
-line-height: 30px;
+/* font-weight: 500; */
+/* font-style: medium; */
+/* font-size: 1rem; */
+line-height: 2!important;
 /* line-height: 167%; */
-text-align: center;
+/* text-align: center; */
 
 color: var(--paragraph-color);
-align: Center;
+/* align: Center; */
 
 }
 
-
+ .heart{
+        
+        transform: translate(50px, -40px);
+    }
 @media (min-width: 1024px) {
+  .pContainer {
+    width: 50%;
+    margin:auto;
+    height: 20dvh;
+
+   
     
-    
+  }  
+    .p{
+        line-height: 
+    }
  }
