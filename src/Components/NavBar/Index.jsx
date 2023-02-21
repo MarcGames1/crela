@@ -154,7 +154,7 @@ export const Navigation = () => {
   }, [scroolPosition]);
 
   return (
-    <div className={tw('flex flex-col')}>
+    <div className={tw(`flex flex-col z-[100] bg-white ${sticky}`)}>
       <div className={tw('flex flex-row sm:flex-col items-center')}>
         <div className={tw('sm:block md:hidden  lg:hidden')}>
           <Image
@@ -176,7 +176,7 @@ export const Navigation = () => {
             {/* <Logo /> */}
           </Link>
         </div>
-        <nav className={tw(`bg-white z-[100] ${sticky}`)}>
+        <nav className={tw(`bg-white `)}>
           <div className={tw(`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8`)}>
             <div className={tw(`flex items-center justify-between`)}>
               <div className={tw(`flex items-center`)}>
