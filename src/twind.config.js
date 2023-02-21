@@ -20,9 +20,7 @@ export default {
           DEFAULT: '#FF0090',
         },
       },
-      backgroundColor: {
-        crelaRoz: 'var(--color-crelaRoz)',
-      },
+   
       container: {
         center: true,
       },

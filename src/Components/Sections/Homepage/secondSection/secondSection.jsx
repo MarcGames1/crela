@@ -7,9 +7,9 @@ import { typography } from '@/helpers/styles'
 import styles from './secondSection.module.css'
 
 
-export const SecondSection = () => {
+export const Despre = () => {
   return (
-    <section
+    <section id='despre-mine'
       className={tw('flex flex-col  justify-items-around items-center')}
     >
       <Image

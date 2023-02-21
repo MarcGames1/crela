@@ -1,4 +1,7 @@
 import { FirstSection } from "./firstSection/firstSection";
-import { SecondSection } from "./secondSection/secondSection";
+import { Despre } from "./secondSection/secondSection";
+import { Servicii } from "./servicii/Servicii";
+import { Portofoliu } from "./portofoliu/Portofoliu";
 
-export {FirstSection, SecondSection}
+
+export {FirstSection, Despre, Servicii, Portofoliu }

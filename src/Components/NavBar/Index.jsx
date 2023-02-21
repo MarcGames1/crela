@@ -7,7 +7,7 @@ import styles from './NavBar.module.css'
 
 import {Logo} from '../Logo/Logo';
 import Link from 'next/link';
-// import { ScrollPosition } from '../../context/scroolPositionContext';
+import { ScrollPosition } from '../../context/scroolPositionContext';
 
 const links = [
   {
@@ -16,15 +16,15 @@ const links = [
   },
   {
     label: `Despre Mine`,
-    href: `/despre-mine`,
+    href: `#despre-mine`,
   },
   {
     label: `Servicii`,
-    href: `/servicii`,
+    href: `/#servicii`,
   },
   {
     label: `Portofoliu`,
-    href: `/portofoliu`,
+    href: `/#portofoliu`,
   },
   {
     label: `Materiale`,
@@ -131,27 +131,27 @@ const MobileMenu = () => (
 );
 
 export const Navigation = () => {
-  // const [scroolPosition] = useContext(ScrollPosition);
+  const [scroolPosition] = useContext(ScrollPosition);
 
   const [showMenu, setShowMenu] = useState(false);
   const toggleMenu = () => setShowMenu(!showMenu);
   const [sticky, setSticky] = useState('');
 
-  // const addSticky = () => {
-  //   setSticky('sticky top-0');
-  // };
+  const addSticky = () => {
+    setSticky('sticky top-0');
+  };
 
-  // const removeSticky = () => {
-  //   setSticky('');
-  // };
+  const removeSticky = () => {
+    setSticky('');
+  };
 
-  // useEffect(() => {
-  //   if (scroolPosition < 200) {
-  //     removeSticky();
-  //   } else {
-  //     addSticky();
-  //   }
-  // }, [scroolPosition]);
+  useEffect(() => {
+    if (scroolPosition < 200) {
+      removeSticky();
+    } else {
+      addSticky();
+    }
+  }, [scroolPosition]);
 
   return (
     <div className={tw('flex flex-col')}>
