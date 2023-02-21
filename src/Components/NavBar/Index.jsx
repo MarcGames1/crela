@@ -170,8 +170,8 @@ export const Navigation = () => {
               className={tw(` `)}
               src="/Logo.svg"
               alt="Crela-logo"
-              width={171}
-              height={113}
+              width={sticky ? 100 : 171}
+              height={sticky ? 50 :113}
             />
             {/* <Logo /> */}
           </Link>
