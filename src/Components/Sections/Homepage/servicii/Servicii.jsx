@@ -17,7 +17,9 @@ export const Servicii = () => {
             'grid grid-cols-3 grid-rows-3 items-center 	  justify-items-center '
           )}
         >
-          <span className={`{tw("row-span-1")} ${typography.decorativ}`}>
+          <span
+            className={`{tw("lg:order-1 row-span-1")} ${typography.decorativ}`}
+          >
             Tu
           </span>
           <Door
@@ -26,11 +28,13 @@ export const Servicii = () => {
             subtitlu={'Ai ceva-n minte, dar nu știi s-o exprimi?'}
             titlu={'COPYWRITING'}
           />
-          <span className={`{tw("row-span-1")} ${typography.decorativ}`}>
+          <span
+            className={`{tw("lg:order-2 row-span-1")} ${typography.decorativ}`}
+          >
             Ce
           </span>
           <span
-            className={`{tw(" row-span-2 col-span-1")} ${typography.decorativ}`}
+            className={`{tw(" lg:order-3 row-span-2 col-span-1")} ${typography.decorativ}`}
           >
             ușă
           </span>
@@ -47,7 +51,7 @@ export const Servicii = () => {
             titlu={'GRAPHIC DESIGN'}
           />
           <span
-            className={`{tw("row-span-3 col-start-3 col-end-3")} ${typography.decorativ}`}
+            className={`{tw("lg:order-4 row-span-3 col-start-3 col-end-3")} ${typography.decorativ}`}
           >
             alegi?
           </span>
@@ -66,13 +70,17 @@ export const Servicii = () => {
 
 
 const Door = ({titlu, subtitlu, src, style}) => {
-  return(
-
-    <div className={ `${style} ${tw('flex flex-col items-center')}`}>
-
- <Image src={src} width={132} height={175} />
- <span className={typography.heading2}>{titlu}</span>
- <span>{subtitlu}</span>
-  </div>
-    )
+  return (
+    <div className={`${style} ${tw('flex flex-col items-center')}`}>
+      <Image src={src} width={132} height={175} />
+      <span
+        className={`${tw('break-keep whitespace-nowrap	')} ${
+          typography.heading2
+        }`}
+      >
+        {titlu}
+      </span>
+      <span className={typography.p}>{subtitlu}</span>
+    </div>
+  );
 }
