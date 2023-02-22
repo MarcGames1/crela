@@ -1,6 +1,6 @@
 .heading1{
     margin: 2rem 3rem 2rem 3rem;
-font-family: 'Poppins';
+
 
 font-weight: 700;
 font-size: 3rem;
@@ -24,4 +24,11 @@ line-height: 2!important;
 
 color: var(--paragraph-color);
 
+}
+
+.decorativ{
+    color: var(--decorativ-color);
+    font-weight: 700;
+     font-size: 2rem;
+    text-align: center;
 }
