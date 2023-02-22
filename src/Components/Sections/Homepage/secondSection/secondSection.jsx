@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 import { typography } from '@/helpers/styles'
 
-import styles from './secondSection.module.css'
+
 
 
 export const Despre = () => {

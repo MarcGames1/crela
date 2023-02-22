@@ -132,3 +132,16 @@ export const PostDataByUri = (uri) => `query getPostByURI($uri: String="${uri}")
     }
   }
 }`;
+
+export const PortfolioItems =()=>{
+`query PortfolioItems {
+  portfolioItems {
+    nodes {
+      title
+      excerpt
+      portfolioItemId
+      slug
+    }
+  }
+}`;
+}
