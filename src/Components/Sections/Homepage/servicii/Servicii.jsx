@@ -13,9 +13,11 @@ export const Servicii = () => {
       <div className={tw('flex items-center flex-col')}>
         <span className={typography.heading1}>Servicii</span>
         <div>
-
-          <Door subtitlu={'subtitlu'} titlu={'s'} />
-          
+          <Door
+            src={'/doors/copywriting-door.png'}
+            subtitlu={'Ai ceva-n minte, dar nu știi s-o exprimi?'}
+            titlu={'COPYWRITING'}
+          />
         </div>
       </div>
     </section>
@@ -30,13 +32,13 @@ export const Servicii = () => {
 
 
 
-const Door = ({titlu, subtitlu}) => {
+const Door = ({titlu, subtitlu, src}) => {
   return(
 
     <div className={tw('flex flex-col items-center')}>
 
- 
- <span className={typography.heading1}>{titlu}</span>
+ <Image src={src} width={132} height={175} />
+ <span className={typography.heading2}>{titlu}</span>
  <span>{subtitlu}</span>
   </div>
     )
