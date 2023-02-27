@@ -10,6 +10,7 @@ img, picture, svg, video, iframe {
 }
 
 html {
+  /* background-color: #8C8383; */
    scroll-behavior: smooth;
    
   --primary-color:#181E4B;

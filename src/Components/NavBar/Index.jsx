@@ -146,9 +146,9 @@ export const Navigation = () => {
   };
 
   useEffect(() => {
-    if (scroolPosition < 200) {
+    if (scroolPosition <= 200) {
       removeSticky();
-    } else {
+    } else if (scroolPosition >= 300) {
       addSticky();
     }
   }, [scroolPosition]);

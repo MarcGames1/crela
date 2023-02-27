@@ -5,6 +5,7 @@ import styles from './firstSection.module.css'
 import Image from 'next/image';
 import { typography } from '@/helpers/styles';
 import { Button } from '@/Components/UX';
+import Link from 'next/link';
 
 
 export const FirstSection = () => {
@@ -57,13 +58,14 @@ export const FirstSection = () => {
             </p>
           </div>
           <div className={tw('flex relative justify-center')}>
-            <Button
+            <Link
               className={tw(
                 ' inline-block  sm:block md:self-start  lg:self-start m-0 md:m-auto    self-center '
               )}
+              href={'#despre-mine'}
             >
-              Descopera{' '}
-            </Button>
+              <Button>Descopera </Button>
+            </Link>
             <div
               className={`${styles.heart} ${tw(
                 ' hidden self-end md:hidden  lg:inline-block'

@@ -135,12 +135,21 @@ export const PostDataByUri = (uri) => `query getPostByURI($uri: String="${uri}")
 
 export const PortfolioItems =()=>{
 `query PortfolioItems {
-  portfolioItems {
+  portfolioItems(first: 90000) {
     nodes {
-      title
       excerpt
-      portfolioItemId
+      featuredImage {
+        node {
+          altText
+          sourceUrl
+        }
+      }
+      title
       slug
+      buttonColor {
+        buttonColor
+      }
+      blocksJSON
     }
   }
 }`;
