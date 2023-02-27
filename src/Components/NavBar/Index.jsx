@@ -8,6 +8,7 @@ import styles from './NavBar.module.css'
 import {Logo} from '../Logo/Logo';
 import Link from 'next/link';
 import { ScrollPosition } from '../../context/scroolPositionContext';
+import { Button } from '../UX';
 
 const links = [
   {
@@ -16,7 +17,7 @@ const links = [
   },
   {
     label: `Despre Mine`,
-    href: `#despre-mine`,
+    href: `/#despre-mine`,
   },
   {
     label: `Servicii`,
@@ -30,6 +31,13 @@ const links = [
     label: `Materiale`,
     href: `/materiale`,
   },
+  
+  {
+    label: `Blog`,
+    href: `/blog`,
+  },
+  
+
   
 ];
 
@@ -117,17 +125,22 @@ const MobileMenu = () => (
   <div className={tw(`md:hidden`)}>
     <div className={tw(`px-2 pt-2 pb-3 space-y-1 sm:px-3`)}>
       {links.map((link) => (
-        <a
+        <Link
           href={link.href}
           className={tw(`text-gray-500 block px-3 py-2 text-base font-medium`)}
           key={link.label}
         >
           {link.label}
-        </a>
+        </Link>
       ))}
+
+      
+        <Button>
+          <Link href={'/contact'}>Contact</Link>
+        </Button>
+      
     </div>
   </div>
-   
 );
 
 export const Navigation = () => {
@@ -193,6 +206,9 @@ export const Navigation = () => {
                         {link.label}
                       </a>
                     ))}
+                    <Link href={'/contact'}>
+                    <Button style='m-2 '>Contact</Button>
+                    </Link>
                   </div>
                 </div>
               </div>

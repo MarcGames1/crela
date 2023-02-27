@@ -20,7 +20,7 @@ export default {
           DEFAULT: '#FF0090',
         },
       },
-   
+
       container: {
         center: true,
       },
@@ -33,6 +33,9 @@ export default {
         medium: '1.125rem',
         large: '1.75rem',
         xlarge: '2rem',
+        huge: 'clamp(2.25rem, 4vw, 2.75rem)',
+        gigantic: 'clamp(2.75rem, 6vw, 3.25rem)',
+        colossal: 'clamp(3.25rem, 8vw, 6.25rem)',
       },
     },
   },
