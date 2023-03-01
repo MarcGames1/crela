@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { tw } from 'twind';
 
 const DefaultImage =({Imageurl, width, height, alt, caption, border}) =>{
@@ -12,7 +12,7 @@ const DefaultImage =({Imageurl, width, height, alt, caption, border}) =>{
     return (
       <>
         <div className={tw(`border-[${border.border?.width}] rounded-[${border?.border?.radius}]`)}>
-          <img src={Imageurl} width={width} height={height} alt={alt} layout="intrinsic" />
+          <Image src={Imageurl} width={width} height={height} alt={alt} />
         </div>
         {caption ? <span className={tw('block text-center text-gray-300	')}>{caption}</span> : null}
       </>

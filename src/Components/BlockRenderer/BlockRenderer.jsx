@@ -10,6 +10,7 @@ import {
   Columns,
   Column,
   PostTitle,
+  Gallery
 } from '../WP';
 // import UniversalBlock from '../WP/UniversalBlock/UniversalBlock';
 import { SocialIcon } from 'react-social-icons';
@@ -112,7 +113,16 @@ import { theme } from '../../theme';
         
         return <BlockRenderer key={block.id} blocks={block.innerBlocks} />;
       }
-
+      case 'core/gallery' :{
+        return (
+          <Gallery
+            columns={block.attributes.columns || 3}
+            cropImages={block.attributes.imageCrop}
+            items={block.innerBlocks}
+            key={block.id}
+          />
+        );
+      }
       case 'core/image': {
      
         const { url, alt, title, rel, style, height, width, anchor, linkTarget, linkClass } = block.attributes || null;
@@ -125,7 +135,7 @@ import { theme } from '../../theme';
           //       width={block?.attributes?.width || 1000}
           //       height={block?.attributes?.height || 300}
           //       alt={block.attributes.alt || ''}
-          //       layout="intrinsic"
+          //       
           //     />
           //   </div>
           //   {block.attributes?.caption ? (
@@ -145,6 +155,9 @@ import { theme } from '../../theme';
               caption={block.attributes.caption}
               anchor={block.attributes?.anchor || null}
             />
+             {block.attributes?.caption ? (
+              <span className={tw('block text-center text-gray-300	')}>{block.attributes?.caption}</span>
+            ) : null}
           </div>
         );
       }

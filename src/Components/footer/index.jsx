@@ -23,9 +23,9 @@ const linkuriUtile = [{
 
 ];
 const dispozitiiLegale = [
-  { text: 'Termeni si Conditii', href: 'termeni-conditii' },
-  { text: 'Politica Cookie', href: 'politica-cookie' },
-  { text: 'Contact', href: 'contact' }
+  { text: 'Termeni si Conditii', href: '/termeni-conditii' },
+  { text: 'Politica Cookie', href: '/politica-cookie' },
+  { text: 'Contact', href: '/contact' }
 
 ];
 
