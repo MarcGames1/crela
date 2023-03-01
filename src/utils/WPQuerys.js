@@ -154,3 +154,31 @@ export const PortfolioItems =()=>{
   }
 }`;
 }
+
+export const PortfolioItemsSlugs =() =>`query MainMenuQuery {
+  portfolioItems {
+    nodes {
+      slug
+    }
+  }
+}`
+
+
+export const PortfolioItemsBySlug = (slug) => `query MainMenuQuery {
+  portfolioItemBy(slug: "${slug}") {
+    blocksJSON
+    seo {
+      canonical
+      title
+      metaDesc
+    }
+    title
+    featuredImage {
+      node {
+        altText
+        sourceUrl
+        link
+      }
+    }
+  }
+}`;

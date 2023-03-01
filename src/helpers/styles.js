@@ -23,6 +23,7 @@ export const colors = {
 export const typography = {
   heading1: `${styles.heading1} ${tw('')}`,
   heading2: `${styles.heading2} ${tw('')}`,
+  heading3: `${styles.heading3} ${tw('')}`,
 
   decorativ: `${styles.decorativ} ${tw('text-[#5e62826e]')}`,
 

@@ -5,6 +5,8 @@ import { gql } from '@apollo/client';
 import client from '@/utils/client';
 import { PortfolioItems } from '@/utils/WPQuerys';
 
+
+
 export  function Home ( props) {
 
   console.log("IN Functia Home ===>>>  ",props )

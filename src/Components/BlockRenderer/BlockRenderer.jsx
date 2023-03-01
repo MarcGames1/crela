@@ -24,12 +24,16 @@ import { theme } from '../../theme';
   return blocks.map((block) => {
     switch (block.name) {
       case 'core/paragraph': {
-        
+        console.log(block)
         return (
           <Paragraph
             key={block.id}
             textAlign={block.attributes.align}
-            textColor={theme[block.attributes.textColor] || block.attributes.style?.color?.text}
+            backgroundColor={block.attributes.backgroundColor}
+            textColor={
+              theme[block.attributes.textColor] ||
+              block.attributes.style?.color?.text
+            }
             content={block.attributes.content}
             fontSize={block.attributes.fontSize}
           />
