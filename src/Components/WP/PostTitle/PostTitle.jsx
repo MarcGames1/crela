@@ -1,8 +1,8 @@
 import { Heading } from '../Heading/Heading';
-import { useBlogPostContext } from '../../../context/postContext';
+import { usePostContext } from '../../../context/postContext';
 
 export const PostTitle = ({ level, textAlign }) => {
-  const { title } = useBlogPostContext();
+  const { title } = usePostContext();
 
   return <Heading content={title} level={level} textAlign={textAlign} />;
 };

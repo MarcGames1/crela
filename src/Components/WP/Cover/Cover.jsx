@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { useBlogPostContext } from '../../../context/blogPost';
+import { usePostContext } from '../../../context/blogPost';
 import { tw } from "twind";
 export const Cover = ({ children, background }) => {
  
   
-    const { featuredImage } = useBlogPostContext();
+    const { featuredImage } = usePostContext();
     
   return (
        <div className="h-screen text-white bg-slate-800 relative min-h-[400px] flex justify-center items-center">

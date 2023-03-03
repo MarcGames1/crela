@@ -68,6 +68,6 @@ export const PostWrapper = ({ value, widget, children }) => {
   );
 };
 
-export const useBlogPostContext = () => {
+export const usePostContext = () => {
   return useContext(BlogPostContext);
 };
