@@ -15,11 +15,11 @@ import {
   PortfolioItemsBySlug,
   PortfolioItemsSlugs,
 } from '../../utils/WPQuerys';
-import BlockRenderer from '../../components/BlockRenderer/BlockRenderer';
+import BlockRenderer from '../../Components/BlockRenderer/BlockRenderer';
 import { PostWrapper } from '../../context/blogPost';
 
 
-const Page = dynamic(() => import('../../components/page'));
+const Page = dynamic(() => import('../../Components/page'));
 // const ErrorPage = dynamic(() => import('../../components/ErrorPage'));
 
 

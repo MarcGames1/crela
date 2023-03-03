@@ -14,7 +14,7 @@ import { Button } from '@/Components/UX';
 
 const DOMAIN = process.env.DOMAIN
 const Page = dynamic(() => import('../../components/page'));
-const BlogCardComponent = dynamic(() => import ('../../components/BlogCardComponent/BlogCardComponent'))
+const BlogCardComponent = dynamic(() => import ('../../Components/BlogCardComponent/BlogCardComponent'))
 
 
 const GET_POSTS = gql(PostsQuery(1));
