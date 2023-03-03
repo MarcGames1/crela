@@ -12,7 +12,7 @@ export const Paragraph = ({
   return (
     <p
       className={tw(
-        `leading-9 py-4 max-w-5xl mx-auto ${backgroundColor ? `block w-full bg-${backgroundColor}` : ""} ${getTextAlign(textAlign)}`
+        `block leading-9 py-4 max-w-5xl mx-auto ${backgroundColor ? `block w-full bg-${backgroundColor}` : ""} ${getTextAlign(textAlign)}`
       )}
       style={{ color: textColor }}
       dangerouslySetInnerHTML={{ __html: relativeToAbsoluteUrls(content) }}
