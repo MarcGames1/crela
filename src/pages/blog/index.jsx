@@ -13,7 +13,7 @@ import client from '../../utils/client';
 import { Button } from '@/Components/UX';
 
 const DOMAIN = process.env.DOMAIN
-const Page = dynamic(() => import('../../components/page'));
+const Page = dynamic(() => import('../../Components/page'));
 const BlogCardComponent = dynamic(() => import ('../../Components/BlogCardComponent/BlogCardComponent'))
 
 
