@@ -4,12 +4,8 @@ const nextConfig = {
   images: {
     domains: [
       '*',
-      'www.avocatdorubotea.ro',
-      'localhost',
-      'lh4.googleusercontent.com',
-      'lh5.googleusercontent.com',
-      'lh6.googleusercontent.com',
-      'api.marweb.ro',
+      'wp.crela.ro',
+      'crela.ro'
     ],
   },
 };
