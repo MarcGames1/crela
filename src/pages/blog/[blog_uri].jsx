@@ -11,11 +11,11 @@ import { cleanAndTransformBlocks } from '../../utils/cleanAndTransformBlocks';
 
 import client from '../../utils/client';
 import { AllPostsUri, AllPostsUrls, PostsQuery, PostDataByUri } from '../../utils/WPQuerys';
-import BlockRenderer from '../../components/BlockRenderer/BlockRenderer';
+import {BlockRenderer} from '@/components/BlockRenderer/';
 import { PostWrapper } from '../../context/blogPost';
 
 
-const Page = dynamic(() => import('../../components/page'));
+const Page = dynamic(() => import('@/components/page'));
 // const ErrorPage = dynamic(() => import('../../components/ErrorPage'));
 
 
