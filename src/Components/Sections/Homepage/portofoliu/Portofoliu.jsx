@@ -17,13 +17,13 @@ export const Portofoliu = (props) => {
 
 
   return (
-    <section id="portofoliu">
+    <section className={tw('')} id="portofoliu">
       <p className={`${typography.p} ${tw('text-center')}`}>Uită-te prin</p>
       <span className={`${typography.heading1} ${tw('text-center m-auto block mb-4')}`}>PORTOFOLIU</span>
 
       <div
         className={tw(
-          `grid md:grid-cols-${cols(3)} lg:grid-cols-${cols(
+          ` grid md:grid-cols-${cols(3)} lg:grid-cols-${cols(
             5
           )} relative items-start justify-around justify-items-center gap-5`
         )}
@@ -48,17 +48,23 @@ console.log(buttonColor.buttonColor);
     alt: featuredImage?.node?.altText,
   };  
   return (
-    <Link href={`/portofoliu/${slug}/`}>
+    <Link className={tw('')} href={`/portofoliu/${slug}/`}>
       <div
         className={tw(
-          'flex flex-col w-full h-full items-center justify-items-center justify-around'
+          'shadow rounded-xl m-3  flex flex-col w-full h-full items-center justify-items-center justify-around'
         )}
       >
-        <Image width={215} height={235} src={image.url} alt={image.alt} />
+        <Image
+          className={tw('w-full h-full cover')}
+          width={150}
+          height={150}
+          src={image.url}
+          alt={image.alt}
+        />
 
         <div
           className={tw(
-            'flex flex-row w-full self-center items-center justify-around gap-4  '
+            'flex flex-row w-full self-center items-center justify-around gap-4 bg-white '
           )}
         >
           <div

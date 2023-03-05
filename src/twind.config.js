@@ -25,7 +25,6 @@ export default {
         secondary: '#DF6951',
         crelaRoz: '#FF0090',
         paragraph: '#5E6282',
-        
       },
 
       container: {
@@ -44,8 +43,16 @@ export default {
         gigantic: 'clamp(2.75rem, 6vw, 3.25rem)',
         colossal: 'clamp(3.25rem, 8vw, 6.25rem)',
       },
+      dropShadow: {
+        '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
+        '4xl': [
+          '0 35px 35px rgba(0, 0, 0, 0.25)',
+          '0 45px 65px rgba(0, 0, 0, 0.15)',
+        ],
+      },
     },
   },
+
   purge: ['./**/*.tsx', './**/*.css'],
   future: {
     purgeLayersByDefault: true,

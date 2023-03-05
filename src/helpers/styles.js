@@ -32,3 +32,10 @@ export const typography = {
   )} ${styles.p}`,
 };
   
+export const form = {
+  input: `${tw('bg-white shadow-md border-2')} ${styles.input}`,
+  label: `${styles.label} `,
+  select: `${styles.select} `,
+  textArea: `${styles.textArea}`, 
+  button: `${styles.button}`,
+};

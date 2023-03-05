@@ -4,6 +4,8 @@ import Page from '@/Components/page';
 import { gql } from '@apollo/client';
 import client from '@/utils/client';
 import { PortfolioItems } from '@/utils/WPQuerys';
+import Contact from '@/Components/Sections/Homepage/contact/contact';
+import Form from '@/Components/Form/Form';
 
 
 
@@ -21,6 +23,9 @@ export  function Home ( props) {
       <Despre />
       <Servicii />
       <Portofoliu {...props} />
+      <Contact>
+        <Form />
+      </Contact>
     </Page>
   );
 }
