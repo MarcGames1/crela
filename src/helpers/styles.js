@@ -33,9 +33,12 @@ export const typography = {
 };
   
 export const form = {
-  input: `${tw('bg-white shadow-md border-2')} ${styles.input}`,
+  form: `${tw('flex flex-col justify-items-between w-full border-1 px-3')} `,
+  input: `${tw('bg-white shadow-md ')} ${styles.input} ${typography.p}`,
   label: `${styles.label} `,
-  select: `${styles.select} `,
-  textArea: `${styles.textArea}`, 
-  button: `${styles.button}`,
+  select: `${styles.select} ${typography.p} `,
+  textArea: `${styles.textArea}  ${typography.p} ${tw(
+    'bg-white shadow-md border-2'
+  )}`,
+  button: `${styles.button} ${tw('shadow-md ')}`,
 };
