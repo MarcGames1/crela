@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState, useRef } from 'react';
 import { tw } from 'twind'
 import axios from 'axios';
 
@@ -11,37 +11,50 @@ import { form } from '@/helpers/styles'
 
 
 const Form = () => {
+  const [nume, setNume] = useState(null);
+  const [email, setEmail] = useState(null);
+  const [serviciu, setServiciu] = useState(null);
+  const [buget, setBuget] = useState(null);
+  const [textAreaValue, setTextAreaValue] = useState(null);
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
-    const [nume, setNume] = useState(null)
-    const [email, setEmail] = useState(null)
-    const [serviciu, setServiciu] = useState(null)
-    const [buget, setBuget] = useState(null)
-    const [textAreaValue, setTextAreaValue] = useState(null)
+  const formRef = useRef(null); // referința către elementul form
 
+  const resetState = () => {
+    setNume(null);
+    setEmail(null);
+    setServiciu(null);
+    setBuget(null);
+    setTextAreaValue(null);
+    formRef.current.reset();
+  };
 
- const handleSubmit = async (e) => {
-   e.preventDefault();
-   try {
-     await axios.post(
-       `https://formspree.io/f/${process.env.NEXT_PUBLIC_FORM_ID}`,
-       {
-         nume,
-         email,
-         serviciu,
-         buget,
-         textAreaValue,
-       }
-     );
-     alert('Mesajul a fost trimis!');
-   } catch (error) {
-     console.error(error);
-     alert('A apărut o problemă la trimiterea mesajului.');
-   }
- };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post(
+        `https://formspree.io/f/${process.env.NEXT_PUBLIC_FORM_ID}`,
+        {
+          nume,
+          email,
+          serviciu,
+          buget,
+          textAreaValue,
+        }
+      );
+      setShowSuccessMessage(true);
+      resetState();
+      alert('Mesajul a fost trimis!');
+    } catch (error) {
+      console.error(error);
+      alert('A apărut o problemă la trimiterea mesajului.');
+      resetState();
+    }
+  };
 
   return (
     <div className={tw('self-center sm: w-full lg:w-1/3')}>
-      <form onSubmit={handleSubmit} id="Formular Contact" className={form.form}>
+      <form ref={formRef} onSubmit={handleSubmit} id="Formular Contact" className={form.form}>
         <label className={form.label} htmlFor="nume">
           Numele tău îmi e poruncă
         </label>
@@ -94,6 +107,17 @@ const Form = () => {
         <button className={form.button} type="submit">
           TRIMITE
         </button>
+        {showSuccessMessage && (
+          <p
+            style={{
+              backgroundColor: 'green',
+              color: 'white',
+              padding: '1rem',
+            }}
+          >
+            Mesajul a fost trimis cu succes!
+          </p>
+        )}
       </form>
     </div>
   );
