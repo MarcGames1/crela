@@ -44,7 +44,7 @@ const Form = () => {
       );
       setShowSuccessMessage(true);
       resetState();
-      alert('Mesajul a fost trimis!');
+      
     } catch (error) {
       console.error(error);
       alert('A apărut o problemă la trimiterea mesajului.');
