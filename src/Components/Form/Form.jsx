@@ -62,7 +62,8 @@ const Form = () => {
           className={form.input}
           type="text"
           name="nume"
-          onChange={(e) => setNume(e.target.value)}
+          required
+          onInput={(e) => setNume(e.target.value)}
         />
         <label className={form.label} htmlFor="email">
           Email
@@ -71,7 +72,8 @@ const Form = () => {
           className={form.input}
           type="email"
           name="email"
-          onChange={(e) => setEmail(e.target.value)}
+          required
+          onInput={(e) => setEmail(e.target.value)}
         />
         <label className={form.label} htmlFor="serviciu">
           Alege-ți serviciul
@@ -81,7 +83,7 @@ const Form = () => {
           name="serviciu"
           id="serviciu"
           form="Formular Contact"
-          onChange={(e) => setServiciu(e.target.value)}
+          onInput={(e) => setServiciu(e.target.value)}
         >
           <option value="Social Media">Social Media</option>
           <option value="Copywriting">CopyWriting</option>
@@ -94,7 +96,8 @@ const Form = () => {
           className={form.input}
           type="number"
           name="buget"
-          onChange={(e) => setBuget(e.target.value)}
+          required
+          onInput={(e) => setBuget(e.target.value)}
         />
         <label className={form.label} htmlFor="buget">
           Spune-mi ce-ți dorești
@@ -102,7 +105,8 @@ const Form = () => {
         <textarea
           rows={10}
           className={form.textArea}
-          onChange={(e) => setTextAreaValue(e.target.value)}
+          required
+          onInput={(e) => setTextAreaValue(e.target.value)}
         />
         <button className={form.button} type="submit">
           TRIMITE
