@@ -3,7 +3,6 @@ import React from 'react';
 import { TestimonialData } from './testimonialData';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import styles from './TestimonialCarousel.module.css'
 import Testimonial from './Testimonials';
 
 
@@ -14,7 +13,7 @@ const TestimonialsCarousel = (props: { data: TestimonialData[]; }) => {
      
      
 
-      <Carousel  infiniteLoop autoPlay  className='max-w-screen my-10' >
+      <Carousel  infiniteLoop autoPlay  className='max-w-screen mt-10' >
         {props.data.map((testimonial: TestimonialData, idx: number) => {
           return <Testimonial key={idx} {...testimonial} />;
         })}
