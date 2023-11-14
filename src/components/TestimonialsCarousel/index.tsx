@@ -14,7 +14,7 @@ const TestimonialsCarousel = (props: { data: TestimonialData[]; }) => {
      
      
 
-      <Carousel  infiniteLoop  className='max-w-screen' >
+      <Carousel  infiniteLoop autoPlay  className='max-w-screen my-10' >
         {props.data.map((testimonial: TestimonialData, idx: number) => {
           return <Testimonial key={idx} {...testimonial} />;
         })}
