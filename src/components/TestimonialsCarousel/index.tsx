@@ -1,31 +1,26 @@
 'use client';
 import React from 'react';
 import { TestimonialData } from './testimonialData';
-import { Carousel } from 'react-daisyui';
-import Testimonials from './Testimonials/Index';
-
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+import styles from './TestimonialCarousel.module.css'
+import Testimonial from './Testimonials';
 
 
 const TestimonialsCarousel = (props: { data: TestimonialData[]; }) => {
-  const args = {
-    display: 'sequential',
-    snap: 'center',
-    width: 'full',
-  };
 
   return (
-    <div>
-      <Carousel
-        display="sequential"
-        snap="center"
-        width="full"
-        className="rounded-box"
-      >
-      {props.data.map((testimonial: TestimonialData, idx: number) =>{
-        return <Carousel.Item key={idx}><Testimonials {...testimonial} /></Carousel.Item>
-      })}
+    
+     
+     
+
+      <Carousel  infiniteLoop  className='max-w-screen' >
+        {props.data.map((testimonial: TestimonialData, idx: number) => {
+          return <Testimonial key={idx} {...testimonial} />;
+        })}
       </Carousel>
-    </div>
+        
+    
   );
 };
 

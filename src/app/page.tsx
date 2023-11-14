@@ -22,14 +22,26 @@ export default function Homepage() {
       <HeroFullScreenVideo />
       <BrandsBand />
       <CallToActionWithPicture />
-      <HeaderWithParalax>
-        <span>“Over 76% of ad spend is typically wasted.”</span>
+      <HeaderWithParalax bgImage="/images/assets/parallax1.png">
+        <span
+          className="mx-auto text-3xl font-bold leading-[1.25] md:text-5xl md:leading-tight 
+                  [&>u]:decoration-[2px] [&>u]:underline-offset-[5px] md:[&>u]:decoration-[5px] 
+                  md:[&>u]:underline-offset-[10px] max-w-[1300px]"
+        >
+          “Over 76% of ad spend is typically wasted.”
+        </span>
       </HeaderWithParalax>
       <TestimonialsCarousel data={testimonialData} />
       <Top3Servicii />
       <ToateServiciile />
-      <HeaderWithParalax>
-        <span>Better Performance on the Platforms That Matter</span>
+      <HeaderWithParalax bgImage="/images/assets/parallax1.png">
+        <span
+          className="mx-auto text-3xl font-bold leading-[1.25] md:text-5xl md:leading-tight 
+                  [&>u]:decoration-[2px] [&>u]:underline-offset-[5px] md:[&>u]:decoration-[5px] 
+                  md:[&>u]:underline-offset-[10px] max-w-[1300px]"
+        >
+          Better Performance on the Platforms That Matter
+        </span>
       </HeaderWithParalax>
     </PageComponent>
   );
