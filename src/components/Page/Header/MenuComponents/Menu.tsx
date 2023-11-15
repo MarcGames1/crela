@@ -15,9 +15,9 @@ const Menu = () => {
         return (
           <Link
             key={link.name}
-            className={`hover:bg-primary font-semibold		 text-secondary p-2 rounded-md ${
+            className={`hover:text-accent uppercase transition-colors font-semibold		 text-secondary p-2 rounded-md ${
               // @ts-ignore
-              router.pathname == link.href ? 'link-primary' : ''
+              router.pathname == link.href ? 'text-red-500' : ''
             }`}
             href={link.href}
           >

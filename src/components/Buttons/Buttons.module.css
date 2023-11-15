@@ -1,0 +1,16 @@
+
+
+.secondary::after{
+    content:" ➨";
+    position: relative;
+     left:0em;
+    transition: all .5s;
+     
+}
+
+.secondary:hover::after{
+    padding-left: 1rem;
+   content:" ➨";
+   display: inline-block;
+    left:-.5rem;
+}

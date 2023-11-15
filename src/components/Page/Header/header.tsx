@@ -20,7 +20,7 @@ const Header = () => {
 
         {/* MOBILE MENU */}
 
-        <div className="lg:hidden flex  justify-between  w-full  text-primary  flex-row place-content-around">
+        <div className="lg:hidden flex  justify-between  w-full flex-row place-content-around">
           <MobileMenu />
           <Logo width={100} />
         </div>
