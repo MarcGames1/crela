@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 
 
-const Logo = ({dark = false}) => {
+const Logo = ({dark = false, width=200, height=74}) => {
   
   const getLogoSrc = () =>{
     return dark
@@ -19,8 +19,8 @@ const Logo = ({dark = false}) => {
           className="w-full"
           loading="eager"
           src={getLogoSrc()}
-          height={74}
-          width={200}
+          height={height}
+          width={width}
         />
       </Link>
     );

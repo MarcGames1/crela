@@ -1,0 +1,13 @@
+.Overlay{
+    margin-top:.5rem;
+    z-index: 0;
+    left:0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.Content{
+ transition:all 5s ease-in-out;
+}

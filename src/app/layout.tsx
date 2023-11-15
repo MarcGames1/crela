@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="ro">
+    <html data-theme="crelaTheme" lang="ro">
       <body className={`${font.className} grid grid-flow-row`}>{children}</body>
     </html>
   );

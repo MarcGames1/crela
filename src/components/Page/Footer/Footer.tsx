@@ -4,44 +4,42 @@ import { Footer as F } from 'react-daisyui';
 import Logo from '../Logo';
 import { INavItem, servicii, legal } from '@/StaticData/navItems';
 import Link from 'next/link';
+import { ActionBtn } from '@/components/Buttons';
 
 const Footer = () => {
 
 
   return (
-    <F className="p-10 bg-neutral text-neutral-content">
-      <div className="flex flex-col items-center">
-        <Logo dark />
-      </div>
+    <footer>
+      <F className=" p-10 bg-neutral text-neutral-content  items-start justify-items-center place-items-center text-center ">
+        <div className="">
+          <Logo dark />
+        
+        </div>
 
-      <div>
-        <F.Title>Servicii</F.Title>
-        {servicii.map((s: INavItem, i: number) => {
-          return (
-            <Link className="link link-hover" href={s.href}>
-              {s.name}
-            </Link>
-          );
-        })}
-      </div>
-      <div>
-        <F.Title>Company</F.Title>
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact</a>
-        <a className="link link-hover">Jobs</a>
-        <a className="link link-hover">Press kit</a>
-      </div>
-      <div>
-        <F.Title>Legal</F.Title>
-        {legal.map((s: INavItem, i: number) => {
-          return (
-            <Link className="link link-hover" href={s.href}>
-              {s.name}
-            </Link>
-          );
-        })}
-      </div>
-    </F>
+        <div className="flex flex-col place-items-start">
+          <F.Title className="place-self-center">Servicii</F.Title>
+          {servicii.map((s: INavItem, i: number) => {
+            return (
+              <Link key={i} className="link link-hover" href={s.href}>
+                {s.name}
+              </Link>
+            );
+          })}
+        </div>
+        <div className="flex flex-col place-items-start">
+          <F.Title className="place-self-center">Legal</F.Title>
+          {legal.map((s: INavItem, i: number) => {
+            return (
+              <Link key={i} className="link link-hover" href={s.href}>
+                {s.name}
+              </Link>
+            );
+          })}
+        </div>
+        
+      </F>
+    </footer>
   );
 };
 
