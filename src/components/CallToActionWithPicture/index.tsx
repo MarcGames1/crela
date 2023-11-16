@@ -22,8 +22,9 @@ const CallToActionWithPicture = () => {
       powderAnimation.start({x: 0,
       transition:{
         type:'spring',
-        duration: 1, bounce:0.3,
-         delay: .5,
+        duration: 1, bounce:0.1,
+         delay: 0,
+         
       }
       })
       lauraAnimation.start({x: 0,
@@ -43,7 +44,7 @@ const CallToActionWithPicture = () => {
     if(!inView){
       powderAnimation.start({x: '100vw'})
       lauraAnimation.start({x: '50vw'})
-      leftSideAnimation.start({x: '-50vw'})
+      leftSideAnimation.start({x: '-100vw'})
     }
   }, [inView])
 
