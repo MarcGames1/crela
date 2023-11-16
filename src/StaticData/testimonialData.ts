@@ -23,6 +23,20 @@ export const testimonialData: TestimonialData[] = [
     header: 'Great work!',
     picture: testimonialsLocation + '/carmen-tenciu.png',
   },
+  {
+    name: 'Moonglow',
+    paragraph:
+      'Planning, seriousness, creativity, efficient solutions, productivity... and the list can easily continue with the best and positive marketing-related needs. Laura is the person you need without knowing it, whom you can confidently turn to when needed, and who always finds the solution when things get tough. Simultaneously, she understands, analyzes, and perceives needs correctly. The collaboration is fruitful and beautiful.',
+    header: 'Efficient Solutions',
+    picture: testimonialsLocation + '/moonglow.png',
+  },
+  {
+    name: 'Alexandru Marcu',
+    paragraph:
+      'While working with Laura I managed to get more brand aweareness form social media, she also created a nice logo for my agency that I really like, I definitely recommend and enjoy working with her',
+    header: 'I managed to get relevant leads from social media',
+    picture: testimonialsLocation + '/alexandru-marcu.png',
+  },
 ];
 
 
