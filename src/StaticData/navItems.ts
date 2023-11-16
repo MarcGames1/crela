@@ -1,21 +1,48 @@
-export interface INavItem { name: string; href: string }
+export interface INavItem { name: string; href: string, }
+export interface Iservicii {
+  name: string;
+  href: string;
+  image: { alt: string; src: string };
+  description: string;
+}
 
-export const servicii: INavItem[] = [
+
+export const servicii: Iservicii[] = [
   {
     name: 'Content Writing',
     href: '/content-writing',
+    description: 'Servicii content writing',
+    image: {
+      alt: 'imagine reprezentativa Copy Writing',
+      src: '/images/servicii/content-writing.png',
+    },
   },
   {
     name: 'Social Media',
     href: '/social-media',
+    description: 'Servicii Social Media',
+    image: {
+      alt: 'imagine reprezentativa Social Media',
+      src: '/images/servicii/social-media.png',
+    },
   },
   {
     name: 'Branding',
     href: '/branding',
+    description: 'Servicii Branding',
+    image: {
+      alt: 'imagine reprezentativa Copy Writing',
+      src: '/images/servicii/branding.jpeg',
+    },
   },
   {
     name: 'Creare Logo',
     href: '/creare-logo',
+    description: 'Creare Logo',
+    image: {
+      alt: 'imagine reprezentativaCreare Logo',
+      src: '/images/servicii/logo-creation.avif',
+    },
   },
 ];
 
