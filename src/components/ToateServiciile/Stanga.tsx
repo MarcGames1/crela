@@ -21,7 +21,7 @@ const Stanga = ({
        const index = servicii.findIndex(
          (serviciu) => serviciu.name === serviciuSelectat.name
        );
-       setLineOffsetY((currentHeight / 4) * index + currentHeight / 4);
+       setLineOffsetY((currentHeight / 4) * index +( currentHeight / 4)/1.25 );
       
      }
      //@ts-ignore
