@@ -3,7 +3,7 @@ import React from 'react';
 import { TestimonialData } from './testimonialData';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import Testimonial from './Testimonials/index';
+import Testimonial from './Testimonial';
 
 
 const TestimonialsCarousel = (props: { data: TestimonialData[]; }) => {
