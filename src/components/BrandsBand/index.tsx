@@ -1,7 +1,7 @@
 import React from 'react'
 
 const BrandsBand = () => {
-  return <div>BrandsBand</div>;
+  return <></>;
 }
 
 export default BrandsBand

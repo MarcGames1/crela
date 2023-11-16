@@ -48,7 +48,7 @@ const CallToActionWithPicture = () => {
   }, [inView])
 
   return (
-    <section className=" min-h-[75vh] flex lg:flex-row flex-col max-w-screen ">
+    <section className=" min-h-[75vh] flex lg:flex-row flex-col max-w-screen overflow-hidden">
       <motion.div animate={leftSideAnimation} className="left p-10">
         <h3 className="mb-2 text-3xl font-bold text-secondary md:mb-7 md:text-5xl md:leading-[1.25]">
           The Last Digital Marketing Agency You’ll Ever Need.
