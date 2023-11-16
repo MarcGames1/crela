@@ -27,7 +27,7 @@ const Dreapta = ({serviciuSelectat=servicii[0]}) => {
 
 
   return (
-    <motion.div id='container' animate={appearAnimation} className=" min-h-full glass shadow-xl">
+    <motion.div id='container' animate={appearAnimation} className="relative min-h-full glass shadow-xl">
     
       <figure>
         <Image {...serviciuSelectat.image} width={800} height={800} />
