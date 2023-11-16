@@ -1,8 +1,8 @@
 'use client'
-import React, {useState,useEffect} from 'react'
+import React, {} from 'react'
 import Image from 'next/image';
 import { ActionBtn } from '../Buttons';
-import { Iservicii, servicii } from '@/StaticData/navItems';
+import { servicii } from '@/StaticData/navItems';
 
 
 
@@ -26,7 +26,7 @@ const Dreapta = ({serviciuSelectat=servicii[0]}) => {
           {serviciuSelectat.description}
         </p>
         <div className="m-5 ">
-          <ActionBtn.MainCta />
+          <ActionBtn.MainCta text={'citeste mai mult'} href={serviciuSelectat.href} dataTip={serviciuSelectat.description} />
         </div>
       </div>
     </div>

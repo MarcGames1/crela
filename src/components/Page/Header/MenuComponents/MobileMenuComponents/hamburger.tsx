@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 
-import styles from './Hamburger.module.css';
+import styles from './hamburger.module.css';
 const Hamburger = ({ isOpen = false, setIsOpen =(a:boolean) =>{} }) => {
   return (
     <>
