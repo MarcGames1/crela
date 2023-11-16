@@ -37,14 +37,13 @@ const Stanga = ({
               className="mb-3 cursor-pointer px-6 md:mb-7 md:px-0 md:pb-5"
               key={idx}
             >
-              <Link
-                href={'/#container'}
+              <h3
                 className="pb-1 text-xl font-bold uppercase leading-6 tracking-wider 
         text-[#9D9D9D] transition-colors md:pb-0 md:text-2xl md:leading-7 "
                 onClick={(e) => setlecteazaServiciul(serviciu)}
               >
                 {serviciu.name}
-              </Link>{' '}
+              </h3>{' '}
             </li>
           );
         })}
