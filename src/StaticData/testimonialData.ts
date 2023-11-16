@@ -31,7 +31,7 @@ export const testimonialData: TestimonialData[] = [
     picture: testimonialsLocation + '/moonglow.png',
   },
   {
-    name: 'Alexandru Marcu',
+    name: 'Alexandru Marcu - Marweb.ro',
     paragraph:
       'While working with Laura I managed to get more brand aweareness form social media, she also created a nice logo for my agency that I really like, I definitely recommend and enjoy working with her',
     header: 'I managed to get relevant leads from social media',
