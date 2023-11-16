@@ -3,15 +3,31 @@ import React, {} from 'react'
 import Image from 'next/image';
 import { ActionBtn } from '../Buttons';
 import { servicii } from '@/StaticData/navItems';
-
+import { motion, useAnimation } from 'framer-motion';
+import { useEffect } from 'react';
 
 
 const Dreapta = ({serviciuSelectat=servicii[0]}) => {
 
 
+  const appearAnimation =useAnimation()
+
+  useEffect(()=>{
+    appearAnimation.set({ opacity: 0 });
+  appearAnimation.start({
+    opacity:1,transition:{
+        type:'spring',
+        duration: 20 ,
+      }
+       
+      
+})
+  }, [serviciuSelectat])
+
+
 
   return (
-    <div className=" min-h-full glass shadow-xl">
+    <motion.div id='container' animate={appearAnimation} className=" min-h-full glass shadow-xl">
     
       <figure>
         <Image {...serviciuSelectat.image} width={800} height={800} />
@@ -29,7 +45,7 @@ const Dreapta = ({serviciuSelectat=servicii[0]}) => {
           <ActionBtn.MainCta text={'citeste mai mult'} href={serviciuSelectat.href} dataTip={serviciuSelectat.description} />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

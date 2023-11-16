@@ -14,7 +14,7 @@ const ToateServiciile = () => {
   
   
   return (
-    <>
+    <section className='my-5'>
       <h2 className="text-center pt-5 mb-5 text-3xl font-bold md:mb-10 md:text-5xl md:leading-[1.25]">
         Maximize Every Step of Your Marketing Funnel
       </h2>
@@ -30,7 +30,7 @@ const ToateServiciile = () => {
         />
         <Dreapta serviciuSelectat={serviciuSelectat} />
       </div>
-    </>
+    </section>
   );
 }
 
