@@ -19,7 +19,7 @@ const HeaderWithParalax = ({
       bgImage={bgImage}
       strength={500}
     >
-      <div className="  flex  items-center py-20  overflow-hidden ">
+      <div className="  flex  items-center py-20 text-center overflow-hidden ">
         {children}
       </div>
     </Parallax>
