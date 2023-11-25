@@ -6,7 +6,7 @@ import HeaderWithParalax from "./HeaderWithParalax";
 import TestimonialsCarousel from "./TestimonialsCarousel";
 import Top3Servicii from "./Top3Servicii";
 import ToateServiciile from "./ToateServiciile";
-
+import MainHeader from "./MainHeader/MainHeader";
 
 
 export {
@@ -18,6 +18,7 @@ export {
   TestimonialsCarousel,
   Top3Servicii,
   ToateServiciile,
+  MainHeader,
 };
 
 

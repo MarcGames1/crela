@@ -1,4 +1,7 @@
-import { PageComponent } from '@/components';
+import { PageComponent, MainHeader } from '@/components';
+import { IMainHeader } from '@/components/MainHeader/MainHeader';
+
+
 import { Metadata } from 'next/types';
 import React from 'react';
 
@@ -9,8 +12,25 @@ export const metadata: Metadata = {
     '✌ Te ajut sa ai o comunicare completa in mediul online:✅Strategie Personalizata si Rezultate Vizibile ✅Creare Continut si Planificare.',
 };
 
+const MainHeaderData: IMainHeader = {
+  title: 'Servicii de Promovare pe Social Media pentru afacerea ta',
+  paragraph:
+    'Te ajut sa ai o comunicare completa in mediul online: Strategie Personalizata si Rezultate Vizibile Creare Continut si Planificare.',
+  image: {
+    src: '/SocialMedia.gif',
+    alt: 'Poza Reprezentativa Social Media',
+    width: 1080,
+    height: 1920,
+  },
+};
+
+
+
+
 const SocialMedia = () => {
-  return <PageComponent></PageComponent>;
+  return <PageComponent>
+    <MainHeader {...MainHeaderData} />
+  </PageComponent>;
 };
 
 export default SocialMedia;
