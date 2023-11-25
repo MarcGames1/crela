@@ -78,7 +78,7 @@ const CallToActionWithPicture = () => {
           <Image
             alt="Laura"
             src={'/images/LauraNoBg.png'}
-            objectFit="contain"
+            
             width={200}
             height={222}
             sizes="(min-width: 500px) 500px, 100vw)"

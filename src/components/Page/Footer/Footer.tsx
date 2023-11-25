@@ -2,7 +2,7 @@
 import React from 'react';
 import { Footer as F } from 'react-daisyui';
 import Logo from '../Logo';
-import { INavItem, servicii, legal } from '@/StaticData/navItems';
+import { INavItem, servicii, legal } from '@/StaticData/constants';
 import Link from 'next/link';
 import { ActionBtn } from '@/components/Buttons';
 

@@ -2,7 +2,7 @@
 import React, {} from 'react'
 import Image from 'next/image';
 import { ActionBtn } from '../Buttons';
-import { servicii } from '@/StaticData/navItems';
+import { servicii } from '@/StaticData/constants';
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
 

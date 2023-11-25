@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './MobileMenuContent.module.css';
-import { menuItems } from '@/StaticData/navItems';
+import { menuItems } from '@/StaticData/constants';
 import Link from 'next/link';
 import { Menu } from 'react-daisyui';
 

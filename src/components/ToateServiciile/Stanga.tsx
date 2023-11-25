@@ -1,6 +1,6 @@
 import { useLayoutEffect, useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
-import { servicii, Iservicii } from '@/StaticData/navItems';
+import { servicii, Iservicii } from '@/StaticData/constants';
 import LiniaRosie from './LiniaRosie';
 const Stanga = ({
   serviciuSelectat = servicii[0],

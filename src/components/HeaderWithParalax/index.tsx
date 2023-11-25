@@ -17,13 +17,13 @@ const HeaderWithParalax = ({
     <Parallax
       className="w-full overflow-hidden "
       bgImage={bgImage}
-      strength={500}
+      strength={100}
     >
-      <Background className="custom-bg w-full h-full relative">
+      <Background className="custom-bg h-1/2 w-full lg:h-full relative">
         <Image
+          className="w-full sm:w-auto	 h-full object-cover"
           src={bgImage}
           alt="fill murray"
-          objectFit="contain"
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />

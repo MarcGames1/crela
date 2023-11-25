@@ -2,7 +2,7 @@
 import React, {useState} from 'react'
 import Stanga from './Stanga'
 import Dreapta from './Dreapta'
-import { Iservicii, servicii } from '@/StaticData/navItems'
+import { Iservicii, servicii } from '@/StaticData/constants'
 
 
 

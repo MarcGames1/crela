@@ -1,7 +1,7 @@
 
 'use client';
 import React from 'react';
-import { menuItems } from '@/StaticData/navItems';
+import { menuItems } from '@/StaticData/constants';
 import Link from 'next/link';
 // @ts-ignore
 import { useRouter } from 'next/navigation';

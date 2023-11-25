@@ -10,7 +10,7 @@ export interface Iservicii {
 export const servicii: Iservicii[] = [
   {
     name: 'Content Writing',
-    href: '/content-writing',
+    href: '/servicii/content-writing',
     description: 'Servicii content writing',
     image: {
       alt: 'imagine reprezentativa Copy Writing',
@@ -19,7 +19,7 @@ export const servicii: Iservicii[] = [
   },
   {
     name: 'Social Media',
-    href: '/social-media',
+    href: '/servicii/social-media',
     description: 'Servicii Social Media',
     image: {
       alt: 'imagine reprezentativa Social Media',
@@ -28,7 +28,7 @@ export const servicii: Iservicii[] = [
   },
   {
     name: 'Branding',
-    href: '/branding',
+    href: '/servicii/branding',
     description: 'Servicii Branding',
     image: {
       alt: 'imagine reprezentativa Copy Writing',
@@ -37,7 +37,7 @@ export const servicii: Iservicii[] = [
   },
   {
     name: 'Creare Logo',
-    href: '/creare-logo',
+    href: '/servicii/creare-logo',
     description: 'Creare Logo',
     image: {
       alt: 'imagine reprezentativaCreare Logo',
@@ -46,11 +46,10 @@ export const servicii: Iservicii[] = [
   },
 ];
 
-export const despre: INavItem[]=[
-    {name: 'Despre Mine', href: '/despre-mine'}
-]
+export const despre: INavItem = {name: 'Despre Mine', href: '/despre-mine'}
 
-export const menuItems: INavItem[] = [...despre, ...servicii]
+
+export const menuItems: INavItem[] = [despre, ...servicii]
 
 export const legal: INavItem[] = [
   { name: 'Termene si Conditii', href: '/termeni-conditii' },
