@@ -1,20 +1,28 @@
+'use client'
 import React from 'react'
 import Logo from '../Logo';
 import Menu from './MenuComponents/Menu';
 import MobileMenu from './MenuComponents/MobileMenu';
 import { ActionBtn } from '@/components/Buttons';
 
+import useScrollDirection from '@/hooks/scroolDirection';
 
 
 
 const Header = () => {
+
+   const isScrollingUp = useScrollDirection();
+
+
   return (
-    <header className="sticky top-0 z-30 flex w-full items-center bg-base-100  py-5 px-5 shadow-lg xl:px-12 header">
+    <header
+      className={`${isScrollingUp ? "sticky" : "absolute"} top-0 z-30 flex w-full items-center bg-base-100  py-5 px-5 shadow-lg xl:px-12 header`}
+    >
       <>
         <div className="lg:flex hidden w-full items-center  flex-row place-content-around">
           <Logo width={100} />
           <Menu />
-          
+
           <ActionBtn.MainCta />
         </div>
 
