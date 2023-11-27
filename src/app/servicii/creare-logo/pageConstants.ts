@@ -1,6 +1,10 @@
 import { IMainHeader } from '@/components/MainHeader/MainHeader';
 import { ILogoDefinitionData } from './Components/LogoDefinition';
 import { ILogoExample } from './Components/LogoExample';
+
+const logosPath = '/images/logos';
+
+
 export const pageMetaData = {
   title: 'Creare logo personalizat pentru firma ta » CRELA ✨',
   description:
@@ -32,11 +36,54 @@ export const LogoDefinitionData: ILogoDefinitionData = {
       exampleText:
         'Logo-ul Google, prin folosirea culorilor, transmite diversitate și accesibilitate. Culorile sunt o reprezentare a diversității și interconectivității serviciilor și produselor Google.',
       image: {
-        src: '/images/logos/google-logo.png',
+        src:
+          logosPath +
+          '/GoogleLogos/logo_Google_FullColor_3x_830x271px.original.png',
         alt: 'Logo Google',
-        width: 400,
-        height: 400,
+        width: 830,
+        height: 571,
       },
+      secondaryImages: [
+        {
+          src: logosPath + '/GoogleLogos/Drive_Icon.original.png',
+          alt: 'Google Drive',
+        },
+        {
+          src: logosPath + '/GoogleLogos/Gmail_Icon.original.png',
+          alt: 'Gmail Icon',
+        },
+        {
+          src: logosPath + '/GoogleLogos/Google_Calendar_Icon.original.png',
+          alt: 'Google Calendar Icon',
+        },
+        {
+          src:
+            logosPath +
+            '/GoogleLogos/logo_accessibility_color_192dp.original.png',
+          alt: 'Google Accessibility Color',
+        },
+        {
+          src: logosPath + '/GoogleLogos/logo_admob_192px_WhiteBG.original.png',
+          alt: 'Google adMobile',
+        },
+
+        {
+          src:
+            logosPath +
+            '/GoogleLogos/logo_google_adsense_color_2x_web_512dp.original.png',
+          alt: 'Google Adsense',
+        },
+        {
+          src:
+            logosPath +
+            '/GoogleLogos/logo_Google_MarketingPlatform_192px.original.png',
+          alt: 'Google Marketing Platform',
+        },
+        {
+          src: logosPath + '/GoogleLogos/Meet_Icon.original.png',
+          alt: 'Google Meet',
+        },
+      ],
     },
     {
       header: 'Recunoaștere instantanee',
@@ -45,7 +92,7 @@ export const LogoDefinitionData: ILogoDefinitionData = {
       exampleHeader: 'Apple',
       exampleText:
         'Logo-ul simplu și iconic al Apple este recunoscut imediat și asociat cu inovația și produsele high-tech ale brandului.',
-      image: { src: '/images/logos/Apple_logo_grey.svg', alt: 'Logo Apple' },
+      image: { src: logosPath + '/Apple_logo_grey.svg', alt: 'Logo Apple' },
     },
     // Alte exemple pentru fiecare aspect specific al unui logo pot fi adăugate aici
     {
@@ -56,7 +103,7 @@ export const LogoDefinitionData: ILogoDefinitionData = {
       exampleText:
         'Logo-ul elegant și clasic al lui Mercedes-Benz transmite o imagine de lux și calitate.',
       image: {
-        src: '/images/logos/mercedes-logo.jpg',
+        src: logosPath + '/mercedes-logo.jpg',
         alt: 'Logo Mercedes-Benz',
         width: 600,
         height: 300,
@@ -70,7 +117,7 @@ export const LogoDefinitionData: ILogoDefinitionData = {
       exampleText:
         'Logo-ul Adobe este flexibil și poate fi adaptat în diferite culori și stiluri, menținându-și recunoașterea.',
       image: {
-        src: '/images/logos/adobe-logo.png',
+        src: logosPath + '/adobe-logo.png',
         alt: 'Logo Adobe',
         width: 600,
         height: 300,
@@ -83,7 +130,20 @@ export const LogoDefinitionData: ILogoDefinitionData = {
       exampleHeader: 'Coca-Cola',
       exampleText:
         'Logo-ul Coca-Cola are o conexiune emoțională puternică datorită istoriei și mesajului său consistent.',
-      image: { src: '/images/logos/coca-cola-logo.png', alt: 'Logo Coca-Cola' },
+      image: {
+        src: logosPath + '/CocaCola/Coca-cola_logo_300x300.png',
+        alt: 'Logo Coca-Cola',
+        width: 300,
+        height: 300,
+      },
+      secondaryImages: [
+        {
+          src: logosPath + '/CocaCola/Coca-cola_light_logo_300x300.png',
+          alt: 'Logo Coca Cola',
+          width: 300,
+          height: 300,
+        },
+      ],
     },
     {
       header: 'Reprezentare vizuală',
@@ -92,7 +152,26 @@ export const LogoDefinitionData: ILogoDefinitionData = {
       exampleHeader: 'Amazon',
       exampleText:
         'Logo-ul Amazon, săgeata de la litera "A" la "Z", reprezintă varietatea și diversitatea produselor disponibile.',
-      image: { src: '/images/logos/amazon-logo.png', alt: 'Logo Amazon' },
+      image: {
+        src: logosPath + '/amazon/amazon-logo.png',
+        alt: 'Logo Amazon',
+        width: 733,
+        height: 153,
+      },
+      secondaryImages: [
+        {
+          src: logosPath + '/amazon/amazon-ads-rgb-squid-ink-large-copy.jpg',
+          alt: 'Logo Amazon Ads',
+          width: 733,
+          height: 153,
+        },
+        {
+          src: logosPath + '/amazon/amazon-music.png',
+          alt: 'Logo Amazon Music',
+          width: 733,
+          height: 153,
+        },
+      ],
     },
     {
       header: 'Unicitate și Memorabilitate',
@@ -102,9 +181,25 @@ export const LogoDefinitionData: ILogoDefinitionData = {
       exampleText:
         "Arcele duble aurii ale lui McDonald's sunt memorabile și imediat asociate cu lanțul de restaurante.",
       image: {
-        src: '/images/logos/mcdonalds-logo.png',
+        src: logosPath + '/mcdonalds/logo.png',
         alt: "Logo McDonald's",
+        width: 300,
+        height: 300,
       },
+      secondaryImages: [
+        {
+          src: logosPath + '/mcdonalds/icon.png',
+          alt: 'Icon Mcdonalds',
+          width: 300,
+          height: 300,
+        },
+        {
+          src: logosPath + '/mcdonalds/symbol.png',
+          alt: 'Symbol Mcdonalds',
+          width: 300,
+          height: 300,
+        },
+      ],
     },
   ],
 };

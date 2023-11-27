@@ -1,12 +1,12 @@
 'use client';
-import React from 'react';
-import { ActionBtn } from '../Buttons';
+import { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
-
-
 import { useInView } from 'react-intersection-observer';
-import { useEffect } from 'react';
+
+import { ActionBtn } from '../Buttons';
+
+
 
 
 const CallToActionWithPicture = () => {
