@@ -32,27 +32,6 @@ export const ImagesGrid = ({
   
 
 
-useEffect(() => {
-  const stop = inView(container.current, (element, isInView) => {
-    if (isInView) {
-      controls.start({
-        opacity: 1,
-        x: 0,
-        y: 0,
-        transition: {
-          type: 'spring',
-          duration: 0.5,
-        },
-      });
-    } else {
-      controls.start({ opacity: 0 });
-    }
-  });
-
-  return () => {
-    stop();
-  };
-}, [controls]);
 
   if(secondaryImages.length === 1 ){
     return (
