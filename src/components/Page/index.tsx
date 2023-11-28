@@ -8,7 +8,7 @@ const PageComponent = ({ children }: PropsWithChildren) => {
   return (
     <>
       <Header />
-      <main className="min-w-full">{children}</main>
+      <main className="">{children}</main>
       <Footer />
     </>
   );

@@ -48,7 +48,7 @@ export const LogoDefinition = ({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: 'spring', duration: 0.5, delay: 0.2 }}
-          className="text-lg mb-4 md:w-1/2 m-auto"
+          className="text-lg mb-4 md:w-1/2 m-auto leading-10"
         >
           {sectionIntro}
         </motion.p>
@@ -65,7 +65,7 @@ export const LogoDefinition = ({
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ type: 'spring', duration: 0.5, delay: idx * 0.1 }}
-                className="grid lg:grid-flow-col md:grid-flow-row "
+                className="grid lg:grid-flow-col grid-flow-row "
                 key={idx}
               >
                 <LogoExample isReversed={idx % 2 === 0} {...example} />
