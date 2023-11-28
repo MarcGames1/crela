@@ -27,13 +27,13 @@ export const LogoExample = ({
         isReversed
           ? 'flex lg:flex-row  flex-col'
           : 'flex lg:flex-row-reverse  flex-col-reverse '
-      } items-center justify-around gap-10 lg:gap-20`}
+      } items-center justify-around gap-5 md:gap-10 lg:gap-20`}
     >
-      <div className="prose w-full block md:m-5 lg:m-10">
+      <div className="prose  block  md:m-5 lg:m-10">
         <b className="block text-xl text-center font-extrabold underline underline-offset-4 decoration-2 decoration-accent">
           {header}
         </b>
-        <p className=" leading-9 tracking-wider italic font-semibold	">
+        <p className="block  leading-9 tracking-wider italic font-semibold	">
           {paragraph}
         </p>
         <b className="text-lg text-center block font-bold mb-2">
@@ -42,8 +42,10 @@ export const LogoExample = ({
         <p className="leading-9 italic tracking-wider">{exampleText}</p>
       </div>
       {/* Apple */}
-      <div className={`place-items-center flex-grow-0 md:m-5 md:p-5 lg:m-10 lg:gap-10`}>
-        <div className="relative w-full h-full flex  lg:flex-row flex-col items-center">
+      <div
+        className={`place-items-center flex-grow-0 md:m-5 md:p-5 lg:m-10 lg:gap-10`}
+      >
+        <div className="relative  h-full flex  lg:flex-row flex-col items-center">
           {!secondaryImages && (
             <Image
               className="place-self-center self-center"
@@ -52,7 +54,7 @@ export const LogoExample = ({
               height={image?.width || 200}
             />
           )}
-          
+
           {secondaryImages && (
             <ImagesGrid image={image} secondaryImages={secondaryImages} />
           )}
