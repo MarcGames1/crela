@@ -7,6 +7,8 @@ import React from 'react';
 import MainHeader from '@/components/MainHeader/MainHeader';
 import Link from 'next/link';
 import { pageMetaData, MainHeaderData } from './pageConstants';
+import LogouriRealizate from './Components/LogouriRealizate';
+import LogoGallery from './Components/LogoGallery';
 
 
 
@@ -19,14 +21,11 @@ const CreareLogo = () => {
       <MainHeader {...MainHeaderData} />
       
         <LogoDefinition {...LogoDefinitionData} />
-     
+        <LogouriRealizate />
+        <LogoGallery />
 
-      <section>
-        <h2>Uite o parte din logo-urile realizate de mine</h2>
-      </section>
-      <section>
-        <h2> Creare logo Firma Transport - Exemplu</h2>
-      </section>
+     
+      
       <section>
         <h2> Creare logo Firma Constructii - Exemplu</h2>
       </section>

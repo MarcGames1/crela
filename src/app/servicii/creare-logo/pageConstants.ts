@@ -1,6 +1,7 @@
 import { IMainHeader } from '@/components/MainHeader/MainHeader';
 import { ILogoDefinitionData } from './Components/LogoDefinition';
 import { ILogoExample } from './Components/LogoExample';
+import { ILogoGallery } from './Components/LogoGallery';
 
 const logosPath = '/images/logos';
 
@@ -203,3 +204,9 @@ export const LogoDefinitionData: ILogoDefinitionData = {
     },
   ],
 };
+
+
+export const LogoTransportSection :ILogoGallery = {
+  sectionHeading: '',
+  images: []
+}
