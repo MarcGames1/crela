@@ -1,7 +1,7 @@
 import { PageComponent,HeaderWithParalax } from '@/components';
 import Image from 'next/image';
 import { LogoDefinition } from './Components/LogoDefinition';
-import { LogoDefinitionData } from './pageConstants';
+import { LogoDefinitionData, LogoTransportSectionData } from './pageConstants';
 import { Metadata } from 'next/types';
 import React from 'react';
 import MainHeader from '@/components/MainHeader/MainHeader';
@@ -22,7 +22,7 @@ const CreareLogo = () => {
       
         <LogoDefinition {...LogoDefinitionData} />
         <LogouriRealizate />
-        <LogoGallery />
+        <LogoGallery {...LogoTransportSectionData}/>
 
      
       

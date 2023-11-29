@@ -1,31 +1,26 @@
 'use client'
+
 import React from 'react'
 import Image from 'next/image'
-import { Carousel } from 'react-daisyui';
+
+import Carousel from '@/components/Carousel/Carousel'
+import styles from './logoGallery.module.css'
+import { Iimage } from '@/interfaces/image'
 export interface ILogoGallery {
   sectionHeading: string;
-  images: {
-    src: string;
-    alt: string,
-    width: number;
-    height: number;
-  }[];
+  images: Iimage[];
 }
 
 
 
-const LogoGallery = ({sectionHeading, images = []}:ILogoGallery) => {
+const LogoGallery = ({sectionHeading, images}:ILogoGallery) => {
     if (images === undefined) return
     if (images.length === 0) return
   return (
     <section>
       <h2> {sectionHeading}</h2>
+      <Carousel slides={images} />
 
-      <Carousel className='rounded-box' display='slider' snap='start' width='half' >
-        {images.map( (image, idx )=>{          
-            return <Carousel.Item key={idx} src={image.src} alt={image.alt} />
-        })}
-      </Carousel>
     </section>
   );
 }
