@@ -22,7 +22,7 @@ const CreareLogo = () => {
         <LogoDefinition {...LogoDefinitionData} />
         <LogouriRealizate />
         <LogoGallery {...LogoTransportSectionData} />
-        <LogoGallery {...LogoConstructionSectionData} />
+        <LogoGallery rtl={true} {...LogoConstructionSectionData} />
 
      
         <section className="flex flex-col">

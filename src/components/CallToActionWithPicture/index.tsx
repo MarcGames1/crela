@@ -52,15 +52,18 @@ const CallToActionWithPicture = () => {
     <section className=" min-h-[75vh] flex lg:flex-row flex-col max-w-screen overflow-hidden">
       <motion.div animate={leftSideAnimation} className="left p-10">
         <h3 className="mb-2 text-3xl font-bold text-secondary md:mb-7 md:text-5xl md:leading-[1.25]">
-          The Last Digital Marketing Agency You’ll Ever Need.
+          Laura - Expertul Tău în Marketing Online
         </h3>
         <span className="mb-5 text-xl font-medium uppercase leading-tight tracking-wider text-secondary md:mb-8">
-          GET MARKETING THAT DRIVES RESULTS
+          Strategii Unice pentru Succesul Tău Online
         </span>
         <div className="h-[3px] w-24 bg-accent"></div>
         <p className="my-5 text-large leading-6">
-          Ready to level up your strategy? We’re here to help. For 10 years
-          we’ve provided full-service digital marketing expertise.
+          Sunt Laura, și mă dedic în mod pasionat dezvoltării și implementării
+          unor strategii personalizate în marketingul online. Imi place să
+          creez soluții care să se potrivească perfect nevoilor tale. Mă angajez
+          să lucrez alături de tine pentru a-ți aduce afacerea la nivelul
+          următor în mediul online.
         </p>
         <ActionBtn.Primary />
       </motion.div>
@@ -78,7 +81,6 @@ const CallToActionWithPicture = () => {
           <Image
             alt="Laura"
             src={'/images/LauraNoBg.png'}
-            
             width={200}
             height={222}
             sizes="(min-width: 500px) 500px, 100vw)"

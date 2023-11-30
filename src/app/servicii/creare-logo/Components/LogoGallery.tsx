@@ -18,7 +18,7 @@ const LogoGallery = ({sectionHeading, images, rtl=false}:ILogoGallery) => {
   return (
     <section>
       <h2 className="text-2xl text-center font-bold mb-4"> {sectionHeading}</h2>
-      <Carousel rtl={false} slides={images} />
+      <Carousel rtl={rtl} slides={images} />
     </section>
   );
 }
