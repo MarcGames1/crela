@@ -1,26 +1,24 @@
 'use client'
 
 import React from 'react'
-import Image from 'next/image'
 
 import Carousel from '@/components/Carousel/Carousel'
-import styles from './logoGallery.module.css'
 import { Iimage } from '@/interfaces/image'
 export interface ILogoGallery {
   sectionHeading: string;
   images: Iimage[];
+  rtl ?: boolean;
 }
 
 
 
-const LogoGallery = ({sectionHeading, images}:ILogoGallery) => {
+const LogoGallery = ({sectionHeading, images, rtl=false}:ILogoGallery) => {
     if (images === undefined) return
     if (images.length === 0) return
   return (
     <section>
-      <h2> {sectionHeading}</h2>
-      <Carousel slides={images} />
-
+      <h2 className="text-2xl text-center font-bold mb-4"> {sectionHeading}</h2>
+      <Carousel rtl={false} slides={images} />
     </section>
   );
 }

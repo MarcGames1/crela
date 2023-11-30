@@ -234,3 +234,55 @@ export const LogoTransportSectionData: ILogoGallery = {
     {...squareImage300px, src: `${transportLogoExamplesPath}/13.png`, alt: altPozaLogo(13, 'transport')},
   ],
 };
+export const LogoConstructionSectionData: ILogoGallery = {
+  sectionHeading:
+    'Uite Cateva Exemple de Creare Logo Pentru Firme de Constructii',
+  images: [
+    {
+      ...squareImage300px,
+      src: `${constructionLogoExamplesPath}/1.png`,
+      alt: altPozaLogo(1, 'transport'),
+    },
+    {
+      ...squareImage300px,
+      src: `${constructionLogoExamplesPath}/2.png`,
+      alt: altPozaLogo(2, 'transport'),
+    },
+    {
+      ...squareImage300px,
+      src: `${constructionLogoExamplesPath}/3.png`,
+      alt: altPozaLogo(3, 'transport'),
+    },
+    {
+      ...squareImage300px,
+      src: `${constructionLogoExamplesPath}/4.png`,
+      alt: altPozaLogo(4, 'transport'),
+    },
+    {
+      ...squareImage300px,
+      src: `${constructionLogoExamplesPath}/5.png`,
+      alt: altPozaLogo(5, 'transport'),
+    },
+    {
+      ...squareImage300px,
+      src: `${constructionLogoExamplesPath}/6.png`,
+      alt: altPozaLogo(6, 'transport'),
+    },
+    {
+      ...squareImage300px,
+      src: `${constructionLogoExamplesPath}/7.png`,
+      alt: altPozaLogo(7, 'transport'),
+    },
+    {
+      ...squareImage300px,
+      src: `${constructionLogoExamplesPath}/8.png`,
+      alt: altPozaLogo(8, 'transport'),
+    },
+    {
+      ...squareImage300px,
+      src: `${constructionLogoExamplesPath}/9.png`,
+      alt: altPozaLogo(9, 'transport'),
+    },
+   
+  ],
+};
