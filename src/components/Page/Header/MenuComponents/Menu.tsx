@@ -4,11 +4,14 @@ import { menuItems } from '@/StaticData/constants';
 import Link from 'next/link';
 
 const Menu = () => {
-  const [currentLink, setCurrentLink] = useState(window.location.pathname);
+  const [currentLink, setCurrentLink] = useState('/');
 
   useEffect(() => {
-    setCurrentLink(window.location.pathname);
-  }, [currentLink === window.location.pathname]);
+    window &&
+      window.location &&
+      window.location.pathname &&
+      setCurrentLink(window.location.pathname);
+  }, [typeof window ]);
 
   return (
     <div className="flex justify-self-center ml-auto self-stretch place-items-around menu menu-horizontal  gap-3 ">
