@@ -2,6 +2,7 @@ import { PageComponent, MainHeader } from '@/components';
 import { IMainHeader } from '@/components/MainHeader/MainHeader';
 import { Metadata } from 'next/types';
 import React from 'react'
+import IntroSection from './components/IntroSection';
 
 'https://docs.google.com/document/d/1lPiLXlPLwb0edJxfKqHU3NysNRZqmvubn2f_wFlsNpQ/edit';
 export const metadata: Metadata = {
@@ -27,22 +28,18 @@ const ContentWriting = () => {
   return (
     <PageComponent>
       <MainHeader {...MainHeaderData} />
-      <section className="">
-        <div className="block m-auto prose">
-          <h2>
-            Servicii de{' '}
-            <span className="bg-clip-text text-transparent bg-primary-gradient">
-              Content Writing si CopyWriting 
-            </span>
-          </h2>
-          <p>
-            Ai nevoie de cuvinte care să transforme vizitatorii în clienți
+      <IntroSection
+        p="Ai nevoie de cuvinte care să transforme vizitatorii în clienți
             fideli? Eu sunt aici să fac ca fiecare frază să conteze și să aducă
-            rezultate palpabile pentru afacerea ta.
-          </p>
-          <div className="mx-auto mb-10 h-[3px] w-[200px] bg-primary-gradient md:mb-24 md:h-[3px] md:w-[300px]"></div>
-        </div>
-      </section>
+            rezultate palpabile pentru afacerea ta."
+      >
+        <h2>
+          Servicii de{' '}
+          <span className="bg-clip-text text-transparent bg-primary-gradient">
+            Content Writing si CopyWriting
+          </span>
+        </h2>
+      </IntroSection>
       <section>
         <div className="prose">
           <h2>
