@@ -27,9 +27,9 @@ const MainHeaderData: IMainHeader = {
 
 const Branding = () => {
   return (
-    <PageComponent>
+    <>
       <MainHeader {...MainHeaderData} />
-    </PageComponent>
+    </>
   );
 };
 

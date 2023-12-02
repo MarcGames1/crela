@@ -28,9 +28,9 @@ const MainHeaderData: IMainHeader = {
 
 
 const SocialMedia = () => {
-  return <PageComponent>
+  return <>
     <MainHeader {...MainHeaderData} />
-  </PageComponent>;
+  </>;
 };
 
 export default SocialMedia;

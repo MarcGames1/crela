@@ -14,7 +14,7 @@ import DeCeCopyWriting from './components/DeCeCopyWriting';
 import ModDeLucru from './components/ModDeLucru';
 import DeCeSaLucreziCuMine from './components/DeCeSaLucreziCuMine';
 
-('https://docs.google.com/document/d/1lPiLXlPLwb0edJxfKqHU3NysNRZqmvubn2f_wFlsNpQ/edit');
+
 export const metadata: Metadata = {
   title: 'Servicii Content Writing si Copywriting » CRELA✨',
   description:
@@ -35,7 +35,7 @@ const MainHeaderData: IMainHeader = {
 
 const ContentWriting = () => {
   return (
-    <PageComponent>
+    <>
       <MainHeader {...MainHeaderData} />
       <IntroSection
         p="Ai nevoie de cuvinte care să transforme vizitatorii în clienți
@@ -53,7 +53,7 @@ const ContentWriting = () => {
       <DeCeCopyWriting {...DeCeCopyWritingData} />
       <ModDeLucru reversed {...ModDeLucruData} />
      <DeCeSaLucreziCuMine {...DeCeSaLucreziCuMineData} />
-    </PageComponent>
+    </>
   );
 };
 
