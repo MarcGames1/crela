@@ -1,5 +1,5 @@
-import { PageComponent, MainHeader } from '@/components';
-import { IMainHeader } from '@/components/MainHeader/MainHeader';
+import { MainHeader } from '@/components';
+import { IMainHeader } from '@/interfaces/IMainHeader';
 
 
 import { Metadata } from 'next/types';

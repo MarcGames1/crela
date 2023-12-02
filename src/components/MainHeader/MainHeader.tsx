@@ -1,16 +1,6 @@
 import Image from "next/image";
 import { ActionBtn } from "../Buttons";
-import { ReactElement } from "react";
-export interface IMainHeader {
-  title: string | ReactElement;
-  paragraph: string | ReactElement;
-  image: {
-    src: string;
-    alt: string;
-    width: number;
-    height: number;
-  };
-}
+import { IMainHeader } from "@/interfaces/IMainHeader";
 
 
 const MainHeader = ({ title, paragraph, image }: IMainHeader) => (

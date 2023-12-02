@@ -1,5 +1,4 @@
-import { PageComponent, MainHeader } from '@/components';
-import { IMainHeader } from '@/components/MainHeader/MainHeader';
+import { MainHeader } from '@/components';
 import { Metadata } from 'next/types';
 import React from 'react';
 import IntroSection from './components/IntroSection';
@@ -13,7 +12,7 @@ import {
 import DeCeCopyWriting from './components/DeCeCopyWriting';
 import ModDeLucru from './components/ModDeLucru';
 import DeCeSaLucreziCuMine from './components/DeCeSaLucreziCuMine';
-
+import { IMainHeader } from '@/interfaces/IMainHeader';
 
 export const metadata: Metadata = {
   title: 'Servicii Content Writing si Copywriting » CRELA✨',
