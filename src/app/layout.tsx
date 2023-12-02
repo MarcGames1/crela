@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google';
 import './globals.css'
-import Script from 'next/script';
 
 const font = Poppins({
   weight: ['100','400' ,'200','300', '500', '600', '700', '800', '900'],
@@ -46,7 +45,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           ></iframe>
         </noscript> */}
         {/* <!-- End Google Tag Manager (noscript) --> */}
+        
         {children}
+        
+
       </body>
     </html>
   );

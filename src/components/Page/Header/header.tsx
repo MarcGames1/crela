@@ -16,7 +16,9 @@ const Header = () => {
 
   return (
     <header
-      className={`${isScrollingUp ? "sticky" : "relative"}  top-0 z-30 flex max-w-screen items-center bg-base-100  py-5 px-5 shadow-lg xl:px-12 header`}
+      className={`${
+        isScrollingUp ? 'sticky ' : 'relative '
+      }  top-0 z-30 flex max-w-screen items-center bg-base-100  py-5 px-5 shadow-lg xl:px-12 header`}
     >
       <>
         <div className="lg:flex hidden w-full items-center  flex-row place-content-around">
