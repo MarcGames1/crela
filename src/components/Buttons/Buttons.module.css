@@ -3,7 +3,7 @@
 .secondary::after{
     content:" ➨";
     position: relative;
-     left:0em;
+    left:0em;
     transition: all .5s;
      
 }
