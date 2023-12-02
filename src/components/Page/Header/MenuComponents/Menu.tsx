@@ -1,13 +1,17 @@
-
 'use client';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { menuItems } from '@/StaticData/constants';
 import Link from 'next/link';
-// @ts-ignore
-import { useRouter } from 'next/navigation';
 
 const Menu = () => {
-  const router = useRouter();
+  const [currentLink, setCurrentLink] = useState('/');
+
+  useEffect(() => {
+    window &&
+      window.location &&
+      window.location.pathname &&
+      setCurrentLink(window.location.pathname);
+  }, [typeof window ]);
 
   return (
     <div className="flex justify-self-center ml-auto self-stretch place-items-around menu menu-horizontal  gap-3 ">
@@ -15,9 +19,10 @@ const Menu = () => {
         return (
           <Link
             key={link.name}
-            className={`hover:text-accent uppercase transition-colors font-semibold		 text-secondary p-2 rounded-md ${
-              // @ts-ignore
-              router.pathname == link.href ? 'text-red-500' : ''
+            className={`hover:text-white rounded-lg p-3 hover:bg-accent uppercase transition-colors font-semibold		  ${
+              currentLink === link.href
+                ? 'text-accent border-[#DA2128] border-[3px]'
+                : ' text-secondary'
             }`}
             href={link.href}
           >

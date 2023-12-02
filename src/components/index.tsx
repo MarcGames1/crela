@@ -7,6 +7,10 @@ import TestimonialsCarousel from "./TestimonialsCarousel";
 import Top3Servicii from "./Top3Servicii";
 import ToateServiciile from "./ToateServiciile";
 import MainHeader from "./MainHeader/MainHeader";
+import WhatsappCta from "./WhatsappCTA/WhatsappCta";
+import FlexibleColumnSection from "./FlexibleColumnSection/FlexibleColumnSection";
+import AlternateTimeline from "./Timeline";
+
 
 
 export {
@@ -19,6 +23,9 @@ export {
   Top3Servicii,
   ToateServiciile,
   MainHeader,
+  WhatsappCta,
+  FlexibleColumnSection,
+  AlternateTimeline,
 };
 
 

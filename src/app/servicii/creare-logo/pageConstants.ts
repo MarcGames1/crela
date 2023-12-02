@@ -1,9 +1,20 @@
 import { IMainHeader } from '@/components/MainHeader/MainHeader';
 import { ILogoDefinitionData } from './Components/LogoDefinition';
 import { ILogoExample } from './Components/LogoExample';
+import { ILogoGallery } from './Components/LogoGallery';
 
 const logosPath = '/images/logos';
+const transportLogoExamplesPath = '/images/logosExaples/transport'
+const constructionLogoExamplesPath = '/images/logosExaples/construction'
 
+const altPozaLogo =  (n : number, d:string) =>{
+    return `Exemplu Logo firma ${d} ${n}` 
+  }
+const squareImage300px ={
+  width:300,
+  height:300,
+ 
+}
 
 export const pageMetaData = {
   title: 'Creare logo personalizat pentru firma ta » CRELA ✨',
@@ -201,5 +212,77 @@ export const LogoDefinitionData: ILogoDefinitionData = {
         },
       ],
     },
+  ],
+};
+
+
+export const LogoTransportSectionData: ILogoGallery = {
+  sectionHeading: 'Uite Cateva Exemple de Creare Logo Pentru Firme de Transport',
+  images: [
+    {...squareImage300px, src: `${transportLogoExamplesPath}/1.png`, alt: altPozaLogo(1, 'transport')},
+    {...squareImage300px, src: `${transportLogoExamplesPath}/2.png`, alt: altPozaLogo(2, 'transport')},
+    {...squareImage300px, src: `${transportLogoExamplesPath}/3.png`, alt: altPozaLogo(3, 'transport')},
+    {...squareImage300px, src: `${transportLogoExamplesPath}/4.png`, alt: altPozaLogo(4, 'transport')},
+    {...squareImage300px, src: `${transportLogoExamplesPath}/5.png`, alt: altPozaLogo(5, 'transport')},
+    {...squareImage300px, src: `${transportLogoExamplesPath}/6.png`, alt: altPozaLogo(6, 'transport')},
+    {...squareImage300px, src: `${transportLogoExamplesPath}/7.png`, alt: altPozaLogo(7, 'transport')},
+    {...squareImage300px, src: `${transportLogoExamplesPath}/8.png`, alt: altPozaLogo(8, 'transport')},
+    {...squareImage300px, src: `${transportLogoExamplesPath}/9.png`, alt: altPozaLogo(9, 'transport')},
+    {...squareImage300px, src: `${transportLogoExamplesPath}/10.png`, alt: altPozaLogo(10, 'transport')},
+    {...squareImage300px, src: `${transportLogoExamplesPath}/11.png`, alt: altPozaLogo(11, 'transport')},
+    {...squareImage300px, src: `${transportLogoExamplesPath}/12.png`, alt: altPozaLogo(12, 'transport')},
+    {...squareImage300px, src: `${transportLogoExamplesPath}/13.png`, alt: altPozaLogo(13, 'transport')},
+  ],
+};
+export const LogoConstructionSectionData: ILogoGallery = {
+  sectionHeading:
+    'Uite Cateva Exemple de Creare Logo Pentru Firme de Constructii',
+  images: [
+    {
+      ...squareImage300px,
+      src: `${constructionLogoExamplesPath}/1.png`,
+      alt: altPozaLogo(1, 'transport'),
+    },
+    {
+      ...squareImage300px,
+      src: `${constructionLogoExamplesPath}/2.png`,
+      alt: altPozaLogo(2, 'transport'),
+    },
+    {
+      ...squareImage300px,
+      src: `${constructionLogoExamplesPath}/3.png`,
+      alt: altPozaLogo(3, 'transport'),
+    },
+    {
+      ...squareImage300px,
+      src: `${constructionLogoExamplesPath}/4.png`,
+      alt: altPozaLogo(4, 'transport'),
+    },
+    {
+      ...squareImage300px,
+      src: `${constructionLogoExamplesPath}/5.png`,
+      alt: altPozaLogo(5, 'transport'),
+    },
+    {
+      ...squareImage300px,
+      src: `${constructionLogoExamplesPath}/6.png`,
+      alt: altPozaLogo(6, 'transport'),
+    },
+    {
+      ...squareImage300px,
+      src: `${constructionLogoExamplesPath}/7.png`,
+      alt: altPozaLogo(7, 'transport'),
+    },
+    {
+      ...squareImage300px,
+      src: `${constructionLogoExamplesPath}/8.png`,
+      alt: altPozaLogo(8, 'transport'),
+    },
+    {
+      ...squareImage300px,
+      src: `${constructionLogoExamplesPath}/9.png`,
+      alt: altPozaLogo(9, 'transport'),
+    },
+   
   ],
 };

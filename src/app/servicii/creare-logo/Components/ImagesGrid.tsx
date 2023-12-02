@@ -39,18 +39,19 @@ export const ImagesGrid = ({
         ref={container}
         initial={{ opacity: 0, x: -100, y: -100 }}
         animate={{ opacity: 1, x: 0, y: 0 }}
-        className="block m-auto relative"
-        style={{ width: '550px', height: '550px' }} // Poți ajusta dimensiunile pentru imagine
+        className="relative aspect-square   w-[300px]"
+        // Poți ajusta dimensiunile pentru imagine
       >
-        <div className="absolute top-0 left-0">
-          <Image {...image} />
+        <div className="absolute aspect-square w-1/2 h-1/2 top-0 left-0">
+          <Image {...image} className="aspect-square" />
         </div>
-        <div className="absolute border-white border-4 bottom-0 right-0">
+        <div className="absolute aspect-square border-white border-4 bottom-10 right-10 	  w-1/2 h-1/2">
           <Image
+            className="aspect-square"
             src={secondaryImages[0].src}
             alt={secondaryImages[0].alt}
-            width={secondaryImages[0].width || 50}
-            height={secondaryImages[0].height || 50}
+            width={secondaryImages[0].width || 150}
+            height={secondaryImages[0].height || 150}
           />
         </div>
       </motion.div>
@@ -62,7 +63,7 @@ export const ImagesGrid = ({
     <motion.div
       initial={{ opacity: 0, x: -100, y: -100 }}
       animate={{ opacity: 1, x: 0, y: 0 }}
-      className="grid grid-flow-row place-items-center"
+      className="grid grid-flow-row place-items-center "
     >
       <motion.div
         initial={{ opacity: 0, scale: 0.5, x: -100, y: -100 }}

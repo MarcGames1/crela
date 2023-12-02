@@ -11,7 +11,8 @@ export const servicii: Iservicii[] = [
   {
     name: 'Content Writing',
     href: '/servicii/content-writing',
-    description: 'Servicii content writing',
+    description:
+      'Te ajut sa iti atingi obiectivele prin servicii creative de content writing si copywriting: scriere texte, reclame, articole blog.',
     image: {
       alt: 'imagine reprezentativa Copy Writing',
       src: '/images/servicii/content-writing.png',
@@ -20,7 +21,8 @@ export const servicii: Iservicii[] = [
   {
     name: 'Social Media',
     href: '/servicii/social-media',
-    description: 'Servicii Social Media',
+    description:
+      'Te ajut sa ai o comunicare completa in mediul online: Strategie Personalizata si Rezultate Vizibile Creare Continut si Planificare.',
     image: {
       alt: 'imagine reprezentativa Social Media',
       src: '/images/servicii/social-media.png',
@@ -29,7 +31,8 @@ export const servicii: Iservicii[] = [
   {
     name: 'Branding',
     href: '/servicii/branding',
-    description: 'Servicii Branding',
+    description:
+      'Ai nevoie de Branding? Identitatea Vizuala a Afacerii Tale Incepe de Aici.',
     image: {
       alt: 'imagine reprezentativa Copy Writing',
       src: '/images/servicii/branding.jpeg',
@@ -38,7 +41,8 @@ export const servicii: Iservicii[] = [
   {
     name: 'Creare Logo',
     href: '/servicii/creare-logo',
-    description: 'Creare Logo',
+    description:
+      'Te ajut sa ai o comunicare completa in mediul online: Strategie Personalizata si Rezultate Vizibile Creare Continut si Planificare.',
     image: {
       alt: 'imagine reprezentativaCreare Logo',
       src: '/images/servicii/logo-creation.avif',
