@@ -1,7 +1,7 @@
-import { MainHeader } from '@/components';
+import { MainHeader, IntroSection  } from '@/components';
 import { Metadata } from 'next/types';
 import React from 'react';
-import IntroSection from './components/IntroSection';
+
 import CePutemRealiza from './components/CePutemRealiza';
 import {
   AccordionData,
@@ -41,7 +41,7 @@ const ContentWriting = () => {
             fideli? Eu sunt aici să fac ca fiecare frază să conteze și să aducă
             rezultate palpabile pentru afacerea ta."
       >
-        <h2>
+        <h2 className='text-center'>
           Servicii de{' '}
           <span className="bg-clip-text text-transparent bg-primary-gradient">
             Content Writing si CopyWriting
