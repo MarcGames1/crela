@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 export interface SectionProps {
-    children: React.ReactNode,
-    heading: React.ReactNode,
-    p?:  string
+  children: React.ReactNode;
+  heading: React.ReactNode;
+  p?: string;
 }
 
 const Section = ({ heading, children, p }: SectionProps) => {
@@ -20,9 +20,9 @@ const Section = ({ heading, children, p }: SectionProps) => {
           </>
         )}
       </div>
-        {children}
+      {children}
     </section>
   );
 };
 
-export default Section
+export default Section;

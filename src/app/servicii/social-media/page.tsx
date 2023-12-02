@@ -1,10 +1,11 @@
-import { MainHeader } from '@/components';
-import { MainHeaderData, PromovareSocialMediaOrganicData } from './pageConstants';
+import { MainHeader, Card, Section } from '@/components';
+import { MainHeaderData, PromovareSocialMediaOrganicData, PromovareAds } from './pageConstants';
 
 
 import { Metadata } from 'next/types';
 import React from 'react';
-import Section from './components/Section';
+import SocialMediaSection from './components/SocialMediaSection';
+
 
 
 export const metadata: Metadata = {
@@ -21,9 +22,9 @@ export const metadata: Metadata = {
 const SocialMedia = () => {
   return <>
     <MainHeader {...MainHeaderData} />
-    <Section p={PromovareSocialMediaOrganicData.p} heading={PromovareSocialMediaOrganicData.sectionHeader} >
-      <div>x</div>
-    </Section>
+   <SocialMediaSection {...PromovareSocialMediaOrganicData} />
+   <br />
+   <SocialMediaSection {...PromovareAds} />
    
 
   </>;

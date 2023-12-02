@@ -11,6 +11,11 @@ import WhatsappCta from "./WhatsappCTA/WhatsappCta";
 import FlexibleColumnSection from "./FlexibleColumnSection/FlexibleColumnSection";
 import AlternateTimeline from "./Timeline";
 import IntroSection from "./IntroSection";
+import Card from "./Top3Servicii/Card";
+import Section from "./Section";
+
+
+
 
 
 export {
@@ -25,8 +30,10 @@ export {
   MainHeader,
   WhatsappCta,
   FlexibleColumnSection,
-  AlternateTimeline,
-  IntroSection
+  AlternateTimeline,  
+  IntroSection,
+  Card,
+  Section
 };
 
 
