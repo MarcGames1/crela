@@ -18,7 +18,7 @@ const MainHeader = ({ title, paragraph, image }: IMainHeader) => (
       </div>
       <div className="flex-1 text-center ">
         <Image
-          className="m-auto max-h-[80%] w-auto rounded-md"
+          className="m-auto max-h-[50%] w-auto rounded-md"
           src={image.src}
           alt={image.alt}
           width={image.width}

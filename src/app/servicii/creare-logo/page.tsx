@@ -20,7 +20,7 @@ const CreareLogo = () => {
         <MainHeader {...MainHeaderData} />
 
         <LogoDefinition {...LogoDefinitionData} />
-        <LogouriRealizate />
+        {/* <LogouriRealizate /> */}
         <LogoGallery {...LogoTransportSectionData} />
         <LogoGallery rtl={true} {...LogoConstructionSectionData} />
 

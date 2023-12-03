@@ -13,7 +13,7 @@ import AlternateTimeline from "./Timeline";
 import IntroSection from "./IntroSection";
 import Card from "./Top3Servicii/Card";
 import Section from "./Section";
-
+import AccordionSection from "./AccoridonSection";
 
 
 
@@ -33,7 +33,8 @@ export {
   AlternateTimeline,  
   IntroSection,
   Card,
-  Section
+  Section,
+  AccordionSection
 };
 
 

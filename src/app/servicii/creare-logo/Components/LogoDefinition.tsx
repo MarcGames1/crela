@@ -17,8 +17,10 @@ export const LogoDefinition = ({
 }: ILogoDefinitionData) => {
 
      const controls = useAnimation();
+   
+
       const [ref, inView] = useInView({
-        triggerOnce: true, // Pentru a declanșa animația doar o dată
+        // triggerOnce: true, 
     
       });
 
@@ -30,9 +32,14 @@ export const LogoDefinition = ({
           transition: {
             type: 'spring',
             duration: 0.5,
+            when: 'beforeChildren',
+            staggerChildren: 0.2,
           },
         });
       }
+
+
+      // return () =>{}
     }, [controls, inView]);
 
 
@@ -45,28 +52,21 @@ export const LogoDefinition = ({
       <div>
         <h2 className="text-2xl text-center font-bold mb-4">{sectionHeader}</h2>
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ type: 'spring', duration: 0.5, delay: 0.2 }}
           className="text-lg mb-4 md:w-1/2 m-auto leading-10"
+          ref={ref}
+          animate={controls}
         >
           {sectionIntro}
         </motion.p>
-        <motion.ul
-          ref={ref}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ type: 'spring', duration: 0.5, delay: 0.4 }}
-          className="list-disc m-10 gap-10 place-items-center pl-8"
-        >
+        <motion.ul className="list-disc m-10 gap-10 place-items-center pl-8">
           {examples.map((example, idx) => {
             return (
               <motion.li
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ type: 'spring', duration: 0.5, delay: idx * 0.1 }}
                 className="  max-w-full	block relative"
                 key={idx}
+                animate="visible"
+                initial="hidden"
+                transition={{ delay: 1 * idx }}
               >
                 <LogoExample isReversed={idx % 2 === 0} {...example} />
               </motion.li>
