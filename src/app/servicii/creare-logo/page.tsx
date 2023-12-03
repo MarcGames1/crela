@@ -16,11 +16,11 @@ export const metadata: Metadata = pageMetaData
 const CreareLogo = () => {
   return (
     <>
-      <PageComponent>
+      
         <MainHeader {...MainHeaderData} />
 
         <LogoDefinition {...LogoDefinitionData} />
-        <LogouriRealizate />
+        {/* <LogouriRealizate /> */}
         <LogoGallery {...LogoTransportSectionData} />
         <LogoGallery rtl={true} {...LogoConstructionSectionData} />
 
@@ -44,7 +44,7 @@ const CreareLogo = () => {
             </div>
           </HeaderWithParalax>
         </section>
-      </PageComponent>
+      
     </>
   );
 };

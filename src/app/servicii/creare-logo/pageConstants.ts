@@ -1,6 +1,5 @@
-import { IMainHeader } from '@/components/MainHeader/MainHeader';
+import { IMainHeader } from '@/interfaces/IMainHeader';
 import { ILogoDefinitionData } from './Components/LogoDefinition';
-import { ILogoExample } from './Components/LogoExample';
 import { ILogoGallery } from './Components/LogoGallery';
 
 const logosPath = '/images/logos';

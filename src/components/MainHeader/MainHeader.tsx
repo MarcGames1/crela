@@ -1,16 +1,6 @@
 import Image from "next/image";
 import { ActionBtn } from "../Buttons";
-import { ReactElement } from "react";
-export interface IMainHeader {
-  title: string | ReactElement;
-  paragraph: string | ReactElement;
-  image: {
-    src: string;
-    alt: string;
-    width: number;
-    height: number;
-  };
-}
+import { IMainHeader } from "@/interfaces/IMainHeader";
 
 
 const MainHeader = ({ title, paragraph, image }: IMainHeader) => (
@@ -28,7 +18,7 @@ const MainHeader = ({ title, paragraph, image }: IMainHeader) => (
       </div>
       <div className="flex-1 text-center ">
         <Image
-          className="m-auto max-h-[80%] w-auto rounded-md"
+          className="m-auto max-h-[50%] w-auto rounded-md"
           src={image.src}
           alt={image.alt}
           width={image.width}

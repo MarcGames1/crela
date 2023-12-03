@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { IAccordionData } from "./components/CePutemRealiza";
+import { IAccordionData } from '@/interfaces/IaccordionData';
 
 export interface CopyWritingData {
   sectionHeading: string | ReactNode;
