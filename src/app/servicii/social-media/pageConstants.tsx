@@ -20,7 +20,7 @@ export interface IPromovareSocialMediaData {
   p: string,
   platforme: ICard[]
 }
-export const PromovareSocialMediaOrganicData :IPromovareSocialMediaData = {
+export const PromovareSocialMediaOrganicData: IPromovareSocialMediaData = {
   sectionHeader: (
     <>
       Promovare{' '}
@@ -32,24 +32,23 @@ export const PromovareSocialMediaOrganicData :IPromovareSocialMediaData = {
   ),
   p: 'Promovarea organică devine din ce în ce mai valoroasă, având capacitatea de a construi relații autentice cu publicul țintă. Această abordare implică crearea de conținut captivant, adaptat fiecărei platforme în parte, strategii de hashtag-uri inteligente, interacțiuni autentice cu utilizatorii și monitorizarea atentă a feedback-ului și a datelor pentru a optimiza și îmbunătăți continuu strategia de social media.',
   platforme: [
-  {
-    text:"Promovare Tiktok Organic",
-    image: ""
-  },
-  {
-    text:"Promovare Facebook Organic",
-    image: ""
-  },
-  {
-    text:"Promovare Instagram Organic",
-    image: ""
-  },
-  {
-    text:"Promovare Youtube Organic",
-    image: ""
-  },
-
-]
+    {
+      text: 'Promovare Tiktok Organic',
+      image: '/images/socialmedia/tiktok.png',
+    },
+    {
+      text: 'Promovare Facebook Organic',
+      image: '/images/socialmedia/facebook.png',
+    },
+    {
+      text: 'Promovare Instagram Organic',
+      image: '/images/socialmedia/instagram.png',
+    },
+    {
+      text: 'Promovare Youtube Organic',
+      image: '/images/socialmedia/youtube.png',
+    },
+  ],
 };
 
 export const PromovareAds: IPromovareSocialMediaData = {
@@ -66,19 +65,19 @@ export const PromovareAds: IPromovareSocialMediaData = {
   platforme: [
     {
       text: 'Promovare Tiktok Ads',
-      image: '',
+      image: '/images/socialmedia/tiktok.png',
     },
     {
       text: 'Promovare Facebook Ads',
-      image: '',
+      image: '/images/socialmedia/facebook.png',
     },
     {
       text: 'Promovare Instagram Ads',
-      image: '',
+      image: '/images/socialmedia/instagram.png',
     },
     {
       text: 'Promovare Youtube Ads',
-      image: '',
+      image: '/images/socialmedia/youtube.png',
     },
   ],
 };
@@ -124,12 +123,15 @@ export const sections = [
     ),
     p: 'Serviciile de social media implică un set cuprinzător de strategii și acțiuni menite să amplifice prezența și impactul unei afaceri în mediul online. Acestea înglobează dezvoltarea unei strategii personalizate, crearea și distribuirea de conținut captivant, gestionarea comunității online și promovarea eficientă a brandului. De la stabilirea obiectivelor până la măsurarea rezultatelor, serviciile de social media sunt fundamentale pentru a construi și menține o prezență puternică și convingătoare pe diversele platforme sociale.',
     children: (
-      <Image
-        src={''}
-        width={300}
-        height={300}
+      <div className="flex  place-content-center">
+
+      <Image 
+        src={'/images/socialmedia/section/1.png'}
+        width={500}
+        height={500}
         alt="poza reprezentativa ce presupun serviciile de social media"
-      />
+        />
+        </div>
     ),
   },
   {
@@ -143,11 +145,11 @@ export const sections = [
     ),
     p: 'Administrarea eficientă a conturilor de social media înseamnă mai mult decât simpla publicare a conținutului. Echipa noastră se ocupă de planificarea strategică a conținutului, crearea și adaptarea mesajelor pentru fiecare platformă, interacțiunea constantă cu audiența și analiza datelor pentru a identifica cele mai bune practici și a ajusta strategiile. Monitorizăm și raportăm performanța pentru a ne asigura că fiecare acțiune are un impact pozitiv și contribuie la atingerea obiectivelor propuse.',
     children: (
-      <div>
+      <div className="flex  place-content-center">
         <Image
-          src={''}
-          width={300}
-          height={300}
+          src={'/images/socialmedia/section/2.png'}
+          width={500}
+          height={500}
           alt="poza reprezentativa ce presupun serviciile de social media"
         />
       </div>
@@ -157,11 +159,11 @@ export const sections = [
     sectionHeading: <>Social Media și SEO</>,
     p: 'Interconectarea dintre social media și optimizarea pentru motoarele de căutare (SEO) este esențială pentru creșterea vizibilității și a impactului online. Activitățile din social media pot influența direct căutările organice prin creșterea expunerii conținutului și a angajamentului. Integrăm metode SEO în strategiile noastre de social media, folosind cuvinte cheie relevante, optimizând conținutul și construind legături pentru a spori autoritatea online a brandului. Astfel, contribuim la creșterea vizibilității și a poziționării în rezultatele căutărilor online, consolidând astfel prezența și influența afacerii pe internet.',
     children: (
-      <div>
+      <div className="flex  place-content-center">
         <Image
-          src={''}
-          width={300}
-          height={300}
+          src={'/images/socialmedia/section/3.png'}
+          width={500}
+          height={500}
           alt="poza reprezentativa ce presupun serviciile de social media"
         />
       </div>

@@ -28,7 +28,7 @@ const Card = ({href, image, text}:ICard) => {
   const renderCard = (
     <Wrapper href={href}
       
-      className="group relative block min-h-[240px] overflow-hidden"
+      className="group relative block overflow-hidden"
     >
       <div className="transition-all duration-300 ease-in-out group-hover:scale-105">
         <Image
@@ -36,7 +36,7 @@ const Card = ({href, image, text}:ICard) => {
           role="presentation"
           src={image}
           width={300}
-          height={300}
+          height={350}
         />
         <h3 className="absolute bottom-4 left-4 z-10 text-xl font-medium leading-[1.2] text-white sm:bottom-5 sm:left-7 sm:text-xl sm:leading-[1.21]">
           {text}

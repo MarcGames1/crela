@@ -14,7 +14,7 @@ const FlexibleColumnSection = ({
   const mobilePlacement = reversed ? 'lg:order-1' : 'lg:order-2';
 
   return (
-    <section className="grid md:grid-rows-2 md:grid-cols-none lg:grid-rows-none lg:grid-cols-2 items-center p-5 lg:mx-5">
+    <section className="grid md:grid-rows-2 md:grid-cols-none lg:grid-rows-none lg:grid-cols-2 items-center place-items-center p-5 lg:mx-5">
       <motion.div
         initial="hidden"
         whileInView="visible"
