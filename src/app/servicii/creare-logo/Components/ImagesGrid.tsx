@@ -39,7 +39,7 @@ export const ImagesGrid = ({
         ref={container}
         initial={{ opacity: 0, x: -100, y: -100 }}
         animate={{ opacity: 1, x: 0, y: 0 }}
-        className="relative aspect-square   w-[300px]"
+        className="relative aspect-square mt-10 lg:mt-0 w-[500px]"
         // Poți ajusta dimensiunile pentru imagine
       >
         <div className="absolute aspect-square w-1/2 h-1/2 top-0 left-0">
