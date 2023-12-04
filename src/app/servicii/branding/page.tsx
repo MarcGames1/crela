@@ -9,6 +9,7 @@ import {
   ThirdSectionData,
   ForthSectionData,
 } from './pageConstants';
+import { NextSeo } from 'next-seo';
 
 export const metadata: Metadata = {
   title: 'Branding si identitate vizuala » CRELA ✨',
@@ -21,12 +22,12 @@ export const metadata: Metadata = {
 const Branding = () => {
   return (
     <>
+      <NextSeo canonical="https://crela.ro/servicii/branding" />
       <MainHeader {...MainHeaderData} />
       <FirstSection />
       <SecondSection {...SecondSectionData} />
       <SecondSection reversed {...ThirdSectionData} />
-      <SecondSection  {...ForthSectionData} />
-     
+      <SecondSection {...ForthSectionData} />
     </>
   );
 };

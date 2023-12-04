@@ -1,6 +1,7 @@
 import React from 'react'
 import PoliticaCookie from './PoliticaCookie';
 import { PageComponent } from '@/components';
+import { NextSeo } from 'next-seo';
 
 
 
@@ -9,6 +10,7 @@ import { PageComponent } from '@/components';
 const page = () => {
   return (
     <PageComponent>
+      <NextSeo noindex />
       <PoliticaCookie />
     </PageComponent>
   );

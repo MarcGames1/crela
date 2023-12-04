@@ -1,7 +1,7 @@
 import React from 'react'
 import TermeniSiConditii from './TermeniSiConditii';
 import { PageComponent } from '@/components';
-
+import { NextSeo } from 'next-seo';
 
 
 
@@ -9,6 +9,7 @@ import { PageComponent } from '@/components';
 const page = () => {
   return (
     <PageComponent>
+      <NextSeo noindex />
       <TermeniSiConditii />
     </PageComponent>
   );

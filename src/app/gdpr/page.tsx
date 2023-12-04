@@ -1,6 +1,7 @@
 import React from 'react'
 import GDPR from './GDPR';
 import { PageComponent } from '@/components';
+import { NextSeo } from 'next-seo';
 
 
 
@@ -8,6 +9,7 @@ import { PageComponent } from '@/components';
 const page = () => {
   return (
     <PageComponent>
+      <NextSeo noindex />
       <GDPR />
     </PageComponent>
   );
