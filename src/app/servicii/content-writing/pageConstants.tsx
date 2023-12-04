@@ -1,15 +1,13 @@
 import { ReactNode } from "react";
 import { IAccordionData } from '@/interfaces/IaccordionData';
+import { IHeadingWParagraph } from "@/interfaces/IHeadingWParagraph";
 
-export interface CopyWritingData {
+export interface CopyWritingData extends IHeadingWParagraph {}
+
+export interface IModDeLucruData extends IHeadingWParagraph {
   sectionHeading: string | ReactNode;
   p: string;
-}
-
-export interface IModDeLucruData {
-  sectionHeading: string | ReactNode;
-  p: string;
-  timeLineData: {title: string, description: string}[]
+  timeLineData: { title: string; description: string }[];
 }
 
 

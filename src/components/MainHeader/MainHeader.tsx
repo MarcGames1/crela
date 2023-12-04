@@ -18,7 +18,7 @@ const MainHeader = ({ title, paragraph, image }: IMainHeader) => (
       </div>
       <div className=" text-center relative">
         <Image
-          className="m-auto max-h-[600px]  w-auto rounded-md"
+          className="m-auto  max-h-[50vh]  w-auto rounded-md"
           src={image.src}
           alt={image.alt}
           width={image.width}
