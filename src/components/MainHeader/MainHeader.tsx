@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ActionBtn } from "../Buttons";
 import { IMainHeader } from "@/interfaces/IMainHeader";
-
+import { LoadingSpinner } from "..";
 
 const MainHeader = ({ title, paragraph, image }: IMainHeader) => (
   <section className="p-10 max-w-full relative overflow-hidden pt-10 pb-2 md:py-24">
@@ -16,9 +16,11 @@ const MainHeader = ({ title, paragraph, image }: IMainHeader) => (
         </div>
         <ActionBtn.Primary />
       </div>
-      <div className=" text-center relative">
+      <div className=" text-center min-w-[302px] min-h[456px] relative">
         <Image
           className="m-auto w-auto rounded-md"
+          placeholder="blur"
+          blurDataURL="/SocialMedia.gif"
           src={image.src}
           alt={image.alt}
           width={image.width}
