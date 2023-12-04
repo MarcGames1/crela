@@ -41,7 +41,7 @@ const Dreapta = ({serviciuSelectat=servicii[0]}) => {
       animate={appearAnimation}
       className="relative m-4 max-h-[80vh] min-h-full glas shadow-2xl drop-shadow-2xl"
     >
-      <figure className='relative min-h-[300px]'>
+      <figure className='relative min-h-[600px]'>
         <Image className='max-h-full max-w-full' {...serviciuSelectat.image} width={800} height={500} />
       </figure>
       <div className="absolute bottom-0 left-0 w-full bg-[#ededed]/80 px-2 py-5 md:p-8 lg:p-12 ">
