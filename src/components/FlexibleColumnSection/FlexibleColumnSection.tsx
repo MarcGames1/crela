@@ -26,7 +26,7 @@ const FlexibleColumnSection = ({
         }}
         className={`container  place-self-center self-center justify-self-center w-full ${desktopPlacement}`}
       >
-        <div className="prose w-full block m-auto">
+        <div className="prose w-full block m-auto ">
           <h2 className="text-center">{sectionHeading}</h2>
           {typeof p === 'string' ? (
             <p className="leading-7 tracking-wider px-5">{p}</p>
