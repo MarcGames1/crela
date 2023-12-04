@@ -27,8 +27,8 @@ const MainHeaderData: IMainHeader = {
   image: {
     src: '/SocialMedia.gif',
     alt: 'Poza Reprezentativa Content Writing',
-    width: 1080,
-    height: 1920,
+    width: 300,
+    height: 553,
   },
 };
 
