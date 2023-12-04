@@ -16,10 +16,7 @@ import {
 
 
 import { testimonialData } from "@/StaticData/testimonialData";
-const data = [{
 
-},]
-'https://disruptiveadvertising.com/';
 export default function Homepage() {
   return (
     <>
