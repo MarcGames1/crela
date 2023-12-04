@@ -13,6 +13,7 @@ import DeCeCopyWriting from './components/DeCeCopyWriting';
 import ModDeLucru from './components/ModDeLucru';
 import DeCeSaLucreziCuMine from './components/DeCeSaLucreziCuMine';
 import { IMainHeader } from '@/interfaces/IMainHeader';
+import { SEOComponent } from '@/components';
 
 export const metadata: Metadata = {
   title: 'Servicii Content Writing si Copywriting » CRELA✨',
@@ -35,13 +36,14 @@ const MainHeaderData: IMainHeader = {
 const ContentWriting = () => {
   return (
     <>
+      <SEOComponent canonical="https://crela.ro/servicii/creare-logo" />
       <MainHeader {...MainHeaderData} />
       <IntroSection
         p="Ai nevoie de cuvinte care să transforme vizitatorii în clienți
             fideli? Eu sunt aici să fac ca fiecare frază să conteze și să aducă
             rezultate palpabile pentru afacerea ta."
       >
-        <h2 className='text-center'>
+        <h2 className="text-center">
           Servicii de{' '}
           <span className="bg-clip-text text-transparent bg-primary-gradient">
             Content Writing si CopyWriting
@@ -51,7 +53,7 @@ const ContentWriting = () => {
       <CePutemRealiza sectionHeader="Te pot ajuta Cu:" data={AccordionData} />
       <DeCeCopyWriting {...DeCeCopyWritingData} />
       <ModDeLucru reversed {...ModDeLucruData} />
-     <DeCeSaLucreziCuMine {...DeCeSaLucreziCuMineData} />
+      <DeCeSaLucreziCuMine {...DeCeSaLucreziCuMineData} />
     </>
   );
 };

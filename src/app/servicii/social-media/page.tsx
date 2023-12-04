@@ -13,6 +13,7 @@ import React from 'react';
 import SocialMediaSection from './components/SocialMediaSection';
 import IntrebariFrecvente from './components/IntrebariFrecvente';
 import { ActionBtn } from '@/components/Buttons';
+import { SEOComponent } from '@/components';
 
 export const metadata: Metadata = {
   title: 'Servicii Promovare Social Media » CRELA ✨',
@@ -23,6 +24,7 @@ export const metadata: Metadata = {
 const SocialMedia = () => {
   return (
     <>
+      <SEOComponent canonical="https://crela.ro/servicii/social-media" />
       <MainHeader {...MainHeaderData} />
       <SocialMediaSection {...PromovareSocialMediaOrganicData} />
       <br />
@@ -55,19 +57,18 @@ const SocialMedia = () => {
         }
       })}
       <HeaderWithParalax bgImage="/images/assets/parallax1.png">
-        <div className=' flex flex-col gap-5 m-auto'>
-        <span
-          className="mx-auto text-3xl font-bold leading-[1.25] md:text-5xl md:leading-tight 
+        <div className=" flex flex-col gap-5 m-auto">
+          <span
+            className="mx-auto text-3xl font-bold leading-[1.25] md:text-5xl md:leading-tight 
           [&>u]:decoration-[2px] [&>u]:underline-offset-[5px] md:[&>u]:decoration-[5px] 
           md:[&>u]:underline-offset-[10px] max-w-[1300px]"
           >
-          Scrie-mi un mesaj pe Watsapp 
-        </span>
-        <div>
-        <ActionBtn.Whatsapp />
-        </div>
-
+            Scrie-mi un mesaj pe Watsapp
+          </span>
+          <div>
+            <ActionBtn.Whatsapp />
           </div>
+        </div>
       </HeaderWithParalax>
     </>
   );

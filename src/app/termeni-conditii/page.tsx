@@ -1,7 +1,7 @@
 import React from 'react'
 import TermeniSiConditii from './TermeniSiConditii';
 import { PageComponent } from '@/components';
-
+import { SEOComponent } from '@/components';
 
 
 
@@ -9,6 +9,7 @@ import { PageComponent } from '@/components';
 const page = () => {
   return (
     <PageComponent>
+      <SEOComponent noindex />
       <TermeniSiConditii />
     </PageComponent>
   );

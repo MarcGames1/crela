@@ -28,7 +28,7 @@ const Top3Servicii = () => {
       </h3>
       <div className="mt-7 flex flex-wrap justify-center gap-5 sm:gap-16 md:mt-20 xl:flex-nowrap">
         {data.map((card:ICard, index:number) =>{
-          return <Card key={index} {...card} />
+          return <Card key={index} {...card} href={`/servicii${card.href}`} />;
         })}
       </div>
     </>
