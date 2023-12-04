@@ -28,8 +28,8 @@ export const MainHeaderData: IMainHeader = {
   image: {
     src: '/CreareLogo.png',
     alt: 'Poza Reprezentativa Creare Logo',
-    width: 1333,
-    height: 2000,
+    width: 300,
+    height: 300,
   },
 };
 
