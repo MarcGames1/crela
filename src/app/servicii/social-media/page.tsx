@@ -13,7 +13,7 @@ import React from 'react';
 import SocialMediaSection from './components/SocialMediaSection';
 import IntrebariFrecvente from './components/IntrebariFrecvente';
 import { ActionBtn } from '@/components/Buttons';
-import { NextSeo } from 'next-seo';
+import { SEOComponent } from '@/components';
 
 export const metadata: Metadata = {
   title: 'Servicii Promovare Social Media » CRELA ✨',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const SocialMedia = () => {
   return (
     <>
-      <NextSeo canonical="https://crela.ro/servicii/social-media" />
+      <SEOComponent canonical="https://crela.ro/servicii/social-media" />
       <MainHeader {...MainHeaderData} />
       <SocialMediaSection {...PromovareSocialMediaOrganicData} />
       <br />

@@ -15,7 +15,7 @@ import Card from "./Top3Servicii/Card";
 import Section from "./Section";
 import AccordionSection from "./AccoridonSection";
 import LoadingSpinner from "./LoadingSpinner";
-
+import SEOComponent from "./SEOComponent";
 
 
 export {
@@ -36,6 +36,7 @@ export {
   Section,
   AccordionSection,
   LoadingSpinner,
+  SEOComponent,
 };
 
 

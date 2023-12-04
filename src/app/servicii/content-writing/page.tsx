@@ -13,7 +13,7 @@ import DeCeCopyWriting from './components/DeCeCopyWriting';
 import ModDeLucru from './components/ModDeLucru';
 import DeCeSaLucreziCuMine from './components/DeCeSaLucreziCuMine';
 import { IMainHeader } from '@/interfaces/IMainHeader';
-import { NextSeo } from 'next-seo';
+import { SEOComponent } from '@/components';
 
 export const metadata: Metadata = {
   title: 'Servicii Content Writing si Copywriting » CRELA✨',
@@ -36,7 +36,7 @@ const MainHeaderData: IMainHeader = {
 const ContentWriting = () => {
   return (
     <>
-      <NextSeo canonical="https://crela.ro/servicii/creare-logo" />
+      <SEOComponent canonical="https://crela.ro/servicii/creare-logo" />
       <MainHeader {...MainHeaderData} />
       <IntroSection
         p="Ai nevoie de cuvinte care să transforme vizitatorii în clienți
