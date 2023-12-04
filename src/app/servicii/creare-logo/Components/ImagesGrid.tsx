@@ -1,9 +1,13 @@
 'use client';
-import { useEffect, useRef } from 'react';
-import { motion, useAnimation, useInView, stagger, inView  } from 'framer-motion';
+
+import { useRef } from 'react';
+import { useAnimation, useInView, motion } from 'framer-motion';
+
+
 
 
 import Image from 'next/image';
+
 
 export const ImagesGrid = ({
   image,

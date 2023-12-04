@@ -19,6 +19,10 @@ export const pageMetaData = {
   title: 'Creare logo personalizat pentru firma ta » CRELA ✨',
   description:
     '✌ Ai nevoie logo personalizat pentru firma ta?✅Identitatea Vizuala a Afacerii Tale Incepe de Aici.',
+      robots:"index, follow",
+  alternates: {
+    canonical: 'servicii/creare-logo',
+  },
 };
 
 export const MainHeaderData: IMainHeader = {
