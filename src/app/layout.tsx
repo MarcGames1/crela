@@ -1,8 +1,14 @@
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import './globals.css';
-import Gtm from './gtmScript';
-import DefaultSEO from './DefaultSEO';
+import dynamic from 'next/dynamic';
+
+
+type ComponentImport = () => Promise<any>;
+
+import { GoogleTagManager } from '@next/third-parties/google';
+
+
 const font = Poppins({
   weight: ['100', '400', '200', '300', '500', '600', '700', '800', '900'],
   style: 'normal',
@@ -11,8 +17,37 @@ const font = Poppins({
 
 export const metadata: Metadata = {
   title: 'Crela',
-  description: 'Crela',
+  description: 'Crela Expertul Tău în Marketing Online',
+  metadataBase: new URL('https://crela.ro'),
+  robots: 'index, follow',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Crela',
+    description: 'STRATEGII UNICE PENTRU SUCCESUL TĂU ONLINE',
+    url: 'https://crela.ro',
+    siteName: 'Next.js',
+    images: [
+      {
+        url: '/images/brand/logo-light.png',
+        width: 800,
+        height: 600,
+      },
+      {
+        url: '/images/brand/logo-light.png',
+        width: 1800,
+        height: 1600,
+        alt: 'Crela Logo',
+      },
+    ],
+    locale: 'ro_RO',
+    type: 'website',
+  },
+  
 };
+
+
 
 export default function RootLayout({
   children,
@@ -22,9 +57,8 @@ export default function RootLayout({
   return (
     <html data-theme="crelaTheme" lang="ro">
       <head>
-      <DefaultSEO />
-        <Gtm />
-        </head>
+        <GoogleTagManager gtmId="GTM-PTTLWWC" />
+      </head>
       <body className={`${font.className} grid grid-flow-row`}>{children}</body>
     </html>
   );

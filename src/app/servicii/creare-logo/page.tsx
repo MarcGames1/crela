@@ -7,16 +7,16 @@ import MainHeader from '@/components/MainHeader/MainHeader';
 import Link from 'next/link';
 import { pageMetaData, MainHeaderData } from './pageConstants';
 import LogoGallery from './Components/LogoGallery';
-import { SEOComponent } from '@/components';
 
 
-('https://docs.google.com/document/d/1lPiLXlPLwb0edJxfKqHU3NysNRZqmvubn2f_wFlsNpQ/edit');
+
+
 export const metadata: Metadata = pageMetaData
 
 const CreareLogo = () => {
   return (
     <>
-      <SEOComponent canonical="https://crela.ro/servicii/creare-logo" />
+      
       <MainHeader {...MainHeaderData} />
 
       <LogoDefinition {...LogoDefinitionData} />

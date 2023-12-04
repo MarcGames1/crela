@@ -1,20 +1,27 @@
+import dynamic from 'next/dynamic';
 import { Metadata } from 'next/types';
 import { MainHeader } from '@/components';
-import FirstSection from './components/FirstSection';
-import SecondSection from './components/SecondSection';
+const FirstSection = dynamic(() => import('./components/FirstSection'));
+const SecondSection = dynamic(() => import('./components/SecondSection'));
 
+import type { ComponentType } from 'react';
+import { IMainHeader } from '@/interfaces/IMainHeader';
 import {
   MainHeaderData,
   SecondSectionData,
   ThirdSectionData,
   ForthSectionData,
 } from './pageConstants';
-import { SEOComponent } from '@/components';
+
 
 export const metadata: Metadata = {
   title: 'Branding si identitate vizuala » CRELA ✨',
   description:
     '✌ Ai nevoie de Branding?✅Identitatea Vizuala a Afacerii Tale Incepe de Aici.',
+    robots:"index, follow",
+  alternates: {
+    canonical: 'servicii/branding',
+  },
 };
 
 
@@ -22,7 +29,7 @@ export const metadata: Metadata = {
 const Branding = () => {
   return (
     <>
-      <SEOComponent canonical="https://crela.ro/servicii/branding" />
+  
       <MainHeader {...MainHeaderData} />
       <FirstSection />
       <SecondSection {...SecondSectionData} />

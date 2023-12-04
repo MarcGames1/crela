@@ -1,7 +1,14 @@
 import React from 'react'
 import PoliticaCookie from './PoliticaCookie';
 import { PageComponent } from '@/components';
-import { SEOComponent } from '@/components';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  robots: 'noindex, follow',
+  alternates: {
+    canonical: '/politica-cookie',
+  },
+};
 
 
 
@@ -10,7 +17,7 @@ import { SEOComponent } from '@/components';
 const page = () => {
   return (
     <PageComponent>
-      <SEOComponent noindex />
+      
       <PoliticaCookie />
     </PageComponent>
   );

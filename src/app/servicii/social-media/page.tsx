@@ -13,18 +13,22 @@ import React from 'react';
 import SocialMediaSection from './components/SocialMediaSection';
 import IntrebariFrecvente from './components/IntrebariFrecvente';
 import { ActionBtn } from '@/components/Buttons';
-import { SEOComponent } from '@/components';
+
 
 export const metadata: Metadata = {
   title: 'Servicii Promovare Social Media » CRELA ✨',
   description:
     '✌ Te ajut sa ai o comunicare completa in mediul online:✅Strategie Personalizata si Rezultate Vizibile ✅Creare Continut si Planificare.',
+  robots: 'index, follow',
+  alternates: {
+    canonical: 'servicii/social-media',
+  },
 };
 
 const SocialMedia = () => {
   return (
     <>
-      <SEOComponent canonical="https://crela.ro/servicii/social-media" />
+      
       <MainHeader {...MainHeaderData} />
       <SocialMediaSection {...PromovareSocialMediaOrganicData} />
       <br />
