@@ -16,7 +16,7 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'primary-gradient': 'linear-gradient(to top, #800507, #DA2128)',
         'secondary-gradient':
-          'linear-gradient(to top,  theme("colors.red.100"), theme("colors.white"))',
+          'conic-gradient(from 180deg at 50% 50%,  oklch(var(--in))"), oklch(var(--er)))',
       },
     },
   },

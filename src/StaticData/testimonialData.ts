@@ -5,36 +5,37 @@ export const testimonialData: TestimonialData[] = [
   {
     name: 'Andreea Voicu Aliand Consulting',
     paragraph:
-      'Laura is a talented designer with an impressive chromatic and aesthetic feel. She manages to pleasantly surprise me every time we have a common project and I rely entirely on her expertise in this area. She is hardworking, strictly adheres to teaching deadlines and has an overwhelming creativity at times. Highly recommend!',
-    header: 'Talented designer with an impressive chromatic and aesthetic feel',
+      'Laura este o designer talentată, cu o simțire cromatică și estetică impresionantă. Reușește să mă surprindă plăcut de fiecare dată când avem un proiect comun și mă bazez în întregime pe expertiza ei în această zonă. Este harnică, respectă cu strictețe termenele limită și are o creativitate copleșitoare uneori. O recomand cu căldură!',
+    header:
+      'Designer talentat cu o simț cromatic și estetic impresionant',
     picture: testimonialsLocation + '/andreea-voicu.png',
   },
   {
     name: 'Calin Perpelea Fity',
     paragraph:
-      'Very profesional and response. Her creative ideas were right to the point. Highly recommend.',
-    header: 'Very profesional',
+      'Foarte profesională și receptivă. Ideile ei creative au fost exact pe punct. O recomand cu căldură.',
+    header: 'Foarte profesională',
     picture: testimonialsLocation + '/catalin-pepelea.png',
   },
   {
-    name: 'Carmen Tenescu | Nutrisimo',
+    name: 'Carmen Tenescu | Nutrisimo',
     paragraph:
-      'Great work! Punctual, creative and very into details! Definitely recommend!',
-    header: 'Great work!',
+      'Muncă excelentă! Punctuală, creativă și foarte atentă la detalii! Cu siguranță o recomand!',
+    header: 'Muncă excelentă!',
     picture: testimonialsLocation + '/carmen-tenciu.png',
   },
   {
     name: 'Moonglow',
     paragraph:
-      'Planning, seriousness, creativity, efficient solutions, productivity... and the list can easily continue with the best and positive marketing-related needs. Laura is the person you need without knowing it, whom you can confidently turn to when needed, and who always finds the solution when things get tough. Simultaneously, she understands, analyzes, and perceives needs correctly. The collaboration is fruitful and beautiful.',
-    header: 'Efficient Solutions',
+      'Planificare, seriozitate, creativitate, soluții eficiente, productivitate... și lista poate continua ușor cu cele mai bune și pozitive nevoi legate de marketing. Laura este persoana de care ai nevoie fără să știi, la care poți apela cu încredere atunci când ai nevoie și care găsește întotdeauna soluția atunci când lucrurile devin dificile. În același timp, înțelege, analizează și percepe corect nevoile. Colaborarea este fructuoasă și minunată.',
+    header: 'Soluții eficiente',
     picture: testimonialsLocation + '/moonglow.png',
   },
   {
     name: 'Alexandru Marcu - Marweb.ro',
     paragraph:
-      'While working with Laura I managed to get more brand aweareness form social media, she also created a nice logo for my agency that I really like, I definitely recommend and enjoy working with her',
-    header: 'I managed to get relevant leads from social media',
+      'În timpul colaborării cu Laura, am reușit să obțin o mai mare conștientizare a mărcii de pe rețelele de socializare, ea a creat, de asemenea, un logo frumos pentru agenția mea, care îmi place foarte mult. Cu siguranță o recomand și mă bucur să lucrez cu ea.',
+    header: 'Am reușit să obțin lead-uri relevante din social media',
     picture: testimonialsLocation + '/alexandru-marcu.png',
   },
 ];

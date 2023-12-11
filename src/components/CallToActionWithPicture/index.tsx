@@ -52,21 +52,22 @@ const CallToActionWithPicture = () => {
     <section className=" min-h-[75vh] flex lg:flex-row flex-col max-w-screen overflow-hidden">
       <motion.div animate={leftSideAnimation} className="left p-10">
         <h3 className="mb-2 text-3xl font-bold text-secondary md:mb-7 md:text-5xl md:leading-[1.25] ">
-          Laura - Expertul Tău în{' '}
           <span className="bg-clip-text text-transparent bg-primary-gradient">
-            Marketing Online
+            Agentie Marketing Online
           </span>
+          
         </h3>
         <span className="mb-5 text-xl font-medium uppercase leading-tight tracking-wider text-secondary md:mb-8">
           Strategii Unice pentru Succesul Tău Online
         </span>
         <div className="h-[3px] w-24 bg-accent"></div>
-        <p className="my-5 text-large leading-6">
-          Sunt Laura, și mă dedic în mod pasionat dezvoltării și implementării
-          unor strategii personalizate în marketingul online. Imi place să creez
-          soluții care să se potrivească perfect nevoilor tale. Mă angajez să
-          lucrez alături de tine pentru a-ți aduce afacerea la nivelul următor
-          în mediul online.
+        <p className="my-5 text-large tracking-widest lg:max-w-[50vw] leading-6">
+          Suntem o agenție dedicată cu pasiune dezvoltării și implementării
+          strategiilor personalizate în marketingul online. Ne pricepem să creăm
+          soluții perfect adaptate nevoilor tale. Echipa noastră se angajează să
+          lucreze alături de tine pentru a-ți propulsa afacerea la nivelul
+          următor în mediul online. Hai să facem ca afacerea ta să strălucească
+          în online!"
         </p>
         <ActionBtn.Primary />
       </motion.div>
