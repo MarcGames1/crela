@@ -40,8 +40,8 @@ export default function Homepage() {
                   [&>u]:decoration-[2px] [&>u]:underline-offset-[5px] md:[&>u]:decoration-[5px] 
                   md:[&>u]:underline-offset-[10px] max-w-[1300px]"
           >
-            “Știai că peste 76% din banii cheltuiți pe reclame sunt adesea
-            aruncați pe fereastră?”
+            &ldquo;Știai că peste 76% din banii cheltuiți pe reclame sunt adesea
+            aruncați pe fereastră?&rdquo;
           </span>
         </DynamicComponents.HeaderWithParalax>
         <DynamicComponents.TestimonialsCarousel data={testimonialData} />
@@ -53,7 +53,7 @@ export default function Homepage() {
           [&>u]:decoration-[2px] [&>u]:underline-offset-[5px] md:[&>u]:decoration-[5px] 
           md:[&>u]:underline-offset-[10px] max-w-[1300px]"
           >
-            We're Better <span className=" font-extrabold ">Together</span>
+            We&apos;re Better <span className=" font-extrabold ">Together</span>
           </div>
         </DynamicComponents.HeaderWithParalax>
       </DynamicComponents.PageComponent>
