@@ -21,7 +21,7 @@ const LeftSide = () => {
         soluții perfect adaptate nevoilor tale. Echipa noastră se angajează să
         lucreze alături de tine pentru a-ți propulsa afacerea la nivelul următor
         în mediul online. Hai să facem ca afacerea ta să strălucească în
-        online!"
+        online!
       </p>
       <ActionBtn.Primary />
     </motion.div>
