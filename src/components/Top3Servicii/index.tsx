@@ -3,18 +3,30 @@ import Card, { ICard } from './Card';
 
 const data: ICard[] = [
   {
-    image: '/images/cards/1.jpg',
-    text: <>Strategie de  <b>BRANDING</b> 360</>,
+    image: '/images/cards/1.png',
+    text: (
+      <>
+        Strategie de <b>BRANDING</b> 360
+      </>
+    ),
     href: '/branding',
   },
   {
-    image: '/images/cards/1.jpg',
-    text: <>Crestem Afacerea pe <b>social media</b></>,
+    image: '/images/cards/2.png',
+    text: (
+      <>
+        Crestem Afacerea pe <b>social media</b>
+      </>
+    ),
     href: '/social-media',
   },
   {
-    image: '/images/cards/1.jpg',
-    text: <>Redactare de texte <b>optimizate SEO</b></>,
+    image: '/images/cards/3.png',
+    text: (
+      <>
+        Redactare de texte <b>optimizate SEO</b>
+      </>
+    ),
     href: '/content-writing',
   },
 ];
