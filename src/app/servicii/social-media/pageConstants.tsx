@@ -50,7 +50,45 @@ export const PromovareSocialMediaOrganicData: IPromovareSocialMediaData = {
     },
   ],
 };
-
+export const DeCeSocialMediaData = {
+  heading: (
+    <>
+      De ce sa fie si afacerea ta prezenta in{' '}
+      <span className=" bg-primary-gradient bg-clip-text text-transparent">
+        Social Media
+      </span>
+    </>
+  ),
+  p: (
+    <>
+      <p>
+        Am avut privilegiul de a colabora cu diverse companii și am observat că
+        nu există o rețetă universală pentru succes în social media. Fiecare
+        afacere are nevoi și obiective diferite, iar noi suntem dedicați să
+        identificăm și să implementăm soluții personalizate pentru fiecare
+        client.
+      </p>
+      <p>
+        Ne pasionează să ajutăm afacerile să-și maximizeze potențialul online.
+        Am văzut rezultate remarcabile obținute prin strategii bine definite în
+        social media, generând nu doar o creștere în numărul de clienți, ci și
+        consolidând relațiile existente.
+      </p>
+      <p>
+        Dorim să fii sigur că suntem aici nu doar ca și experți în social media,
+        ci ca și parteneri interesați de nevoile specifice și viziunea unică a
+        afacerii tale. Suntem pregătiți să investim efort și creativitate pentru
+        a construi împreună o strategie adaptată care să te ajute să atingi
+        obiectivele propuse și să-ți consolideze prezența online.
+      </p>
+      <p>
+        Împreună, suntem convinși că putem transforma această călătorie într-o
+        experiență captivantă, generând oportunități și aducând afacerea ta în
+        fața unui public care va fi atras să colaboreze cu tine.
+      </p>
+    </>
+  ),
+};
 export const PromovareAds: IPromovareSocialMediaData = {
   sectionHeader: (
     <>
