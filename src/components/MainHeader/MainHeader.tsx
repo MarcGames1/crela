@@ -16,9 +16,9 @@ const MainHeader = ({ title, paragraph, image }: IMainHeader) => (
         </div>
         <ActionBtn.Primary />
       </div>
-      <div className=" text-center min-w-[302px] min-h[456px] relative">
+      <div className=" text-center relative">
         <Image
-          className="m-auto w-auto rounded-md"
+          className="m-auto  rounded-md"
           placeholder="blur"
           blurDataURL="/SocialMedia.gif"
           src={image.src}

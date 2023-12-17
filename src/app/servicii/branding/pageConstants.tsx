@@ -18,8 +18,8 @@ export const MainHeaderData: IMainHeader = {
     </>
   ),
   image: {
-    src: '/SocialMedia.gif',
-    alt: 'Poza Reprezentativa Social Media',
+    src: '/images/header/Branding.gif',
+    alt: 'Poza Reprezentativa Branding',
     width: 302,
     height: 453,
   },

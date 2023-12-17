@@ -8,7 +8,7 @@ export const MainHeaderData: IMainHeader = {
   paragraph:
     'Te ajut sa ai o comunicare completa in mediul online: Strategie Personalizata si Rezultate Vizibile Creare Continut si Planificare.',
   image: {
-    src: '/SocialMedia.gif',
+    src: 'images/header/SocialMedia.gif',
     alt: 'Poza Reprezentativa Social Media',
     width: 1080,
     height: 1920,
