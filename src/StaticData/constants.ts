@@ -35,7 +35,7 @@ export const servicii: Iservicii[] = [
       'Ai nevoie de Branding? Identitatea Vizuala a Afacerii Tale Incepe de Aici.',
     image: {
       alt: 'imagine reprezentativa Copy Writing',
-      src: '/images/servicii/branding.jpeg',
+      src: '/images/servicii/branding.png',
     },
   },
   {
@@ -45,7 +45,7 @@ export const servicii: Iservicii[] = [
       'Te ajut sa ai o comunicare completa in mediul online: Strategie Personalizata si Rezultate Vizibile Creare Continut si Planificare.',
     image: {
       alt: 'imagine reprezentativaCreare Logo',
-      src: '/images/servicii/logo-creation.avif',
+      src: '/images/servicii/logo-creation.png',
     },
   },
 ];

@@ -14,15 +14,17 @@ const ToateServiciile = () => {
   
   
   return (
-    <section className='m-5 '>
+    <section className="m-5 ">
       <h2 className="text-center pt-5 mb-5 text-3xl font-bold md:mb-10 md:text-5xl md:leading-[1.25]">
-        Maximize Every Step of Your Marketing Funnel
+        Maximizează fiecare etapă a funnel-ului tău de marketing.
       </h2>
       <p className="mx-auto max-w-[1150px] text-lg italic leading-6 md:text-xl md:leading-8">
-        We don &apos;t just manage your ad accounts—we provide a full-funnel
-        marketing strategy leveraging the best platforms and services to help
-        you solve your biggest challenges and achieve your goals.
+        Noi nu gestionăm doar conturile tale de publicitate - oferim o strategie
+        completă de marketing pe întregul funnel, folosind cele mai bune
+        platforme și servicii pentru a te ajuta să rezolvi cele mai mari
+        provocări și să-ți atingi obiectivele.
       </p>
+
       <div className="mt-14 items-start justify-center md:mt-20 lg:flex">
         <Stanga
           serviciuSelectat={serviciuSelectat}

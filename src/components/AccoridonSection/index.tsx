@@ -19,13 +19,13 @@ const AccordionSection = ({
         {data.map((a: IAccordionData, i: number) => {
           return (
             <Accordion
-              className="bg-red-800 text-white mix-blend-overlay "
+              className="bg-red-800 text-white  "
               name="Ce Putem Realiza"
               key={i}
               icon="arrow"
               defaultChecked
             >
-              <Accordion.Title className="text-2xl font-bold tracking-wide prose prose-h2 text-transparent bg-clip-text bg-secondary-gradient">
+              <Accordion.Title className="text-2xl font-bold tracking-wide prose prose-h2 text-white ">
                 {a.title}
               </Accordion.Title>
               <Accordion.Content>

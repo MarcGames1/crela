@@ -30,7 +30,7 @@ export const MainHeaderData: IMainHeader = {
   paragraph:
     'Te ajut sa ai o comunicare completa in mediul online: Strategie Personalizata si Rezultate Vizibile Creare Continut si Planificare.',
   image: {
-    src: '/CreareLogo.png',
+    src: '/images/header/creare-logo.gif',
     alt: 'Poza Reprezentativa Creare Logo',
     width: 300,
     height: 300,

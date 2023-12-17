@@ -5,6 +5,7 @@ import {
   PromovareAds,
   intrebariFrecventeData,
   sections,
+  DeCeSocialMediaData,
 } from './pageConstants';
 import { IFlexibleColumnSection } from '@/interfaces/IFlexibleColumnSection';
 
@@ -31,6 +32,8 @@ const SocialMedia = () => {
       
       <MainHeader {...MainHeaderData} />
       <SocialMediaSection {...PromovareSocialMediaOrganicData} />
+      <br />
+      <Section {...DeCeSocialMediaData} />
       <br />
       <SocialMediaSection {...PromovareAds} />
       <br />

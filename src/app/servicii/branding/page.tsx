@@ -4,8 +4,6 @@ import { MainHeader } from '@/components';
 const FirstSection = dynamic(() => import('./components/FirstSection'));
 const SecondSection = dynamic(() => import('./components/SecondSection'));
 
-import type { ComponentType } from 'react';
-import { IMainHeader } from '@/interfaces/IMainHeader';
 import {
   MainHeaderData,
   SecondSectionData,
