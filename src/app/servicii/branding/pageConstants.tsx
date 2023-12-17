@@ -18,10 +18,10 @@ export const MainHeaderData: IMainHeader = {
     </>
   ),
   image: {
-    src: '/images/header/Branding.gif',
+    src: '/images/header/Branding.png',
     alt: 'Poza Reprezentativa Branding',
-    width: 302,
-    height: 453,
+    width: 600,
+    height: 600,
   },
 };
 
