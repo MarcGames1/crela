@@ -1,6 +1,18 @@
 import React from 'react'
 import { PageComponent } from '@/components';
 import Image from 'next/image';
+import { Metadata } from 'next/types';
+
+export const metadata: Metadata = {
+  title: 'Despre » CRELA ✨',
+  description:
+    '✌Afla despre pasiunea mea pentru design, cuvinte și social media 🎨✍️ Înălțând creativitatea cu fiecare detaliu la @CRELA. WOW!',
+  robots: 'index, follow',
+  alternates: {
+    canonical: 'despre-mine',
+  },
+};
+
 const DespreMine = () => {
   return (
     <PageComponent>
