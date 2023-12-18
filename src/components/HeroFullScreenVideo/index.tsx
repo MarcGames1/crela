@@ -14,6 +14,8 @@ return (
       onClick={(e) => {
         setIsMuted(!isMuted);
       }}
+      role="button"
+      aria-label='sounds volume'
       className="rounded-full btn-secondary shadow-2xl bg-white absolute bottom-1 right-10 "
     >
       {isMuted ? <FaVolumeOff /> : <FaVolumeUp />}
