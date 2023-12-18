@@ -27,8 +27,10 @@ const DespreMine = () => {
         </div>
         <div>
           <div className="prose">
-            <h1 className='text-center bg-primary-gradient bg-clip-text text-transparent'>Despre mine</h1>
-            <div className=' tracking-widest'>
+            <h1 className="text-center bg-primary-gradient bg-clip-text text-transparent">
+              Despre mine
+            </h1>
+            <div className=" tracking-widest">
               <p>
                 Numele meu este Laura și sunt: Manager de Social Media
                 Copywriter Designer Grafic Digital Întotdeauna am avut o pasiune
@@ -44,7 +46,7 @@ const DespreMine = () => {
               <p>
                 Sunt o persoană meticuloasă și foarte atentă la detalii și pur
                 și simplu ador când creez ceva de la zero, doar pentru a vedea o
-                reacție de genul 'wwooow, chiar tu ai creat asta?
+                reacție de genul <i>wwooow, chiar tu ai creat asta?</i>
               </p>
             </div>
           </div>
