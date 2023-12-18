@@ -6,7 +6,7 @@ const Hamburger = ({ isOpen = false, setIsOpen =(a:boolean) =>{} }) => {
   return (
     <>
       <div
-        aria-expanded={isOpen}
+        aria-expanded={String(isOpen)}
         aria-controls="menuContent"
         onClick={(e) => {
           e.preventDefault;
