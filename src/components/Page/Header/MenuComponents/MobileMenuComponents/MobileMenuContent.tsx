@@ -3,6 +3,7 @@ import styles from './MobileMenuContent.module.css';
 import { menuItems } from '@/StaticData/constants';
 import Link from 'next/link';
 import { Menu } from 'react-daisyui';
+import { ActionBtn } from '@/components/Buttons';
 
 const MobileMenuContent = () => {
   return (
@@ -19,6 +20,10 @@ const MobileMenuContent = () => {
               <Link href={menuItem.href}>{menuItem.name}</Link>
             </Menu.Item>
           ))}
+        <div className="flex flex-col gap-5">
+          <ActionBtn.MainCta />
+          <ActionBtn.Whatsapp />
+        </div>
         </Menu>
       </div>
     </div>
