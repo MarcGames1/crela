@@ -19,13 +19,13 @@ const HeaderWithParalax = ({
       bgImage={bgImage}
       strength={100}
     >
-      <Background className="custom-bg h-1/2 w-full lg:h-full relative">
+      <Background className="custom-bg  w-full lg:h-full relative bg-no-repeat object-cover">
         <Image
           className="w-full sm:w-auto	 h-full object-cover"
+          loading='lazy'
           src={bgImage}
-          alt="fill murray"
+          alt="Bg Parallax"
           fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </Background>
       <div className="  flex text-white items-center py-20 text-center overflow-hidden ">
