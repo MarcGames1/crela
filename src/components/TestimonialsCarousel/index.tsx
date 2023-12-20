@@ -17,7 +17,7 @@ const TestimonialsCarousel = (props: { data: TestimonialData[]; }) => {
         {props.data.map((testimonial: TestimonialData, idx: number) => {
           return (
             <div key={idx} tabIndex={0} aria-roledescription="testimonial">
-              <Testimonial {...testimonial} />;
+              <Testimonial {...testimonial} />
             </div>
           );
 
