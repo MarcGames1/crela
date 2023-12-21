@@ -63,7 +63,7 @@ const SocialMedia = () => {
           );
         }
       })}
-      <HeaderWithParalax bgImage="/images/assets/parallax1.png">
+      <HeaderWithParalax bgImage="/images/assets/parallax1.webp">
         <div className=" flex flex-col gap-5 m-auto">
           <span
             className="mx-auto text-3xl font-bold leading-[1.25] md:text-5xl md:leading-tight 

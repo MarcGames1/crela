@@ -25,7 +25,7 @@ const CreareLogo = () => {
       <LogoGallery rtl={true} {...LogoConstructionSectionData} />
 
       <section className="flex flex-col">
-        <HeaderWithParalax bgImage="/images/assets/parallax1.png">
+        <HeaderWithParalax bgImage="/images/assets/parallax1.webp">
           <div className="m-auto">
             <h2
               className="mx-auto text-3xl font-bold leading-[1.25] md:text-5xl md:leading-tight 

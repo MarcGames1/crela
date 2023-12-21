@@ -34,7 +34,7 @@ export default function Homepage() {
         <DynamicComponents.HeroFullScreenVideo />
         <DynamicComponents.BrandsBand />
         <DynamicComponents.CallToActionWithPicture />
-        <DynamicComponents.HeaderWithParalax bgImage="/images/assets/parallax1.png">
+        <DynamicComponents.HeaderWithParalax bgImage="/images/assets/parallax1.webp">
           <span
             className="mx-auto text-3xl font-bold leading-[1.25] md:text-5xl md:leading-tight 
                   [&>u]:decoration-[2px] [&>u]:underline-offset-[5px] md:[&>u]:decoration-[5px] 
@@ -47,7 +47,7 @@ export default function Homepage() {
         <DynamicComponents.TestimonialsCarousel data={testimonialData} />
         <DynamicComponents.Top3Servicii />
         <DynamicComponents.ToateServiciile />
-        <DynamicComponents.HeaderWithParalax bgImage="/images/assets/parallax1.png">
+        <DynamicComponents.HeaderWithParalax bgImage="/images/assets/parallax1.webp">
           <div
             className="mx-auto text-3xl font-semibold leading-[1.25] md:text-5xl md:leading-tight 
           [&>u]:decoration-[2px] [&>u]:underline-offset-[5px] md:[&>u]:decoration-[5px] 
