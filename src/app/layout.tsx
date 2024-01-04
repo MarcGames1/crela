@@ -1,10 +1,8 @@
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import './globals.css';
-import dynamic from 'next/dynamic';
 
 
-type ComponentImport = () => Promise<any>;
 
 import { GoogleTagManager } from '@next/third-parties/google';
 
