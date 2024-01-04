@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   title: 'Crela',
   description: 'Crela Expertul Tău în Marketing Online',
   metadataBase: new URL('https://crela.ro'),
+  manifest: '/manifest.json',
   robots: 'index, follow',
   alternates: {
     canonical: '/',
@@ -44,7 +45,6 @@ export const metadata: Metadata = {
     locale: 'ro_RO',
     type: 'website',
   },
-  
 };
 
 
