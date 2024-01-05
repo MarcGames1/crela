@@ -18,6 +18,7 @@ const MainHeader = ({ title, paragraph, image, video }: IMainHeader) => (
       <div className=" text-center relative">
         {image && (
           <Image
+            loading="eager"
             className="m-auto  rounded-md"
             placeholder="blur"
             blurDataURL="/SocialMedia.gif"
