@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import './globals.css';
-
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/react';
 
 
 import { GoogleTagManager } from '@next/third-parties/google';
@@ -57,7 +58,10 @@ export default function RootLayout({
       <head>
         <GoogleTagManager gtmId="GTM-PTTLWWC" />
       </head>
-      <body className={`${font.className} grid grid-flow-row`}>{children}</body>
+      <body className={`${font.className} grid grid-flow-row`}>
+        {children} <SpeedInsights />
+        <Analytics />
+      </body>
     </html>
   );
 }
