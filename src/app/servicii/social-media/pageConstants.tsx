@@ -10,8 +10,8 @@ export const MainHeaderData: IMainHeader = {
   image: {
     src: '/images/header/SocialMedia.png',
     alt: 'Poza Reprezentativa Social Media',
-    width: 600,
-    height: 600,
+    width: 400,
+    height: 400,
   },
 };
 

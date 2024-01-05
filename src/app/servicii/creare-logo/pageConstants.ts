@@ -29,9 +29,8 @@ export const MainHeaderData: IMainHeader = {
   title: 'Creare logo personalizat pentru firma ta',
   paragraph:
     'Te ajut sa ai o comunicare completa in mediul online: Strategie Personalizata si Rezultate Vizibile Creare Continut si Planificare.',
-  image: {
-    src: '/images/header/creare-logo.gif',
-    alt: 'Poza Reprezentativa Creare Logo',
+  video: {
+    src: '/images/header/creare-logo.webm',
     width: 300,
     height: 300,
   },
