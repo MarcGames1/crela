@@ -1,6 +1,10 @@
 import React from 'react'
+import dynamic from 'next/dynamic';
+
 import HeroFullScreenVideoContainer from './HeroFullScreenVideoContainer';
-import HeroFullScreenVideoComponent from './HeroFullScreenVideoComponent';
+const HeroFullScreenVideoComponent = dynamic(
+  () => import('./HeroFullScreenVideoComponent')
+);
 
 const HeroFullScreenVideo = () => {
 
