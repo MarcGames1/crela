@@ -23,6 +23,7 @@ const DespreMine = () => {
             alt="Laura Image"
             width={300}
             height={300}
+            loading='eager'
           />
         </div>
         <div>
