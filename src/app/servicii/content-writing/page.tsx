@@ -29,11 +29,10 @@ const MainHeaderData: IMainHeader = {
   title: 'Servicii de Content Writing pentru afacerea ta',
   paragraph:
     'Te ajut sa iti atingi obiectivele prin servicii creative de content writing si copywriting: scriere texte, reclame, articole blog.',
-  image: {
-    src: '/images/header/ContentWriting.gif',
-    alt: 'Poza Reprezentativa Content Writing',
-    width: 300,
-    height: 300,
+  video: {
+    src: '/images/header/ContentWriting.webm',
+    width: 648,
+    height: 648,
   },
 };
 
