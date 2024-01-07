@@ -7,6 +7,7 @@ const Hamburger = ({ isOpen = false, setIsOpen =(a:boolean) =>{} }) => {
     <>
       <div
         role="button"
+        aria-label='menu button'
         aria-expanded={isOpen ? 'true' : 'false'}
         aria-controls="menuContent"
         onClick={(e) => {
@@ -15,7 +16,7 @@ const Hamburger = ({ isOpen = false, setIsOpen =(a:boolean) =>{} }) => {
         }}
         className={`${styles.burger}  ${isOpen ? styles.Clicked : ''}`}
       >
-        <div className={`${styles.strip} ${styles['burger-strip']} `}>
+        <div aria-hidden className={`${styles.strip} ${styles['burger-strip']} `}>
           <div></div>
           <div></div>
           <div></div>
