@@ -55,11 +55,10 @@ export default function RootLayout({
 }) {
   return (
     <html data-theme="crelaTheme" lang="ro">
-      <head>
-        <GoogleTagManager gtmId="GTM-PTTLWWC" />
-      </head>
       <body className={`${font.className} grid grid-flow-row`}>
-        {children} <SpeedInsights />
+        {children} 
+        <GoogleTagManager gtmId="GTM-PTTLWWC" />
+        <SpeedInsights />
         <Analytics />
       </body>
     </html>
