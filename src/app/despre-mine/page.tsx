@@ -33,8 +33,8 @@ const DespreMine = () => {
             </h1>
             <div className=" tracking-widest">
               <p>
-                Numele meu este Laura și sunt: Manager de Social Media
-                Copywriter Designer Grafic Digital Întotdeauna am avut o pasiune
+                Numele meu este Laura și sunt: Manager de Social Media,
+                Copywriter, Designer Grafic Digital. Întotdeauna am avut o pasiune
                 pentru aspectul vizual, estetic, dar și pentru lumea
                 literaturii.
               </p>

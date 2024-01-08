@@ -5,7 +5,7 @@ export const testimonialData: TestimonialData[] = [
   {
     name: 'Andreea Voicu Aliand Consulting',
     paragraph:
-      'Laura este o designer talentată, cu o simțire cromatică și estetică impresionantă. Reușește să mă surprindă plăcut de fiecare dată când avem un proiect comun și mă bazez în întregime pe expertiza ei în această zonă. Este harnică, respectă cu strictețe termenele limită și are o creativitate copleșitoare uneori. O recomand cu căldură!',
+      'Laura este un designer talentat, cu o simțire cromatică și estetică impresionantă. Reușește să mă surprindă plăcut de fiecare dată când avem un proiect comun și mă bazez în întregime pe expertiza ei în această zonă. Este harnică, respectă cu strictețe termenele limită și are o creativitate copleșitoare uneori. O recomand cu căldură!',
     header:
       'Designer talentat cu o simț cromatic și estetic impresionant',
     picture: testimonialsLocation + '/andreea-voicu.png',
