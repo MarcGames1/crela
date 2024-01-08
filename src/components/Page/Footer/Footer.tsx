@@ -4,7 +4,6 @@ import { Footer as F } from 'react-daisyui';
 import Logo from '../Logo';
 import { INavItem, servicii, legal } from '@/StaticData/constants';
 import Link from 'next/link';
-import { ActionBtn } from '@/components/Buttons';
 import { FaFacebook, FaTiktok } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaThreads } from 'react-icons/fa6';
