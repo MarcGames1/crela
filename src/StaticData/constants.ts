@@ -51,9 +51,9 @@ export const servicii: Iservicii[] = [
 ];
 
 export const despre: INavItem = {name: 'Despre Mine', href: '/despre-mine'}
+export const ilustratii: INavItem = {name: 'Iustratii', href:'/ilustratii'}
 
-
-export const menuItems: INavItem[] = [despre, ...servicii]
+export const menuItems: INavItem[] = [despre, ...servicii, ilustratii]
 
 export const legal: INavItem[] = [
   { name: 'Termene si Conditii', href: '/termeni-conditii' },
