@@ -10,7 +10,7 @@ export interface ILogoDefinitionData {
   examples: ILogoExample[];
 }
 
-export const LogoDefinition = ({
+const LogoDefinition = ({
   sectionHeader,
   sectionIntro,
   examples,
@@ -77,3 +77,5 @@ export const LogoDefinition = ({
     </motion.div>
   );
 };
+
+export default LogoDefinition;

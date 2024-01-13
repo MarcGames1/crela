@@ -1,14 +1,34 @@
-import { HeaderWithParalax } from '@/components';
-import { LogoDefinition } from './Components/LogoDefinition';
+import dynamic from 'next/dynamic';
+
+import React from 'react';
+import Link from 'next/link';
 import { LogoDefinitionData, LogoTransportSectionData, LogoConstructionSectionData } from './pageConstants';
 import { Metadata } from 'next/types';
-import React from 'react';
-import MainHeader from '@/components/MainHeader/MainHeader';
-import Link from 'next/link';
 import { pageMetaData, MainHeaderData } from './pageConstants';
-import LogoGallery from './Components/LogoGallery';
 
 
+type ComponentImport = () => Promise<any>;
+const DynamicComponents: Record<string, any> = {};
+
+
+
+
+const componentsToDynamicImport: Record<string, ComponentImport> = {
+  MainHeader: () => import('@/components/MainHeader/MainHeader'),
+  LogoGallery: () => import('./Components/LogoGallery'),
+  LogouriRealizate: () => import('./Components/LogouriRealizate'),
+  HeaderWithParalax: () =>
+    import('@/components').then((c) => c.HeaderWithParalax),
+  LogoDefinition: () =>
+    import('./Components/LogoDefinition'),
+};
+
+
+Object.keys(componentsToDynamicImport).forEach((componentName) => {
+  DynamicComponents[componentName] = dynamic(
+    componentsToDynamicImport[componentName]
+  );
+});
 
 
 export const metadata: Metadata = pageMetaData
@@ -16,16 +36,18 @@ export const metadata: Metadata = pageMetaData
 const CreareLogo = () => {
   return (
     <>
-      
-      <MainHeader {...MainHeaderData} />
+      <DynamicComponents.MainHeader {...MainHeaderData} />
 
-      <LogoDefinition {...LogoDefinitionData} />
+      <DynamicComponents.LogoDefinition {...LogoDefinitionData} />
       {/* <LogouriRealizate /> */}
-      <LogoGallery {...LogoTransportSectionData} />
-      <LogoGallery rtl={true} {...LogoConstructionSectionData} />
+      <DynamicComponents.LogoGallery {...LogoTransportSectionData} />
+      <DynamicComponents.LogoGallery
+        rtl={true}
+        {...LogoConstructionSectionData}
+      />
 
       <section className="flex flex-col">
-        <HeaderWithParalax bgImage="/images/assets/parallax1.webp">
+        <DynamicComponents.HeaderWithParalax bgImage="/images/assets/parallax1.webp">
           <div className="m-auto">
             <h2
               className="mx-auto text-3xl font-bold leading-[1.25] md:text-5xl md:leading-tight 
@@ -41,7 +63,7 @@ const CreareLogo = () => {
               </Link>
             </span>
           </div>
-        </HeaderWithParalax>
+        </DynamicComponents.HeaderWithParalax>
       </section>
     </>
   );
