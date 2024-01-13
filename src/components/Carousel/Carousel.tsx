@@ -12,11 +12,11 @@ interface ICarouselProps {
 
 export default function Carousel({ slides, rtl=false }: ICarouselProps) {
   const settings = {
-    dots: true,
+    // dots: true,
     infinite: true,
     speed: 1000,
     slidesToShow: 5,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
@@ -33,18 +33,21 @@ export default function Carousel({ slides, rtl=false }: ICarouselProps) {
   };
 
   return (
+    <div className='block h-fit relative'>
+
     <Slider {...settings}>
       {slides.map((s, k) => {
         return (
           <div className="relative m-5 border-4 border-white  block " key={k}>
-            <Image
+            <Image loading='lazy'
               className="ml-auto   drop-shadow-2xl bg-slate-700  "
               {...s}
-            />
+              />
           </div>
         );
       })}
     </Slider>
+      </div>
   );
 }
 
