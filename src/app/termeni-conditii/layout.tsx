@@ -2,7 +2,7 @@ import React, { PropsWithChildren } from 'react'
 
 
 export const metadata = {
-  title: 'Termene si Conditii - Tomotiv ',
+  title: 'Termene si Conditii - Crela ',
   description: 'Desriere Meta',
   robots: 'noindex, folow',
 };

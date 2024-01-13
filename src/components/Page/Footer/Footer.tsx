@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <footer>
       <F className=" p-10 bg-neutral text-neutral-content  items-start justify-items-center place-items-center text-center ">
-        <div className="">
+        <div className="w-full flex items-center  gap-5 flex-col ">
           <Logo dark />
           <div className="flex flex-row gap-10 items-center justify-items-center">
             <Link
