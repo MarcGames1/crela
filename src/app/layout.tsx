@@ -14,6 +14,8 @@ const font = Poppins({
   subsets: ['latin'],
 });
 
+
+
 export const metadata: Metadata = {
   title: 'Crela',
   description: 'Crela Expertul Tău în Marketing Online',
@@ -56,8 +58,8 @@ export default function RootLayout({
   return (
     <html data-theme="crelaTheme" lang="ro">
       <body className={`${font.className} grid grid-flow-row`}>
-        {children} 
-        <GoogleTagManager gtmId="GTM-PTTLWWC" />
+        {children}
+        <GoogleTagManager gtmId={process.env?.GA_TRACKING_ID || ''} />
         <SpeedInsights />
         <Analytics />
       </body>
