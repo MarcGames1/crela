@@ -15,16 +15,16 @@ const AccordionSection = ({
   return (
     <>
       <h2 className="text-center text-2xl font-bold m-2">{sectionHeader}</h2>
-      <div className="flex flex-wrap my-10 drop-shadow-2xl lg:w-1/2 m-auto gap-2">
+      <div className="flex flex-wrap my-10 drop-shadow-2xl mx-5 lg:w-1/2 m-auto gap-2">
         {data.map((a: IAccordionData, i: number) => {
           return (
             <Accordion
               className="bg-red-800 text-white  "
               name="Ce Putem Realiza"
               key={i}
-              icon="arrow"
-              defaultChecked
-            >
+              icon="plus"
+              >
+              
               <Accordion.Title className="text-2xl font-bold tracking-wide prose prose-h2 text-white ">
                 {a.title}
               </Accordion.Title>
