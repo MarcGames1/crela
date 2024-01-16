@@ -7,7 +7,7 @@ const SocialMediaSection = ({sectionHeader,p, platforme}:IPromovareSocialMediaDa
       p={p}
       heading={sectionHeader}
     >
-      <div className="mt-7 flex flex-wrap justify-center gap-5 sm:gap-16 md:mt-20 xl:flex-nowrap">
+      <div className="mt-7 flex flex-wrap mx-5 justify-center gap-5 sm:gap-16 md:mt-20 xl:flex-nowrap">
         {platforme.map((p, i) => {
           return <Card key={i} {...p} />;
         })}

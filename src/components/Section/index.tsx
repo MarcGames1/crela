@@ -9,9 +9,9 @@ export interface SectionProps {
 const Section = ({ heading, children, p }: SectionProps) => {
   const renderParagraphs = () => {
     if (typeof p === 'string') {
-      return <p className="leading-7 tracking-widest">{p}</p>;
+      return <p className="leading-7 mx-5 tracking-widest">{p}</p>;
     } else if (React.isValidElement(p)) {
-      return <div className="prose leading-7 tracking-widest">{p}</div>;
+      return <div className="prose leading-7 mx-5 tracking-widest">{p}</div>;
     }
     return null;
   };
