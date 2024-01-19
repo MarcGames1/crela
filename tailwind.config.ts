@@ -19,6 +19,10 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%,  oklch(var(--in))"), oklch(var(--er)))',
       },
     },
+    screens: {
+      lg: '1375px',
+      // => @media (min-width: 1375px) { ... }
+    },
   },
 
   // add daisyUI plugin
