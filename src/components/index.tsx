@@ -16,7 +16,7 @@ import Card from "./Top3Servicii/Card";
 import Section from "./Section";
 import AccordionSection from "./AccoridonSection";
 import LoadingSpinner from "./LoadingSpinner";
-
+import PhoneMockup from "./PhoneMockup";
 
 
 export {
@@ -37,7 +37,7 @@ export {
   Section,
   AccordionSection,
   LoadingSpinner,
- 
+ PhoneMockup
 };
 
 

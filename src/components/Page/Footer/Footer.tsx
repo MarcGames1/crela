@@ -30,12 +30,12 @@ const Footer = () => {
             <Link
               href={'https://www.facebook.com/profile.php?id=61555699130647'}
             >
-              <FaTiktok  size={'2rem'} />
+              <FaTiktok size={'2rem'} />
             </Link>
             <Link
               href={'https://www.facebook.com/profile.php?id=61555699130647'}
             >
-              <FaThreads  size={'2rem'} />
+              <FaThreads size={'2rem'} />
             </Link>
           </div>
         </div>
@@ -61,6 +61,9 @@ const Footer = () => {
           })}
         </div>
       </F>
+      <div className="bg-black flex items-center w-full flex-col">
+        <div>site creat cu ❤️ de <Link className='link' href={'https://marweb.ro'}>MarWeb.ro</Link></div>
+      </div>
     </footer>
   );
 };
