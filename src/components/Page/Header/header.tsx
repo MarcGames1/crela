@@ -17,11 +17,11 @@ const Header = () => {
   return (
     <header
       className={`${
-        isScrollingUp ? 'sticky ' :  'sticky lg:relative '
+        isScrollingUp ? 'sticky ' : 'sticky lg:relative '
       }  top-0 z-30 flex max-w-screen items-center bg-base-100  py-5 px-5 shadow-lg xl:px-12 header`}
     >
       <>
-        <div className="lg:flex hidden w-full items-center  flex-row place-content-around">
+        <div className="xl:flex hidden w-full items-center  flex-row place-content-around">
           <Logo width={100} />
           <Menu />
 
@@ -30,7 +30,7 @@ const Header = () => {
 
         {/* MOBILE MENU */}
 
-        <div className="lg:hidden flex  justify-between  w-full flex-row place-content-around">
+        <div className="xl:hidden flex  justify-between  w-full flex-row place-content-around">
           <MobileMenu />
           <Logo width={100} />
         </div>
