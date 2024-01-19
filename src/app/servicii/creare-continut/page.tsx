@@ -1,10 +1,11 @@
-import { MainHeader, IntroSection, Section } from '@/components';
+import { MainHeader, IntroSection, Section , PhoneMockup} from '@/components';
 import { Metadata } from 'next/types';
 import React from 'react';
 
 
 import { IMainHeader } from '@/interfaces/IMainHeader';
 import dynamic from 'next/dynamic';
+
 
 export const metadata: Metadata = {
   title: 'Creare Continut si UGC » CRELA✨',
@@ -34,7 +35,8 @@ const componentsToDynamicImport: Record<string, ComponentImport> = {
 };
 
 
-const ContentWriting = () => {
+
+const UGCPage = () => {
     const DynamicComponents: Record<string, any> = {};
 
     Object.keys(componentsToDynamicImport).forEach((componentName) => {
@@ -42,6 +44,27 @@ const ContentWriting = () => {
         componentsToDynamicImport[componentName]
       );
     });
+
+
+    const videos = [];
+
+    for (let i = 1; i <= 14; i++) {
+      videos.push(
+        <div
+          key={i}
+          className="py-5 min-w-[500px] w-auto flex   mx-auto"
+        >
+          <PhoneMockup key={i}>
+            <div>
+              <video controls>
+                <source src={`/UGC-portfolio/${i}.mp4`} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </PhoneMockup>
+        </div>
+      );
+    }
 
   return (
     <>
@@ -70,12 +93,12 @@ const ContentWriting = () => {
       </DynamicComponents.HeaderWithParalax>
       <br />
       <Section heading={'Portofoliu Creare de continut'} p={undefined}>
-        <div className='container'>
-          
+        <div className="container flex flex-row flex-wrap items-center justify-center m-auto">
+          { videos }
         </div>
       </Section>
     </>
   );
 };
 
-export default ContentWriting;
+export default UGCPage;
