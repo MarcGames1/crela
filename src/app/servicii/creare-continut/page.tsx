@@ -50,13 +50,10 @@ const UGCPage = () => {
 
     for (let i = 1; i <= 14; i++) {
       videos.push(
-        <div
-          key={i}
-          className="py-5 min-w-[500px] w-auto flex   mx-auto"
-        >
+        <div key={i} className="py-5 min-w-[500px] w-auto flex   mx-auto">
           <PhoneMockup key={i}>
             <div>
-              <video controls>
+              <video loop autoPlay controls playsInline >
                 <source src={`/UGC-portfolio/${i}.mp4`} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
