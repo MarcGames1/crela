@@ -6,12 +6,13 @@ const Stanga = ({
   serviciuSelectat = servicii[0],
   setlecteazaServiciul = (a: Iservicii) => {},
 }) => {
-
+  const [totalServicii, setTotalServicii] = useState(servicii.length)
   const container =  useRef(null);
   const [height, setHeight] = useState(0);
-  const[lineOffsetY, setLineOffsetY] = useState(height/4)
+  const[lineOffsetY, setLineOffsetY] = useState(height/totalServicii)
   
    useEffect(() => {
+    setTotalServicii(servicii.length)
      if (!container.current) {
        return;
      } else {
@@ -21,16 +22,16 @@ const Stanga = ({
        const index = servicii.findIndex(
          (serviciu) => serviciu.name === serviciuSelectat.name
        );
-       setLineOffsetY((currentHeight / 4) * index +( currentHeight / 4)/1.25 );
+       setLineOffsetY((currentHeight / totalServicii) * index +( currentHeight / totalServicii)/1.25 );
       
      }
      //@ts-ignore
-   }, [container.current, serviciuSelectat]);
+   }, [container.current, serviciuSelectat, totalServicii]);
   
   return (
     <div className="relative flex-1 self-center text-center lg:max-w-[650px] lg:text-left">
       <LiniaRosie y={lineOffsetY} />
-      <ul ref={container} className="lg:ml-12">
+      <ul ref={container} className="lg:ml-12 flex flex-col justify-evenly">
         {servicii.map((serviciu: Iservicii, idx: number) => {
           return (
             <li

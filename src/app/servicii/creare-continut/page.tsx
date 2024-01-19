@@ -53,7 +53,7 @@ const UGCPage = () => {
         <div key={i} className="py-5 min-w-[500px] w-auto flex   mx-auto">
           <PhoneMockup key={i}>
             <div>
-              <video loop autoPlay muted controls playsInline >
+              <video loop autoPlay muted controls >
                 <source src={`/UGC-portfolio/${i}.mp4`} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>

@@ -44,7 +44,7 @@ export const servicii: Iservicii[] = [
     description:
       'Te ajut sa ai o comunicare completa in mediul online: Strategie Personalizata si Rezultate Vizibile Creare Continut si Planificare.',
     image: {
-      alt: 'imagine reprezentativaCreare Logo',
+      alt: 'imagine reprezentativa Creare Logo',
       src: '/images/servicii/logo-creation.png',
     },
   },
@@ -52,10 +52,10 @@ export const servicii: Iservicii[] = [
     name: 'Creare Continut',
     href: '/servicii/creare-continut',
     description:
-      'Te ajut sa ai o comunicare completa in mediul online: Strategie Personalizata si Rezultate Vizibile Creare Continut si Planificare.',
+      'Crearea de conținut este procesul de elaborare și producție a materialelor, cum ar fi texte sau videoclipuri, pentru a atrage și oferi valoare audienței.',
     image: {
-      alt: 'imagine reprezentativaCreare Logo',
-      src: '/images/servicii/logo-creation.png',
+      alt: 'imagine UGC',
+      src: '/images/servicii/UGC.png',
     },
   },
 ];
