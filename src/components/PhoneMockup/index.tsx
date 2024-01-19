@@ -5,7 +5,7 @@ const PhoneMockup = ({ children }: { children: ReactNode }) => {
     <div className="mockup-phone  border-primary ">
       <div className="camera"></div>
       <div className="display ">
-        <div className="artboard max-h-fit artboard-demo phone-1 m-[-17px]  overflow-y-scroll">
+        <div className="artboard max-h-fit artboard-demo lg:phone-1  phone-5 m-[-17px] ">
           {children}
         </div>
       </div>

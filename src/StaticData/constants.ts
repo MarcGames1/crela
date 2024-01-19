@@ -48,6 +48,16 @@ export const servicii: Iservicii[] = [
       src: '/images/servicii/logo-creation.png',
     },
   },
+  {
+    name: 'Creare Continut',
+    href: '/servicii/creare-continut',
+    description:
+      'Te ajut sa ai o comunicare completa in mediul online: Strategie Personalizata si Rezultate Vizibile Creare Continut si Planificare.',
+    image: {
+      alt: 'imagine reprezentativaCreare Logo',
+      src: '/images/servicii/logo-creation.png',
+    },
+  },
 ];
 
 export const despre: INavItem = {name: 'Despre Mine', href: '/despre-mine'}
