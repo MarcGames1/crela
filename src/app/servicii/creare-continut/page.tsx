@@ -8,7 +8,7 @@ import dynamic from 'next/dynamic';
 
 
 export const metadata: Metadata = {
-  title: 'Creare Continut si UGC » CRELA✨',
+  title: 'UGC Creator Romania » CRELA✨',
   description:
     '✌ Te ajut sa iti atingi obiectivele Cu UGC - User Generated Content, creative si resurse pentru Social Media.',
   robots: 'index, follow',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 };
 
 const MainHeaderData: IMainHeader = {
-  title: 'Creare de conținut și UGC Costuri reduse și vizbilitate crescută',
+  title: 'UGC Creator Romania - Creare de conținut și UGC Costuri reduse și vizbilitate crescută',
   paragraph:undefined,
   video: {
     src: '/images/header/UGC.webm',
@@ -70,11 +70,11 @@ const UGCPage = () => {
         <h2 className="text-center">
           De ce{' '}
           <span className="bg-clip-text text-transparent bg-primary-gradient">
-            Creare de conținut?
+            Ai Nevoie de un UGC Creator{' '}
           </span>{' '}
-          sau{' '}
+          Pentru{' '}
           <span className="bg-clip-text text-transparent bg-primary-gradient">
-            UGC?
+            Creare de conținut UGC?
           </span>
         </h2>
       </IntroSection>
@@ -89,7 +89,17 @@ const UGCPage = () => {
         </div>
       </DynamicComponents.HeaderWithParalax>
       <br />
-      <Section heading={'Portofoliu Creare de continut'} p={undefined}>
+      <Section
+        heading={
+          <>
+            Portofoliu{' '}
+            <span className="bg-clip-text text-transparent bg-primary-gradient">
+              UGC Romania
+            </span>
+          </>
+        }
+        p={undefined}
+      >
         <div className="container flex flex-row flex-wrap items-center justify-center m-auto">
           {videos}
         </div>
@@ -100,7 +110,7 @@ const UGCPage = () => {
           [&>u]:decoration-[2px] [&>u]:underline-offset-[5px] md:[&>u]:decoration-[5px] 
           md:[&>u]:underline-offset-[10px] max-w-[1300px]"
         >
-          Știai că 65% dintre utilizatori preferă crearea de coținut sau UGC?
+          Știai că 65% dintre utilizatori din Romania preferă crearea de coținut UGC?
         </div>
       </DynamicComponents.HeaderWithParalax>
     </>
