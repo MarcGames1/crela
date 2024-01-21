@@ -48,7 +48,7 @@ const UGCPage = () => {
 
     const videos = [];
 
-    for (let i = 1; i <= 17; i++) {
+    for (let i = 1; i <= 16; i++) {
       videos.push(
         <div key={i} className="py-5 min-w-[500px] w-auto flex   mx-auto">
           <PhoneMockup key={i}>
