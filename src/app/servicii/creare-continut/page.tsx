@@ -5,7 +5,8 @@ import React from 'react';
 
 import { IMainHeader } from '@/interfaces/IMainHeader';
 import dynamic from 'next/dynamic';
-
+import { UGC_VideosData } from './UGC_Data';
+import SingleVideo from './SingleVideo';
 
 export const metadata: Metadata = {
   title: 'UGC Creator Romania » CRELA✨',
@@ -46,22 +47,11 @@ const UGCPage = () => {
     });
 
 
-    const videos = [];
+    
 
-    for (let i = 1; i <= 16; i++) {
-      videos.push(
-        <div key={i} className="py-5 min-w-[500px] w-auto flex   mx-auto">
-          <PhoneMockup key={i}>
-            <div>
-              <video loop muted controls >
-                <source src={`/UGC-portfolio/${i}.mp4`} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </PhoneMockup>
-        </div>
-      );
-    }
+ 
+      
+
 
   return (
     <>
@@ -101,7 +91,9 @@ const UGCPage = () => {
         p={undefined}
       >
         <div className="container flex flex-row flex-wrap items-center justify-center m-auto">
-          {videos}
+          {UGC_VideosData.map((video, idx )=>{
+            return <SingleVideo key={idx} {...video} />
+          })}
         </div>
       </Section>
       <DynamicComponents.HeaderWithParalax bgImage="/images/assets/parallax1.webp">
