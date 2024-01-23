@@ -81,4 +81,9 @@ export const UGC_VideosData: UGC_Video[] = [
     header: 'Exemplu 15',
     description: '@ Dolphin Travel & Events',
   },
+  {
+    src: '/UGC-portfolio/16.mp4',
+    header: 'Exemplu 16',
+    description: '@ Dolphin Travel & Events',
+  },
 ];
