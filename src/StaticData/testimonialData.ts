@@ -6,8 +6,7 @@ export const testimonialData: TestimonialData[] = [
     name: 'Andreea Voicu Aliand Consulting',
     paragraph:
       'Laura este un designer talentat, cu o simțire cromatică și estetică impresionantă. Reușește să mă surprindă plăcut de fiecare dată când avem un proiect comun și mă bazez în întregime pe expertiza ei în această zonă. Este harnică, respectă cu strictețe termenele limită și are o creativitate copleșitoare uneori. O recomand cu căldură!',
-    header:
-      'Designer talentat cu o simț cromatic și estetic impresionant',
+    header: 'Designer talentat cu o simț cromatic și estetic impresionant',
     picture: testimonialsLocation + '/andreea-voicu.png',
   },
   {
@@ -37,6 +36,13 @@ export const testimonialData: TestimonialData[] = [
       'În timpul colaborării cu Laura, am reușit să obțin o mai mare conștientizare a mărcii de pe rețelele de socializare, ea a creat, de asemenea, un logo frumos pentru agenția mea, care îmi place foarte mult. Cu siguranță o recomand și mă bucur să lucrez cu ea.',
     header: 'Am reușit să obțin lead-uri relevante din social media',
     picture: testimonialsLocation + '/alexandru-marcu.png',
+  },
+  {
+    name: 'Dolphin Travel & Events Agency',
+    paragraph:
+      'Am colaborat extrem de bine cu Laura, pentru promovare pe canale social media (Facebook, Instagram, Tik-Tok), agentia mea de turism si organizare evenimente. Laura este flexibila, creativa, deschisa la idei noi, iar campaniile create de ea ne-au adus rezultate foarte bune. Recomand serviciile ei de promovare online!',
+    header: 'Am colaborat extrem de bine cu Laura',
+    picture: testimonialsLocation + '/dolphin.jpeg',
   },
 ];
 

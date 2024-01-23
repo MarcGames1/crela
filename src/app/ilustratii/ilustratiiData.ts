@@ -99,4 +99,10 @@ export const GalleryData: ImageData[] = [
     width: 1920,
     height: 2561,
   },
+  {
+    src: IlustratiiFolder + '15.jpg',
+    alt: '15',
+    width: 1199,
+    height: 1600,
+  },
 ];
