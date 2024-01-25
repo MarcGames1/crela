@@ -17,7 +17,7 @@ import Section from "./Section";
 import AccordionSection from "./AccoridonSection";
 import LoadingSpinner from "./LoadingSpinner";
 import PhoneMockup from "./PhoneMockup";
-
+import VideoPlayer from "./ReactPlayer";
 
 export {
   PageComponent,
@@ -37,7 +37,8 @@ export {
   Section,
   AccordionSection,
   LoadingSpinner,
- PhoneMockup
+ PhoneMockup,
+ VideoPlayer
 };
 
 

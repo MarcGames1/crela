@@ -6,7 +6,7 @@ import { INavItem, servicii, legal } from '@/StaticData/constants';
 import Link from 'next/link';
 import { FaFacebook, FaTiktok } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
-import { FaThreads } from 'react-icons/fa6';
+import { FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
 
@@ -33,9 +33,9 @@ const Footer = () => {
               <FaTiktok size={'2rem'} />
             </Link>
             <Link
-              href={'https://www.facebook.com/profile.php?id=61555699130647'}
+              href={'https://www.youtube.com/channel/UCdugLsWRHALQOlps0Do6-Kw'}
             >
-              <FaThreads size={'2rem'} />
+              <FaYoutube size={'2rem'} />
             </Link>
           </div>
         </div>
@@ -62,7 +62,12 @@ const Footer = () => {
         </div>
       </F>
       <div className="bg-black flex items-center w-full flex-col">
-        <div>site creat cu ❤️ de <Link className='link' href={'https://marweb.ro'}>MarWeb.ro</Link></div>
+        <div>
+          site creat cu ❤️ de{' '}
+          <Link className="link" href={'https://marweb.ro'}>
+            MarWeb.ro
+          </Link>
+        </div>
       </div>
     </footer>
   );
