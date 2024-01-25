@@ -5,7 +5,7 @@ export interface UGC_Video {
 }
 
 
-export const UGC_VideosData: UGC_Video[] = [
+ const VideosData: UGC_Video[] = [
   {
     src: '/UGC-portfolio/1.mp4',
     header: 'Exemplu 1',
@@ -86,4 +86,17 @@ export const UGC_VideosData: UGC_Video[] = [
     header: 'Exemplu 16',
     description: '@ Dolphin Travel & Events',
   },
+  {
+    src: '/UGC-portfolio/17.mp4',
+    header: 'Exemplu 17',
+    description: '',
+  },
+  {
+    src: '/UGC-portfolio/18.mp4',
+    header: 'Exemplu 18',
+    description: '',
+  },
 ];
+
+
+ export const UGC_VideosData = VideosData.reverse()
