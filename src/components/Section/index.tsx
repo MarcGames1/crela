@@ -19,7 +19,7 @@ const Section = ({ heading, children, p }: SectionProps) => {
   return (
     <section>
       <div className="prose m-auto">
-        <h2 className="lg:text-3xl md:text-2xl text-center font-bold">
+        <h2 className="lg:text-3xl p-5 md:text-2xl text-center font-bold">
           {heading}
         </h2>
         {p && (

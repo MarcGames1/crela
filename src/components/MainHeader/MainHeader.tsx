@@ -32,12 +32,13 @@ const MainHeader = ({ title, paragraph, image, video }: IMainHeader) => (
           <video
             className="m-auto  rounded-md"
             playsInline
+            controls
             autoPlay
-            muted
+            muted={true}
             loop
             src={video.src}
-            height={video.height}
-            width={video.width}
+           width={video.width}
+           height={video.height}
           ></video>
         )}
       </div>

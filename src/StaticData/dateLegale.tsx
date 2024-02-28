@@ -1,7 +1,7 @@
 import Link
  from "next/link";
 export const dateLegale = {
-  brand: 'Tomotiv',
+  brand: 'Crela',
   site: <Link href={'https://crela.ro/'}>crela.ro</Link>,
   dateFirma: {
     nume: ' ',
