@@ -39,7 +39,7 @@ const BrandsBand = () => {
           <span className="bg-clip-text  text-transparent bg-primary-gradient">
             O parte din Clientii
           </span>{' '}
-          Care Au Incredere in Crela.ro
+          Care Au Încredere în Crela.ro
         </>
       }
       p={undefined}
