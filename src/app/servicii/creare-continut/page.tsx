@@ -24,7 +24,7 @@ const MainHeaderData: IMainHeader = {
   title: 'UGC Creator Romania - Creare de conținut și UGC Costuri reduse și vizbilitate crescută',
   paragraph:undefined,
   video: {
-    src: '/images/header/UGC.webm',
+    src: '/images/header/UGC.mp4',
     width: 648,
     height: 648,
   },

@@ -97,25 +97,27 @@ export const ImagesGrid = ({
 
   return (
     secondaryImages.length >= 8 && (
+      <div className="relative lg:py-2 py-10">
+
       <motion.div
         initial={{ opacity: 0, x: -100, y: -100 }}
         animate={{ opacity: 1, x: 0, y: 0 }}
         className="grid grid-cols-4 gap-4 place-items-center"
-      >
+        >
         {firstHalf.map((secondaryImage, index) => (
           <motion.div
-            initial={{ opacity: 0, x: -100, y: -100 }}
-            animate={{ opacity: 1, x: 0, y: 0 }}
-            transition={{ type: 'spring', duration: 0.5, delay: index * 0.1 }}
-            key={index}
-            className="firstRow col-span-1"
+          initial={{ opacity: 0, x: -100, y: -100 }}
+          animate={{ opacity: 1, x: 0, y: 0 }}
+          transition={{ type: 'spring', duration: 0.5, delay: index * 0.1 }}
+          key={index}
+          className="firstRow col-span-1"
           >
             <Image
               src={secondaryImage.src}
               alt={secondaryImage.alt}
               width={secondaryImage.width || 50}
               height={secondaryImage.height || 50}
-            />
+              />
           </motion.div>
         ))}
         <motion.div
@@ -123,27 +125,28 @@ export const ImagesGrid = ({
           animate={{ opacity: 1, scale: 1 }}
           transition={{ type: 'spring', duration: 0.5, delay: 0.5 }}
           className="col-span-4 row-span-1 row-start-2 row-end-2"
-        >
+          >
           <Image {...image} />
         </motion.div>
         {secondHalf.map((secondaryImage, index) => (
           <motion.div
-            id="secondRow"
-            key={index}
-            className="col-span-1"
-            initial={{ opacity: 0, x: -100, y: -100 }}
-            animate={{ opacity: 1, x: 0, y: 0 }}
-            transition={{ type: 'spring', duration: 0.5, delay: index * 0.1 }}
+          id="secondRow"
+          key={index}
+          className="col-span-1"
+          initial={{ opacity: 0, x: -100, y: -100 }}
+          animate={{ opacity: 1, x: 0, y: 0 }}
+          transition={{ type: 'spring', duration: 0.5, delay: index * 0.1 }}
           >
             <Image
               src={secondaryImage.src}
               alt={secondaryImage.alt}
               width={secondaryImage.width || 50}
               height={secondaryImage.height || 50}
-            />
+              />
           </motion.div>
         ))}
       </motion.div>
+        </div>
     )
   );
 };

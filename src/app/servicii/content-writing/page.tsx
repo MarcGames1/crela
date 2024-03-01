@@ -30,7 +30,7 @@ const MainHeaderData: IMainHeader = {
   paragraph:
     'Te ajut sa iti atingi obiectivele prin servicii creative de content writing si copywriting: scriere texte, reclame, articole blog.',
   video: {
-    src: '/images/header/ContentWriting.webm',
+    src: '/images/header/ContentWriting.mp4',
     width: 648,
     height: 648,
   },

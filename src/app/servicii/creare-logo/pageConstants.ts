@@ -30,7 +30,7 @@ export const MainHeaderData: IMainHeader = {
   paragraph:
     'Te ajut sa ai o comunicare completa in mediul online: Strategie Personalizata si Rezultate Vizibile Creare Continut si Planificare.',
   video: {
-    src: './images/header/creare-logo.webm',
+    src: '/images/header/creare-logo.mp4',
     width: 300,
     height: 300,
   },
