@@ -2,8 +2,10 @@ import React, { PropsWithChildren } from 'react'
 
 const GalleryGrid = ({children}:PropsWithChildren) => {
   return (
-    <div className='p-10 flex flex-wrap items-center justify-items-center justify-between '>{children}</div>
-  )
+    <div className="grid grid-cols-1 gap-4 md:grid-cols-2  lg:grid-cols-3 w-screen  justify-items-center items-center">
+      {children}
+    </div>
+  );
 }
 
 export default GalleryGrid

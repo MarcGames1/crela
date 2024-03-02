@@ -3,7 +3,7 @@ import React from 'react'
 import { UGC_Video } from './UGC_Data';
 import dynamic from 'next/dynamic';
 
-const SingleVideo = ({src, header, description}:UGC_Video) => {
+const SingleVideo = ({src, header, description, thumbnail}:UGC_Video) => {
   return (
     <div
       id="phoneContainer"
@@ -11,13 +11,13 @@ const SingleVideo = ({src, header, description}:UGC_Video) => {
     >
       <PhoneMockup>
         <div>
-          <video preload="none" loop muted controls>
+          <video poster={thumbnail}  loop muted controls>
             <source src={src} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
       </PhoneMockup>
-      <div className="y">
+      <div>
         <p className="text-center text-sm">{header}</p>
         <p className="text-center text-lg font-semibold">{description}</p>
       </div>
