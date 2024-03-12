@@ -35,16 +35,16 @@ const MainCta = ({
 const Primary = () =>{
 
   return (
-    <div
+    <a href={'https://calendly.com/crela/consultanta-gratuita'}
       className={` btn btn-secondary hover:text-secondary ml-[7px] hover:ml-[2px]  hover:border-secondary hover:border-[3px] hover:bg-transparent hover:bg-none hover:border-opacity-100	 border-[0px] border-solid border-white border-opacity-0 text-white transition-colors duration-300', ${styles.secondary}`}
     >
-      <a
-        href={'https://calendly.com/crela/consultanta-gratuita'}
+      <span
+        
         className={`${styles.link}`}
       >
         Contacteaza-ma
-      </a>
-    </div>
+      </span>
+    </a>
   );
 }
 export  const ActionBtn = { MainCta, Whatsapp, Primary };
