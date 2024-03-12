@@ -25,7 +25,10 @@ const Header = () => {
           <Logo width={100} />
           <Menu />
 
-          <ActionBtn.MainCta />
+          <div className='flex gap-5'>
+            <ActionBtn.MainCta />
+            <ActionBtn.Whatsapp />
+          </div>
         </div>
 
         {/* MOBILE MENU */}
