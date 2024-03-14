@@ -42,7 +42,7 @@ const CreareLogoPageComponent = () => {
         rtl={true}
         {...LogoConstructionSectionData}
       />
-
+      <DynamicComponents.LogouriRealizate />
       <section className="flex flex-col">
         <DynamicComponents.HeaderWithParalax bgImage="/images/assets/parallax1.webp">
           <div className="m-auto">

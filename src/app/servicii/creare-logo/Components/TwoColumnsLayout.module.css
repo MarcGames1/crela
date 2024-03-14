@@ -1,0 +1,8 @@
+.left-side {
+position: sticky;
+position: -webkit-sticky;
+height:auto;
+display:block;
+bottom: 300px;
+
+}
