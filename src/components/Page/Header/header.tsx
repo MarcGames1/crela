@@ -1,31 +1,27 @@
-'use client'
-import React from 'react'
-import Logo from '../Logo';
-import Menu from './MenuComponents/Menu';
-import MobileMenu from './MenuComponents/MobileMenu';
-import { ActionBtn } from '@/components/Buttons';
+"use client";
+import React from "react";
+import Logo from "../Logo";
+import Menu from "./MenuComponents/Menu";
+import MobileMenu from "./MenuComponents/MobileMenu";
+import { ActionBtn } from "@/components/Buttons";
 
-import useScrollDirection from '@/hooks/scroolDirection';
-
-
+import useScrollDirection from "@/hooks/scroolDirection";
 
 const Header = () => {
-
-   const isScrollingUp = useScrollDirection();
-
+  const isScrollingUp = useScrollDirection();
 
   return (
     <header
       className={`${
-        isScrollingUp ? 'sticky ' : 'sticky lg:relative '
-      }  top-0 z-30 flex max-w-screen items-center bg-base-100  py-5 px-5 shadow-lg xl:px-12 header`}
+        isScrollingUp ? "sticky " : "sticky lg:relative "
+      }  top-0 z-30 flex max-w-screen items-center bg-base-100  py-2 px-5 shadow-lg xl:px-12 header`}
     >
       <>
-        <div className="lg:flex hidden w-full items-center  flex-row place-content-around">
+        <div className="lg:flex md:flex hidden w-full items-center  flex-row place-content-around">
           <Logo width={100} />
           <Menu />
 
-          <div className='flex gap-5'>
+          <div className="flex gap-5 items-center">
             <ActionBtn.MainCta />
             <ActionBtn.Whatsapp />
           </div>
@@ -33,7 +29,7 @@ const Header = () => {
 
         {/* MOBILE MENU */}
 
-        <div className="lg:hidden flex  justify-between  w-full flex-row place-content-around">
+        <div className="lg:hidden md:hidden flex  justify-between  w-full flex-row place-content-around">
           <MobileMenu />
           <Logo width={100} />
         </div>
@@ -42,6 +38,6 @@ const Header = () => {
       </>
     </header>
   );
-}
+};
 
-export default Header
+export default Header;

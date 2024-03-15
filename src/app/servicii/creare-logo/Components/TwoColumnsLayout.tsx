@@ -56,7 +56,7 @@ useEffect(() => {
       >
         {/* Partea stângă */}
         <motion.div
-          className={`flex-none w-1/3 h-auto self-stretch relative overflow-visible`}
+          className={`flex-none w-1/4 h-auto self-stretch relative overflow-visible`}
         >
           <motion.div ref={stickyContentRef} style={{ y: positionY }} className='bg-gray-300/70 drop-shadow-lg rounded-xl'>
             {leftSideContent}

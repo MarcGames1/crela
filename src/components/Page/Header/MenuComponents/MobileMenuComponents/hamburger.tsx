@@ -1,22 +1,25 @@
-'use client';
-import React from 'react';
+"use client";
+import React from "react";
 
-import styles from './hamburger.module.css';
-const Hamburger = ({ isOpen = false, setIsOpen =(a:boolean) =>{} }) => {
+import styles from "./hamburger.module.css";
+const Hamburger = ({ isOpen = false, setIsOpen = (a: boolean) => {} }) => {
   return (
     <>
       <div
         role="button"
-        aria-label='menu button'
-        aria-expanded={isOpen ? 'true' : 'false'}
+        aria-label="menu button"
+        aria-expanded={isOpen ? "true" : "false"}
         aria-controls="menuContent"
         onClick={(e) => {
-          e.preventDefault;
+          e.preventDefault();
           setIsOpen(!isOpen);
         }}
-        className={`${styles.burger}  ${isOpen ? styles.Clicked : ''}`}
+        className={`${styles.burger} ${isOpen ? styles.Clicked : ""}`}
       >
-        <div aria-hidden className={`${styles.strip} ${styles['burger-strip']} `}>
+        <div
+          aria-hidden
+          className={`${styles.strip} ${styles["burger-strip"]} `}
+        >
           <div></div>
           <div></div>
           <div></div>
