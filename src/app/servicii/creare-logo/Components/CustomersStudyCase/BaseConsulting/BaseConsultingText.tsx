@@ -18,10 +18,10 @@ const BaseConsultingText = () => {
           <p>
             Următorul pas a constat într-o sesiune intensă de brainstorming și
             schițare a ideilor, concentrându-ne pe elementele distinctive ale
-            numelui <i>&amp;Base Consulting&amp;</i> și pe conotațiile asociate
-            acestuia în contextul managementului operațional. Am experimentat cu
-            diferite concepte, forme, și combinații de culori, având ca scop
-            crearea unei identități vizuale puternice și profesionale.
+            numelui <i>Base Consulting</i> și pe conotațiile asociate acestuia
+            în contextul managementului operațional. Am experimentat cu diferite
+            concepte, forme, și combinații de culori, având ca scop crearea unei
+            identități vizuale puternice și profesionale.
           </p>
           <p>
             Pe măsură ce am avansat în proces, am selectat conceptele care

@@ -14,13 +14,13 @@ const TwoColumnLayout = ({
         <div
           className={`flex-none  lg:w-2/4 h-auto  relative overflow-visible`}
         >
-          <div className="bg-gray-300/70 drop-shadow-lg rounded-xl">
-            {leftSideContent}
-          </div>
+          <div className=" drop-shadow-2xl rounded-xl">{leftSideContent}</div>
         </div>
 
         {/* Partea dreaptă */}
-        <div className="flex-grow lg:w-2/4">{rightSideContent}</div>
+        <div className="flex-grow lg:w-2/4 drop-shadow-2xl rounded-xl">
+          {rightSideContent}
+        </div>
       </div>
     </>
   );
