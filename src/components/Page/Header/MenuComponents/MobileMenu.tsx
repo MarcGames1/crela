@@ -1,7 +1,7 @@
-'use client';
-import React, { useState } from 'react';
-import Hamburger from './MobileMenuComponents/hamburger';
-import MobileMenuContent from './MobileMenuComponents/MobileMenuContent';
+"use client";
+import React, { useState } from "react";
+import Hamburger from "./MobileMenuComponents/hamburger";
+import MobileMenuContent from "./MobileMenuComponents/MobileMenuContent";
 
 const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
