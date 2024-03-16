@@ -30,7 +30,7 @@ export default function Homepage() {
     <>
       <DynamicComponents.PageComponent>
         <DynamicComponents.HeroFullScreenVideo />
-        {/*<DynamicComponents.BrandsBand />*/}
+        <DynamicComponents.BrandsBand />
         <DynamicComponents.CallToActionWithPicture />
         <DynamicComponents.HeaderWithParalax bgImage="/images/assets/parallax1.webp">
           <span

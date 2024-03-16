@@ -27,11 +27,11 @@ function getBrandImages() {
   }
 }
 const imageSizes = {
-  width: 600,
-  height: 600,
+  width: 331,
+  height: 331,
 };
 const images: Iimage[] = getBrandImages().map((img) => {
-  return { loading: "eager", ...img };
+  return { loading: "eager", priority: true, ...img };
 });
 
 const BrandsBand = () => {
