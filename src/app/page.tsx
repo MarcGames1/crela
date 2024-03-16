@@ -1,29 +1,27 @@
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
 type ComponentImport = () => Promise<any>;
 
 const componentsToDynamicImport: Record<string, ComponentImport> = {
-  PageComponent: () => import('@/components/Page'),
-  HeroFullScreenVideo: () => import('@/components/HeroFullScreenVideo'),
-  BrandsBand: () => import('@/components/BrandsBand'),
-  HeaderWithParalax: () => import('@/components/HeaderWithParalax'),
-  CallToActionWithPicture: () => import('@/components/CallToActionWithPicture'),
-  TestimonialsCarousel: () => import('@/components/TestimonialsCarousel'),
-  Top3Servicii: () => import('@/components/Top3Servicii'),
-  ToateServiciile: () => import('@/components/ToateServiciile'),
+  PageComponent: () => import("@/components/Page"),
+  HeroFullScreenVideo: () => import("@/components/HeroFullScreenVideo"),
+  BrandsBand: () => import("@/components/BrandsBand"),
+  HeaderWithParalax: () => import("@/components/HeaderWithParalax"),
+  CallToActionWithPicture: () => import("@/components/CallToActionWithPicture"),
+  TestimonialsCarousel: () => import("@/components/TestimonialsCarousel"),
+  Top3Servicii: () => import("@/components/Top3Servicii"),
+  ToateServiciile: () => import("@/components/ToateServiciile"),
 };
 
 const DynamicComponents: Record<string, any> = {};
 
 Object.keys(componentsToDynamicImport).forEach((componentName) => {
   DynamicComponents[componentName] = dynamic(
-    componentsToDynamicImport[componentName]
+    componentsToDynamicImport[componentName],
   );
 });
 
 // Utilizare: DynamicComponents.PageComponent, DynamicComponents.HeroFullScreenVideo etc.
-
-
 
 import { testimonialData } from "@/StaticData/testimonialData";
 
@@ -44,7 +42,7 @@ export default function Homepage() {
             aruncați pe fereastră?&rdquo;
           </span>
         </DynamicComponents.HeaderWithParalax>
-        <DynamicComponents.TestimonialsCarousel data={testimonialData} />
+        {/*<DynamicComponents.TestimonialsCarousel data={testimonialData} />*/}
         <DynamicComponents.Top3Servicii />
         <DynamicComponents.ToateServiciile />
         <DynamicComponents.HeaderWithParalax bgImage="/images/assets/parallax1.webp">
