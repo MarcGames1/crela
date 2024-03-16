@@ -30,7 +30,7 @@ export default function Homepage() {
     <>
       <DynamicComponents.PageComponent>
         <DynamicComponents.HeroFullScreenVideo />
-        <DynamicComponents.BrandsBand />
+        {/*<DynamicComponents.BrandsBand />*/}
         <DynamicComponents.CallToActionWithPicture />
         <DynamicComponents.HeaderWithParalax bgImage="/images/assets/parallax1.webp">
           <span
@@ -42,7 +42,7 @@ export default function Homepage() {
             aruncați pe fereastră?&rdquo;
           </span>
         </DynamicComponents.HeaderWithParalax>
-        {/*<DynamicComponents.TestimonialsCarousel data={testimonialData} />*/}
+        <DynamicComponents.TestimonialsCarousel data={testimonialData} />
         <DynamicComponents.HeaderWithParalax bgImage="/images/assets/parallax1.webp">
           <div
             className="mx-auto text-3xl font-semibold leading-[1.25] md:text-5xl md:leading-tight
