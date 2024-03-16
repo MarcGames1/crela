@@ -45,7 +45,7 @@ export default function Carousel({
             <div className="relative m-5 border-4 border-white  block " key={k}>
               <Image
                 loading={s?.loading ? s.loading : "lazy"}
-                className={`ml-auto   drop-shadow-2xl ${bgColor} `}
+                className={`ml-auto min-h-[300px]   drop-shadow-2xl ${bgColor} `}
                 {...s}
               />
             </div>
