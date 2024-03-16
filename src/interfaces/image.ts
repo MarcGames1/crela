@@ -3,4 +3,5 @@ export interface Iimage {
   alt: string;
   width: number;
   height: number;
+  loading?: "eager" | "lazy";
 }
