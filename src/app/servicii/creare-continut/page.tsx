@@ -10,8 +10,8 @@ import React from "react";
 
 import { IMainHeader } from "@/interfaces/IMainHeader";
 import dynamic from "next/dynamic";
-import { UGC_VideosData } from "./UGC_Data";
-import SingleVideo from "./SingleVideo";
+import { UGC_VideosData } from "./Components/UGC_Data";
+import SingleVideo from "./Components/SingleVideo";
 import { WhatsappCTAVariants } from "@/components/WhatsappCTA/WhatsappCta";
 
 export const metadata: Metadata = {
@@ -39,7 +39,7 @@ type ComponentImport = () => Promise<any>;
 const componentsToDynamicImport: Record<string, ComponentImport> = {
   HeaderWithParalax: () => import("@/components/HeaderWithParalax"),
   Section: () => import("@/components"),
-  VideoPopup: () => import("./VideoPopUp"),
+  VideoPopup: () => import("./Components/VideoPopUp"),
 };
 
 const UGCPage = () => {
