@@ -2,10 +2,12 @@
 import React from "react";
 
 import styles from "./hamburger.module.css";
+import Link from "next/link";
 const Hamburger = ({ isOpen = false, setIsOpen = (a: boolean) => {} }) => {
   return (
     <>
-      <div
+      <Link
+        href={"#top"}
         role="button"
         aria-label="menu button"
         aria-expanded={isOpen ? "true" : "false"}
@@ -24,7 +26,7 @@ const Hamburger = ({ isOpen = false, setIsOpen = (a: boolean) => {} }) => {
           <div></div>
           <div></div>
         </div>
-      </div>
+      </Link>
     </>
   );
 };

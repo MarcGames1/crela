@@ -7,10 +7,7 @@ import { ActionBtn } from "@/components/Buttons";
 
 const MobileMenuContent = () => {
   return (
-    <div
-      onScroll={(e) => {}}
-      className="absolute top-15  z-20  max-h-80 h-auto "
-    >
+    <div onScroll={(e) => {}} className="fixed top-15  z-20  max-h-80  ">
       <div className={`${styles.Overlay} flex place-content-center z-20 `}>
         <Menu
           className={`${styles.Content} transparent  bg-base-100 w-full flex items-center text-center`}

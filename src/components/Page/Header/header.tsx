@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <header
       className={`${
-        isScrollingUp ? "sticky " : "sticky lg:relative "
+        isScrollingUp ? "lg:sticky " : " lg:relative "
       }  top-0 z-30 flex max-w-screen items-center bg-base-100  py-2 px-5 shadow-lg xl:px-12 header`}
     >
       <>
