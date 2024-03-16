@@ -1,30 +1,35 @@
+import {
+  MainHeader,
+  IntroSection,
+  Section,
+  VideoPlayer,
+  WhatsappCta,
+} from "@/components";
+import { Metadata } from "next/types";
+import React from "react";
 
-import { MainHeader, IntroSection, Section, VideoPlayer, WhatsappCta} from '@/components';
-import { Metadata } from 'next/types';
-import React from 'react';
-
-
-import { IMainHeader } from '@/interfaces/IMainHeader';
-import dynamic from 'next/dynamic';
-import { UGC_VideosData } from './UGC_Data';
-import SingleVideo from './SingleVideo';
-import { WhatsappCTAVariants } from '@/components/WhatsappCTA/WhatsappCta';
+import { IMainHeader } from "@/interfaces/IMainHeader";
+import dynamic from "next/dynamic";
+import { UGC_VideosData } from "./UGC_Data";
+import SingleVideo from "./SingleVideo";
+import { WhatsappCTAVariants } from "@/components/WhatsappCTA/WhatsappCta";
 
 export const metadata: Metadata = {
-  title: 'UGC Creator Romania » CRELA✨',
+  title: "UGC Creator Romania » CRELA✨",
   description:
-    '✌ Te ajut sa iti atingi obiectivele Cu UGC - User Generated Content, creative si resurse pentru Social Media.',
-  robots: 'index, follow',
+    "✌ Te ajut sa iti atingi obiectivele Cu UGC - User Generated Content, creative si resurse pentru Social Media.",
+  robots: "index, follow",
   alternates: {
-    canonical: 'servicii/creare-continut',
+    canonical: "servicii/creare-continut",
   },
 };
 
 const MainHeaderData: IMainHeader = {
-  title: 'UGC Creator Romania - Creare de conținut și UGC Costuri reduse și vizbilitate crescută',
-  paragraph:undefined,
+  title:
+    "UGC Creator Romania - Creare de conținut și UGC Costuri reduse și vizbilitate crescută",
+  paragraph: undefined,
   video: {
-    src: '/images/header/UGC.mp4',
+    src: "/images/header/UGC.mp4",
     width: 648,
     height: 648,
   },
@@ -32,39 +37,30 @@ const MainHeaderData: IMainHeader = {
 type ComponentImport = () => Promise<any>;
 
 const componentsToDynamicImport: Record<string, ComponentImport> = {
-  HeaderWithParalax: () => import('@/components/HeaderWithParalax'),
-  Section: () => import('@/components'),
-
+  HeaderWithParalax: () => import("@/components/HeaderWithParalax"),
+  Section: () => import("@/components"),
+  VideoPopup: () => import("./VideoPopUp"),
 };
 
-
-
 const UGCPage = () => {
-    const DynamicComponents: Record<string, any> = {};
+  const DynamicComponents: Record<string, any> = {};
 
-    Object.keys(componentsToDynamicImport).forEach((componentName) => {
-      DynamicComponents[componentName] = dynamic(
-        componentsToDynamicImport[componentName]
-      );
-    });
-
-
-    
-
- 
-      
-
+  Object.keys(componentsToDynamicImport).forEach((componentName) => {
+    DynamicComponents[componentName] = dynamic(
+      componentsToDynamicImport[componentName],
+    );
+  });
 
   return (
     <>
       <MainHeader {...MainHeaderData} />
       <IntroSection p="Crearea de conținut este procesul de elaborare și producție a materialelor, cum ar fi texte sau videoclipuri, pentru a atrage și oferi valoare audienței.">
         <h2 className="text-center">
-          De ce{' '}
+          De ce{" "}
           <span className="bg-clip-text text-transparent bg-primary-gradient">
-            Ai Nevoie de un UGC Creator{' '}
-          </span>{' '}
-          Pentru{' '}
+            Ai Nevoie de un UGC Creator{" "}
+          </span>{" "}
+          Pentru{" "}
           <span className="bg-clip-text text-transparent bg-primary-gradient">
             Creare de conținut UGC?
           </span>
@@ -73,20 +69,20 @@ const UGCPage = () => {
       <Section
         heading={
           <>
-            {' '}
+            {" "}
             <span className="bg-clip-text text-transparent bg-primary-gradient">
               Creator UGC in Romania?
-            </span>{' '}
+            </span>{" "}
             te-ai intrebat ce Inseamna?
           </>
         }
-        p={''}
+        p={""}
       >
         <div className="flex lg:flex-row flex-col items-center justify-items-center p-5">
           <VideoPlayer
-            url={'https://www.youtube.com/shorts/mFtfB3jbEH4?feature=share'}
+            url={"https://www.youtube.com/shorts/mFtfB3jbEH4?feature=share"}
           />
-          <div className='lg:w-1/2 prose m-auto text-lg tracking-wider leading-8 items-center justify-items-center'>
+          <div className="lg:w-1/2 prose m-auto text-lg tracking-wider leading-8 items-center justify-items-center">
             <p>
               UGC Creators sunt peste tot si mai nou in Romania. Insa, te-ai
               intrebat vreodata ce inseamna? Multi vin cu explicatii complicate,
@@ -95,7 +91,7 @@ const UGCPage = () => {
               ti-ai lua produsul preferat, l-ai folosi si ti-ai porni si camera
               sa te filmeze. Respecti bineinteles un brief de la client, il
               editezi si voila! Ai devenit situ un UGC Creator in Romania! Sper
-              ca lucrurile sunt acum mai simple si mai usor de inteles! 
+              ca lucrurile sunt acum mai simple si mai usor de inteles!
             </p>
             <WhatsappCta variant={WhatsappCTAVariants.UGC} />
           </div>
@@ -115,7 +111,7 @@ const UGCPage = () => {
       <Section
         heading={
           <>
-            Portofoliu{' '}
+            Portofoliu{" "}
             <span className="bg-clip-text text-transparent bg-primary-gradient">
               UGC Romania
             </span>
@@ -139,6 +135,7 @@ const UGCPage = () => {
           UGC?
         </div>
       </DynamicComponents.HeaderWithParalax>
+      <DynamicComponents.VideoPopup />
     </>
   );
 };
