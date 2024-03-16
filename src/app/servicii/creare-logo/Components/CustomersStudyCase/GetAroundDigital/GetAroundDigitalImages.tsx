@@ -1,41 +1,35 @@
-import Image from "next/image";
 import React from "react";
 
-const GetAroundDigitalImages = () =>{
-    return (
-        <div className="m-2 flex items-center flex-1 flex-col gap-5   col-span-7 ">
-            <Image
-                className={' max-h-[90vh] w-auto'}
-                src="/Logo-Mockups/GetAroundDigital1.png"
-                width={1920}
-                height={1080}
-                alt="GetAroundDigital Mockup si Logo"
-            />
-            <Image
-                className={' max-h-[90vh] w-auto'}
-                src="/Logo-Mockups/GetAroundDigital2.png"
-                width={1920}
-                height={1080}
-                alt="GetAroundDigital Mockup si Logo"
+import StudyCaseImageGallery from "@/app/servicii/creare-logo/Components/StudyCaseImageGallery";
 
-
-            />
-            <Image
-                className={' max-h-[90vh] w-auto'}
-                src="/Logo-Mockups/GetAroundDigital3.png"
-                width={1920}
-                height={1080}
-                alt="GetAroundDigital Mockup si Logo"
-            />
-            <Image
-                className={' max-h-[90vh] w-auto'}
-                src="/Logo-Mockups/GetAroundDigital4.png"
-                width={1920}
-                height={1080}
-                alt="GetAroundDigital Mockup si Logo"
-            />
-
-        </div>
-    )
-}
-export default GetAroundDigitalImages
+const images = [
+  {
+    original: "/Logo-Mockups/GetAroundDigital1.png",
+    thumbnail: "/Logo-Mockups/GetAroundDigital1.png",
+  },
+  {
+    original: "/Logo-Mockups/GetAroundDigital2.png",
+    thumbnail: "/Logo-Mockups/GetAroundDigital2.png",
+  },
+  {
+    original: "/Logo-Mockups/GetAroundDigital3.png",
+    thumbnail: "/Logo-Mockups/GetAroundDigital3.png",
+  },
+  {
+    original: "/Logo-Mockups/GetAroundDigital4.png",
+    thumbnail: "/Logo-Mockups/GetAroundDigital4.png",
+  },
+];
+const GetAroundDigitalImages = ({
+  thumbnailPosition,
+}: {
+  thumbnailPosition: "bottom" | "left" | "right" | "top" | undefined;
+}) => {
+  return (
+    <StudyCaseImageGallery
+      thumbnailPosition={thumbnailPosition}
+      images={images}
+    />
+  );
+};
+export default GetAroundDigitalImages;
