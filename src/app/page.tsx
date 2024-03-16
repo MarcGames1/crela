@@ -43,12 +43,10 @@ export default function Homepage() {
           </span>
         </DynamicComponents.HeaderWithParalax>
         {/*<DynamicComponents.TestimonialsCarousel data={testimonialData} />*/}
-        <DynamicComponents.Top3Servicii />
-        <DynamicComponents.ToateServiciile />
         <DynamicComponents.HeaderWithParalax bgImage="/images/assets/parallax1.webp">
           <div
-            className="mx-auto text-3xl font-semibold leading-[1.25] md:text-5xl md:leading-tight 
-          [&>u]:decoration-[2px] [&>u]:underline-offset-[5px] md:[&>u]:decoration-[5px] 
+            className="mx-auto text-3xl font-semibold leading-[1.25] md:text-5xl md:leading-tight
+          [&>u]:decoration-[2px] [&>u]:underline-offset-[5px] md:[&>u]:decoration-[5px]
           md:[&>u]:underline-offset-[10px] max-w-[1300px]"
           >
             We&apos;re Better <span className=" font-extrabold ">Together</span>
