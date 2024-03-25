@@ -5,7 +5,7 @@ const ThinkDigitalText = () => {
     <>
       {" "}
       <div className={`px-6 py-4 `}>
-        <div className="prose">
+        <div className="prose text-pretty whitespace-normal	 hyphens-auto break-all	">
           <h3 className="text-center mb-2">ThinkDigitall</h3>
           <p>
             Pentru ThinkDigital, o companie specializată în dezvoltarea de

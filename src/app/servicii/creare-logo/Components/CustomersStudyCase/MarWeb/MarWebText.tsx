@@ -5,7 +5,7 @@ const MarWebText = () => {
     <>
       {" "}
       <div className={`px-6 py-4 `}>
-        <div className="prose">
+        <div className="prose text-pretty whitespace-normal	 hyphens-auto break-all	">
           <h3 className="text-center mb-2">MarWeb</h3>
           <p>
             Marweb, este o companie specializată în programare de website-uri,

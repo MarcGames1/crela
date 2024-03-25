@@ -32,6 +32,7 @@ export default function Carousel({
         breakpoint: 768,
         settings: {
           swipeToSlide: true,
+          slidesToShow: 3,
         },
       },
     ],
@@ -45,7 +46,7 @@ export default function Carousel({
             <div className="relative m-5 border-4 border-white  block " key={k}>
               <Image
                 loading={s?.loading ? s.loading : "lazy"}
-                className={`ml-auto min-h-[300px]   drop-shadow-2xl ${bgColor} `}
+                className={`ml-auto min-h-[300px] aspect-square   drop-shadow-2xl ${bgColor} `}
                 {...s}
               />
             </div>

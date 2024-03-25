@@ -5,7 +5,7 @@ const BaseConsultingText = () => {
     <>
       {" "}
       <div className={`px-6 py-4 `}>
-        <div className="prose">
+        <div className="prose text-pretty whitespace-normal	 hyphens-auto break-all	">
           <h3 className="text-center mb-2">Base Consulting</h3>
           <p>
             Pentru a crea logo-ul pentru Base Consulting, am început prin a
