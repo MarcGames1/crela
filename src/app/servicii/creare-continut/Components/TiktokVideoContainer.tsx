@@ -27,7 +27,7 @@ const TiktokVideoContainer = () => {
             title="♬ som original - 𝒆𝒅𝒖𝒆𝒗𝒍'𝒔 - 𝒆𝒅𝒖𝒆𝒗𝒍'𝒔"
             href="https://www.tiktok.com/music/som-original-𝒆𝒅𝒖𝒆𝒗𝒍'𝒔-7300714218735192837?refer=embed"
           >
-            ♬ som original - 𝒆𝒅𝒖𝒆𝒗𝒍'𝒔 - 𝒆𝒅𝒖𝒆𝒗𝒍'𝒔
+            ♬ som original - 𝒆𝒅𝒖𝒆𝒗𝒍&apos;𝒔 - 𝒆𝒅𝒖𝒆𝒗𝒍&apos;𝒔
           </a>
         </section>
       </blockquote>
