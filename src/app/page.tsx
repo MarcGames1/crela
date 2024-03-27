@@ -24,6 +24,7 @@ Object.keys(componentsToDynamicImport).forEach((componentName) => {
 // Utilizare: DynamicComponents.PageComponent, DynamicComponents.HeroFullScreenVideo etc.
 
 import { testimonialData } from "@/StaticData/testimonialData";
+import { ToateServiciile, Top3Servicii } from "@/components";
 
 export default function Homepage() {
   return (
@@ -43,6 +44,8 @@ export default function Homepage() {
           </span>
         </DynamicComponents.HeaderWithParalax>
         <DynamicComponents.TestimonialsCarousel data={testimonialData} />
+        <Top3Servicii />
+        <ToateServiciile  />
         <DynamicComponents.HeaderWithParalax bgImage="/images/assets/parallax1.webp">
           <div
             className="mx-auto text-3xl font-semibold leading-[1.25] md:text-5xl md:leading-tight
