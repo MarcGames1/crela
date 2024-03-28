@@ -1,7 +1,6 @@
-import React from 'react'
-import { TestimonialData } from '../testimonialData'
-import Image from 'next/image';
-
+import React from "react";
+import { TestimonialData } from "../testimonialData";
+import Image from "next/image";
 
 const Testimonial = ({ header, paragraph, name, picture }: TestimonialData) => {
   return (
@@ -20,7 +19,7 @@ const Testimonial = ({ header, paragraph, name, picture }: TestimonialData) => {
       </div>
 
       <div className="flex flex-col container w-2/3 relative  text-center lg:py-0 lg:text-left">
-        <h3 className="inline text-center mb-5 text-2xl font-bold lg:mb-10 lg:indent-[90px] lg:text-5xl lg:leading-tight">
+        <h3 className="inline text-center mb-5 text-2xl font-bold lg:mb-10 lg:indent-[90px] lg:text-3xl lg:leading-tight">
           {header}
         </h3>
         <div className="content flex  flex-col">
@@ -36,4 +35,4 @@ const Testimonial = ({ header, paragraph, name, picture }: TestimonialData) => {
   );
 };
 
-export default Testimonial
+export default Testimonial;
