@@ -21,9 +21,9 @@ const HeroSection = () => {
           <TypewriterEffect strings={strings} />
         </div>
 
-        <span className={"lg:text-3xl p-5 md:text-2xl text-center font-bold"}>
+        <p className={"lg:text-3xl p-5 md:text-2xl text-center font-bold"}>
           Ajutăm brandurile să facă diferența.
-        </span>
+        </p>
         <div className={"lg:text-2xl p-5 md:text-xl text-center font-semibold"}>
           <p>Oferim soluții personalizate</p>
           <p> pentru a te ajuta să devii</p>
