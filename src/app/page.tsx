@@ -5,6 +5,7 @@ type ComponentImport = () => Promise<any>;
 const componentsToDynamicImport: Record<string, ComponentImport> = {
   PageComponent: () => import("@/components/Page"),
   HeroFullScreenVideo: () => import("@/components/HeroFullScreenVideo"),
+  HeroSection: () => import("@/components/HeroSection"),
   BrandsBand: () => import("@/components/BrandsBand"),
   HeaderWithParalax: () => import("@/components/HeaderWithParalax"),
   CallToActionWithPicture: () => import("@/components/CallToActionWithPicture"),
@@ -31,6 +32,7 @@ export default function Homepage() {
     <>
       <DynamicComponents.PageComponent>
         <DynamicComponents.HeroFullScreenVideo />
+        <DynamicComponents.HeroSection />
         <DynamicComponents.BrandsBand />
         <DynamicComponents.CallToActionWithPicture />
         <DynamicComponents.HeaderWithParalax bgImage="/images/assets/parallax1.webp">
@@ -45,7 +47,7 @@ export default function Homepage() {
         </DynamicComponents.HeaderWithParalax>
         <DynamicComponents.TestimonialsCarousel data={testimonialData} />
         <Top3Servicii />
-        <ToateServiciile  />
+        <ToateServiciile />
         <DynamicComponents.HeaderWithParalax bgImage="/images/assets/parallax1.webp">
           <div
             className="mx-auto text-3xl font-semibold leading-[1.25] md:text-5xl md:leading-tight
