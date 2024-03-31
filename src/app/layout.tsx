@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "Crela",
     description: "STRATEGII UNICE PENTRU SUCCESUL TĂU ONLINE",
     url: "https://crela.ro",
-    siteName: "Next.js",
+    siteName: "Crela",
     images: [
       {
         url: "/images/brand/logo-light.png",
